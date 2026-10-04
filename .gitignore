@@ -1,3 +1,11 @@
 .edge*
 .map-preview.html
 Thumbs.db
+
+# Generated Python cache and downloaded page scratch files.
+__pycache__/
+*.py[cod]
+/tmp_*.html
+
+# Local source documents and superseded collection notes.
+/非遗数据采集旧版/

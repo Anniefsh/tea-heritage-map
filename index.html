@@ -63,6 +63,12 @@
           <p class="section-note" id="mapSummary">从全国分布开始，选择省份进入下一层浏览。</p>
         </div>
       </div>
+      <div class="map-browse-row">
+        <div class="map-browse-toggle" id="mapBrowseToggle" aria-label="地图浏览方式">
+          <button type="button" class="map-mode-button is-active" id="provinceBrowseButton" data-browse-mode="province">省份浏览</button>
+          <button type="button" class="map-mode-button" id="projectBrowseButton" data-browse-mode="project">项目浏览</button>
+        </div>
+      </div>
       <div class="search-row" id="mapSearchRow">
         <div class="search-box">
           <input id="searchInput" type="search" placeholder="搜索项目名 / 省份 / 地区">
@@ -81,6 +87,7 @@
                 <div class="zoom-value" id="zoomValue">100%</div>
               </div>
               <p class="map-hint" id="mapHint"></p>
+              <button type="button" class="map-inset-button" id="southSeaToggleButton">南海诸岛附图</button>
               <svg class="map-surface" id="officialMapSvg" viewBox="0 0 1000 760" aria-label="中国茶类非遗地图">
                 <defs>
                   <linearGradient id="paperFill" x1="0" y1="0" x2="1" y2="1">
@@ -105,15 +112,15 @@
                 <g id="provinceBorderLayer"></g>
                 <g id="nationalBoundaryLayer"></g>
                 <g id="provinceLabelLayer"></g>
+                <g id="provinceButtonLayer"></g>
                 <g id="specialRegionLayer"></g>
                 <g id="projectMarkerSvgLayer"></g>
                 <g id="southSeaInsetLayer"></g>
               </svg>
+              <div class="south-sea-float-panel hidden" id="southSeaFloatPanel"></div>
             </div>
           </div>
           <div class="map-legend" id="mapLegend"></div>
-          <p class="map-source-note" id="mapSourceNote">底图与行政区划表达必须持续按官方标准核验。当前版本保留台湾和南海附图表达，公开发布前需再次确认审图信息与底图版本一致。</p>
-          <section class="map-compliance-card hidden" id="mapComplianceCard"></section>
         </section>
 
         <aside class="map-context-panel" id="mapContextPanel"></aside>

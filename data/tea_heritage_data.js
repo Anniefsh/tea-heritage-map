@@ -1,1470 +1,5238 @@
-﻿window.TEA_HERITAGE_DATA = {
-    "generatedAt":  "2026-03-25 22:15:23",
-    "source":  "D:\\桌面\\国创\\非遗地图\\各省国家级茶叶非遗分布.docx",
-    "totalItems":  46,
-    "totalProvinces":  17,
-    "teaTypes":  [
-                     {
-                         "key":  "green",
-                         "zh":  "绿茶",
-                         "en":  "Green Tea",
-                         "icon":  "leaf",
-                         "color":  "#5f8f4e"
-                     },
-                     {
-                         "key":  "black",
-                         "zh":  "红茶",
-                         "en":  "Black Tea",
-                         "icon":  "ember",
-                         "color":  "#8b4b34"
-                     },
-                     {
-                         "key":  "dark",
-                         "zh":  "黑茶",
-                         "en":  "Dark Tea",
-                         "icon":  "mountain",
-                         "color":  "#5b4636"
-                     },
-                     {
-                         "key":  "oolong",
-                         "zh":  "乌龙茶",
-                         "en":  "Oolong Tea",
-                         "icon":  "swirl",
-                         "color":  "#7c5b3f"
-                     },
-                     {
-                         "key":  "yellow",
-                         "zh":  "黄茶",
-                         "en":  "Yellow Tea",
-                         "icon":  "sun",
-                         "color":  "#b9932f"
-                     },
-                     {
-                         "key":  "white",
-                         "zh":  "白茶",
-                         "en":  "White Tea",
-                         "icon":  "petal",
-                         "color":  "#c6bea5"
-                     },
-                     {
-                         "key":  "flower",
-                         "zh":  "花茶",
-                         "en":  "Scented Tea",
-                         "icon":  "flower",
-                         "color":  "#c66d63"
-                     },
-                     {
-                         "key":  "puer",
-                         "zh":  "普洱茶",
-                         "en":  "Pu\u0027er Tea",
-                         "icon":  "disc",
-                         "color":  "#7e4f2f"
-                     },
-                     {
-                         "key":  "custom",
-                         "zh":  "茶俗",
-                         "en":  "Tea Custom",
-                         "icon":  "cup",
-                         "color":  "#4a6b60"
-                     },
-                     {
-                         "key":  "art",
-                         "zh":  "茶艺",
-                         "en":  "Tea Art",
-                         "icon":  "cup",
-                         "color":  "#5a5ea2"
-                     },
-                     {
-                         "key":  "pastry",
-                         "zh":  "茶点",
-                         "en":  "Tea Pastry",
-                         "icon":  "tray",
-                         "color":  "#d27b42"
-                     },
-                     {
-                         "key":  "herbal",
-                         "zh":  "凉茶",
-                         "en":  "Herbal Tea",
-                         "icon":  "herb",
-                         "color":  "#3d7f59"
-                     },
-                     {
-                         "key":  "other",
-                         "zh":  "茶类相关",
-                         "en":  "Tea Heritage",
-                         "icon":  "marker",
-                         "color":  "#7a6a52"
-                     }
-                 ],
-    "provinces":  [
-                      {
-                          "province":  "福建省",
-                          "count":  6,
-                          "x":  72,
-                          "y":  60,
-                          "teaTypes":  [
-                                           "茶类相关",
-                                           "花茶",
-                                           "红茶",
-                                           "白茶",
-                                           "乌龙茶"
-                                       ]
-                      },
-                      {
-                          "province":  "云南省",
-                          "count":  6,
-                          "x":  30,
-                          "y":  72,
-                          "teaTypes":  [
-                                           "红茶",
-                                           "普洱茶",
-                                           "黑茶",
-                                           "茶俗",
-                                           "茶类相关"
-                                       ]
-                      },
-                      {
-                          "province":  "浙江省",
-                          "count":  5,
-                          "x":  70,
-                          "y":  50,
-                          "teaTypes":  [
-                                           "绿茶",
-                                           "茶俗"
-                                       ]
-                      },
-                      {
-                          "province":  "安徽省",
-                          "count":  4,
-                          "x":  62,
-                          "y":  45,
-                          "teaTypes":  [
-                                           "绿茶",
-                                           "红茶"
-                                       ]
-                      },
-                      {
-                          "province":  "江苏省",
-                          "count":  3,
-                          "x":  69,
-                          "y":  40,
-                          "teaTypes":  [
-                                           "绿茶",
-                                           "茶点"
-                                       ]
-                      },
-                      {
-                          "province":  "湖北省",
-                          "count":  3,
-                          "x":  53,
-                          "y":  48,
-                          "teaTypes":  [
-                                           "绿茶",
-                                           "黑茶"
-                                       ]
-                      },
-                      {
-                          "province":  "湖南省",
-                          "count":  3,
-                          "x":  53,
-                          "y":  58,
-                          "teaTypes":  [
-                                           "黑茶",
-                                           "黄茶"
-                                       ]
-                      },
-                      {
-                          "province":  "江西省",
-                          "count":  3,
-                          "x":  60,
-                          "y":  56,
-                          "teaTypes":  [
-                                           "绿茶",
-                                           "红茶"
-                                       ]
-                      },
-                      {
-                          "province":  "广东省",
-                          "count":  2,
-                          "x":  59,
-                          "y":  73,
-                          "teaTypes":  [
-                                           "凉茶",
-                                           "茶艺"
-                                       ]
-                      },
-                      {
-                          "province":  "北京市",
-                          "count":  2,
-                          "x":  57,
-                          "y":  24,
-                          "teaTypes":  [
-                                           "花茶"
-                                       ]
-                      },
-                      {
-                          "province":  "四川省",
-                          "count":  2,
-                          "x":  39,
-                          "y":  54,
-                          "teaTypes":  [
-                                           "黑茶",
-                                           "绿茶"
-                                       ]
-                      },
-                      {
-                          "province":  "广西",
-                          "count":  2,
-                          "x":  50,
-                          "y":  73,
-                          "teaTypes":  [
-                                           "黑茶",
-                                           "茶俗"
-                                       ]
-                      },
-                      {
-                          "province":  "河南省",
-                          "count":  1,
-                          "x":  55,
-                          "y":  39,
-                          "teaTypes":  [
-                                           "绿茶"
-                                       ]
-                      },
-                      {
-                          "province":  "陕西省",
-                          "count":  1,
-                          "x":  45,
-                          "y":  40,
-                          "teaTypes":  [
-                                           "黑茶"
-                                       ]
-                      },
-                      {
-                          "province":  "贵州省",
-                          "count":  1,
-                          "x":  45,
-                          "y":  66,
-                          "teaTypes":  [
-                                           "绿茶"
-                                       ]
-                      },
-                      {
-                          "province":  "香港",
-                          "count":  1,
-                          "x":  66,
-                          "y":  81,
-                          "teaTypes":  [
-                                           "凉茶"
-                                       ]
-                      },
-                      {
-                          "province":  "澳门",
-                          "count":  1,
-                          "x":  62,
-                          "y":  80,
-                          "teaTypes":  [
-                                           "凉茶"
-                                       ]
-                      }
-                  ],
-    "items":  [
-                  {
-                      "id":  "tea-item-01",
-                      "province":  "福建省",
-                      "city":  "南平市武夷山市",
-                      "name":  "武夷岩茶（大红袍）制作技艺",
-                      "nameEn":  "Wuyi Rock Tea (Da Hong Pao) Processing Technique",
-                      "code":  "Ⅷ-63",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2006 第一批",
-                      "protectionUnit":  "武夷山市文化馆",
-                      "teaType":  "茶类相关",
-                      "teaTypeEn":  "Tea Heritage",
-                      "icon":  "marker",
-                      "color":  "#7a6a52",
-                      "descriptionZh":  "于2006 第一批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Wuyi Rock Tea (Da Hong Pao) Processing Technique was inscribed on the national intangible cultural heritage list in 2006 第一批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  76.5,
-                      "y":  60,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-02",
-                      "province":  "福建省",
-                      "city":  "福州市仓山区",
-                      "name":  "花茶制作技艺（福州茉莉花茶窨制工艺）",
-                      "nameEn":  "Scented Tea Processing Technique (Fuzhou Jasmine Tea Scenting)",
-                      "code":  "Ⅷ-147",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "福州海峡茶业交流协会",
-                      "teaType":  "花茶",
-                      "teaTypeEn":  "Scented Tea",
-                      "icon":  "flower",
-                      "color":  "#c66d63",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Scented Tea Processing Technique (Fuzhou Jasmine Tea Scenting) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  74.25,
-                      "y":  63.9,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-03",
-                      "province":  "福建省",
-                      "city":  "宁德市福安市",
-                      "name":  "红茶制作技艺（坦洋工夫茶制作技艺）",
-                      "nameEn":  "Black Tea Processing Technique (Tanyang Congou Tea)",
-                      "code":  "Ⅷ-149",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "福安市茶业协会",
-                      "teaType":  "红茶",
-                      "teaTypeEn":  "Black Tea",
-                      "icon":  "ember",
-                      "color":  "#8b4b34",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Black Tea Processing Technique (Tanyang Congou Tea) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  69.75,
-                      "y":  63.9,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-04",
-                      "province":  "福建省",
-                      "city":  "宁德市福鼎市",
-                      "name":  "白茶制作技艺（福鼎白茶制作技艺）",
-                      "nameEn":  "White Tea Processing Technique (Fuding White Tea)",
-                      "code":  "Ⅷ-203",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "福鼎市茶业协会",
-                      "teaType":  "白茶",
-                      "teaTypeEn":  "White Tea",
-                      "icon":  "petal",
-                      "color":  "#c6bea5",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "White Tea Processing Technique (Fuding White Tea) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  67.5,
-                      "y":  60,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-05",
-                      "province":  "福建省",
-                      "city":  "泉州市安溪县",
-                      "name":  "乌龙茶制作技艺（铁观音制作技艺）",
-                      "nameEn":  "Oolong Tea Processing Technique (Tieguanyin)",
-                      "code":  "Ⅷ-150",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "安溪县茶文化研究中心",
-                      "teaType":  "乌龙茶",
-                      "teaTypeEn":  "Oolong Tea",
-                      "icon":  "swirl",
-                      "color":  "#7c5b3f",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Oolong Tea Processing Technique (Tieguanyin) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  69.75,
-                      "y":  56.1,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-06",
-                      "province":  "福建省",
-                      "city":  "龙岩市漳平市",
-                      "name":  "乌龙茶制作技艺（漳平水仙茶制作技艺）",
-                      "nameEn":  "Oolong Tea Processing Technique (Zhangping Shuixian)",
-                      "code":  "Ⅷ-150",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "漳平市文化馆",
-                      "teaType":  "乌龙茶",
-                      "teaTypeEn":  "Oolong Tea",
-                      "icon":  "swirl",
-                      "color":  "#7c5b3f",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Oolong Tea Processing Technique (Zhangping Shuixian) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  74.25,
-                      "y":  56.1,
-                      "provinceX":  72,
-                      "provinceY":  60,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-07",
-                      "province":  "云南省",
-                      "city":  "临沧市凤庆县",
-                      "name":  "红茶制作技艺（滇红茶制作技艺）",
-                      "nameEn":  "Black Tea Processing Technique (Dianhong Tea)",
-                      "code":  "Ⅷ-149",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "云南滇红集团股份有限公司",
-                      "teaType":  "红茶",
-                      "teaTypeEn":  "Black Tea",
-                      "icon":  "ember",
-                      "color":  "#8b4b34",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Black Tea Processing Technique (Dianhong Tea) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  34.5,
-                      "y":  72,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-08",
-                      "province":  "云南省",
-                      "city":  "普洱市宁洱县",
-                      "name":  "普洱茶制作技艺（贡茶制作技艺）",
-                      "nameEn":  "Pu\u0027er Tea Processing Technique (Tribute Tea)",
-                      "code":  "Ⅷ-151",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "宁洱县文化馆",
-                      "teaType":  "普洱茶",
-                      "teaTypeEn":  "Pu\u0027er Tea",
-                      "icon":  "disc",
-                      "color":  "#7e4f2f",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Pu\u0027er Tea Processing Technique (Tribute Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  32.25,
-                      "y":  75.9,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-09",
-                      "province":  "云南省",
-                      "city":  "西双版纳勐海县",
-                      "name":  "普洱茶制作技艺（大益茶制作技艺）",
-                      "nameEn":  "Pu\u0027er Tea Processing Technique (Dayi Tea)",
-                      "code":  "Ⅷ-151",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "勐海茶厂",
-                      "teaType":  "普洱茶",
-                      "teaTypeEn":  "Pu\u0027er Tea",
-                      "icon":  "disc",
-                      "color":  "#7e4f2f",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Pu\u0027er Tea Processing Technique (Dayi Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  27.75,
-                      "y":  75.9,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-10",
-                      "province":  "云南省",
-                      "city":  "大理州",
-                      "name":  "黑茶制作技艺（下关沱茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Xiaguan Tuo Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "云南下关沱茶集团",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Xiaguan Tuo Tea) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  25.5,
-                      "y":  72,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-11",
-                      "province":  "云南省",
-                      "city":  "大理州大理市",
-                      "name":  "茶俗（白族三道茶）",
-                      "nameEn":  "Tea Custom (Bai Three-Course Tea)",
-                      "code":  "Ⅹ-107",
-                      "category":  "民俗",
-                      "categoryEn":  "Folk Custom",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "大理市非遗保护所",
-                      "teaType":  "茶俗",
-                      "teaTypeEn":  "Tea Custom",
-                      "icon":  "cup",
-                      "color":  "#4a6b60",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Tea Custom (Bai Three-Course Tea) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Folk Custom. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  27.75,
-                      "y":  68.1,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-12",
-                      "province":  "云南省",
-                      "city":  "德宏州芒市",
-                      "name":  "德昂族酸茶制作技艺",
-                      "nameEn":  "De\u0027ang Sour Tea Making Technique",
-                      "code":  "Ⅷ-268",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "芒市文化馆",
-                      "teaType":  "茶类相关",
-                      "teaTypeEn":  "Tea Heritage",
-                      "icon":  "marker",
-                      "color":  "#7a6a52",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "De\u0027ang Sour Tea Making Technique was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  32.25,
-                      "y":  68.1,
-                      "provinceX":  30,
-                      "provinceY":  72,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-13",
-                      "province":  "浙江省",
-                      "city":  "杭州市",
-                      "name":  "绿茶制作技艺（西湖龙井）",
-                      "nameEn":  "Green Tea Processing Technique (West Lake Longjing)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "西湖区龙井茶产业协会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (West Lake Longjing) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  74.5,
-                      "y":  50,
-                      "provinceX":  70,
-                      "provinceY":  50,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-14",
-                      "province":  "浙江省",
-                      "city":  "杭州市余杭区",
-                      "name":  "径山茶宴",
-                      "nameEn":  "Jingshan Tea Banquet",
-                      "code":  "Ⅹ-140",
-                      "category":  "民俗",
-                      "categoryEn":  "Folk Custom",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "径山万寿禅寺",
-                      "teaType":  "茶俗",
-                      "teaTypeEn":  "Tea Custom",
-                      "icon":  "cup",
-                      "color":  "#4a6b60",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Jingshan Tea Banquet was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Folk Custom. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  71.39,
-                      "y":  54.28,
-                      "provinceX":  70,
-                      "provinceY":  50,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-15",
-                      "province":  "浙江省",
-                      "city":  "金华市",
-                      "name":  "绿茶制作技艺（婺州举岩）",
-                      "nameEn":  "Green Tea Processing Technique (Wuzhou Juyan)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "浙江采云间茶业",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Wuzhou Juyan) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  66.36,
-                      "y":  52.65,
-                      "provinceX":  70,
-                      "provinceY":  50,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-16",
-                      "province":  "浙江省",
-                      "city":  "湖州市长兴县",
-                      "name":  "绿茶制作技艺（紫笋茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Zisun Tea)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "长兴县紫笋茶文化研究会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Zisun Tea) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  66.36,
-                      "y":  47.35,
-                      "provinceX":  70,
-                      "provinceY":  50,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-17",
-                      "province":  "浙江省",
-                      "city":  "湖州市安吉县",
-                      "name":  "绿茶制作技艺（安吉白茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Anji White Tea)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "安吉白茶小镇茶产业商会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Anji White Tea) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  71.39,
-                      "y":  45.72,
-                      "provinceX":  70,
-                      "provinceY":  50,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-18",
-                      "province":  "安徽省",
-                      "city":  "黄山市徽州区",
-                      "name":  "绿茶制作技艺（黄山毛峰）",
-                      "nameEn":  "Green Tea Processing Technique (Huangshan Maofeng)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "谢裕大茶业股份",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Huangshan Maofeng) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  65.4,
-                      "y":  45,
-                      "provinceX":  62,
-                      "provinceY":  45,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-19",
-                      "province":  "安徽省",
-                      "city":  "黄山市黄山区",
-                      "name":  "绿茶制作技艺（太平猴魁）",
-                      "nameEn":  "Green Tea Processing Technique (Taiping Houkui)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "黄山区茶业协会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Taiping Houkui) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  62,
-                      "y":  48.4,
-                      "provinceX":  62,
-                      "provinceY":  45,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-20",
-                      "province":  "安徽省",
-                      "city":  "黄山市祁门县",
-                      "name":  "红茶制作技艺（祁门红茶制作技艺）",
-                      "nameEn":  "Black Tea Processing Technique (Keemun Black Tea)",
-                      "code":  "Ⅷ-149",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "祁门县红茶协会",
-                      "teaType":  "红茶",
-                      "teaTypeEn":  "Black Tea",
-                      "icon":  "ember",
-                      "color":  "#8b4b34",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Black Tea Processing Technique (Keemun Black Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  58.6,
-                      "y":  45,
-                      "provinceX":  62,
-                      "provinceY":  45,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-21",
-                      "province":  "安徽省",
-                      "city":  "六安市裕安区",
-                      "name":  "绿茶制作技艺（六安瓜片）",
-                      "nameEn":  "Green Tea Processing Technique (Lu\u0027an Guapian)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "裕安区茶叶产业协会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Lu\u0027an Guapian) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  62,
-                      "y":  41.6,
-                      "provinceX":  62,
-                      "provinceY":  45,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-22",
-                      "province":  "江苏省",
-                      "city":  "苏州市吴中区",
-                      "name":  "绿茶制作技艺（碧螺春制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Biluochun)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "洞庭山碧螺春茶业协会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Biluochun) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  72.4,
-                      "y":  40,
-                      "provinceX":  69,
-                      "provinceY":  40,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-23",
-                      "province":  "江苏省",
-                      "city":  "南京市",
-                      "name":  "绿茶制作技艺（雨花茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Yuhua Tea)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "南京盛峰茶业",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Yuhua Tea) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  67.3,
-                      "y":  42.94,
-                      "provinceX":  69,
-                      "provinceY":  40,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-24",
-                      "province":  "江苏省",
-                      "city":  "扬州市",
-                      "name":  "茶点制作技艺（富春茶点制作技艺）",
-                      "nameEn":  "Tea Pastry Making Technique (Fuchun Tea Pastry)",
-                      "code":  "Ⅷ-161",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "扬州富春茶社",
-                      "teaType":  "茶点",
-                      "teaTypeEn":  "Tea Pastry",
-                      "icon":  "tray",
-                      "color":  "#d27b42",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Tea Pastry Making Technique (Fuchun Tea Pastry) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  67.3,
-                      "y":  37.06,
-                      "provinceX":  69,
-                      "provinceY":  40,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-25",
-                      "province":  "湖北省",
-                      "city":  "恩施州恩施市",
-                      "name":  "绿茶制作技艺（恩施玉露制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Enshi Yulu)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "恩施玉露茶产业协会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Enshi Yulu) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  56.4,
-                      "y":  48,
-                      "provinceX":  53,
-                      "provinceY":  48,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-26",
-                      "province":  "湖北省",
-                      "city":  "咸宁市赤壁市",
-                      "name":  "黑茶制作技艺（赵李桥砖茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Zhaoliqiao Brick Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "湖北省赵李桥茶厂",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Zhaoliqiao Brick Tea) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  51.3,
-                      "y":  50.94,
-                      "provinceX":  53,
-                      "provinceY":  48,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-27",
-                      "province":  "湖北省",
-                      "city":  "宜昌市伍家岗区",
-                      "name":  "黑茶制作技艺（长盛川青砖茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Changshengchuan Brick Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "鑫鼎生物科技",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Changshengchuan Brick Tea) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  51.3,
-                      "y":  45.06,
-                      "provinceX":  53,
-                      "provinceY":  48,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-28",
-                      "province":  "湖南省",
-                      "city":  "益阳市安化县",
-                      "name":  "黑茶制作技艺（千两茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Qianliang Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "安化县文化馆",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Qianliang Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  56.4,
-                      "y":  58,
-                      "provinceX":  53,
-                      "provinceY":  58,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-29",
-                      "province":  "湖南省",
-                      "city":  "益阳市",
-                      "name":  "黑茶制作技艺（茯砖茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Fuzhuan Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "益阳茶厂",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Fuzhuan Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  51.3,
-                      "y":  60.94,
-                      "provinceX":  53,
-                      "provinceY":  58,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-30",
-                      "province":  "湖南省",
-                      "city":  "岳阳市君山区",
-                      "name":  "黄茶制作技艺（君山银针茶制作技艺）",
-                      "nameEn":  "Yellow Tea Processing Technique (Junshan Yinzhen)",
-                      "code":  "Ⅷ-267",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "君山区文化馆",
-                      "teaType":  "黄茶",
-                      "teaTypeEn":  "Yellow Tea",
-                      "icon":  "sun",
-                      "color":  "#b9932f",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Yellow Tea Processing Technique (Junshan Yinzhen) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  51.3,
-                      "y":  55.06,
-                      "provinceX":  53,
-                      "provinceY":  58,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-31",
-                      "province":  "江西省",
-                      "city":  "赣州市全南县",
-                      "name":  "绿茶制作技艺（赣南客家擂茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Southern Jiangxi Hakka Lei Cha)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "全南县文化馆",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Southern Jiangxi Hakka Lei Cha) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  63.4,
-                      "y":  56,
-                      "provinceX":  60,
-                      "provinceY":  56,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-32",
-                      "province":  "江西省",
-                      "city":  "上饶市婺源县",
-                      "name":  "绿茶制作技艺（婺源绿茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Wuyuan Green Tea)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "婺源县文化馆",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Wuyuan Green Tea) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  58.3,
-                      "y":  58.94,
-                      "provinceX":  60,
-                      "provinceY":  56,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-33",
-                      "province":  "江西省",
-                      "city":  "九江市修水县",
-                      "name":  "红茶制作技艺（宁红茶制作技艺）",
-                      "nameEn":  "Black Tea Processing Technique (Ninghong Tea)",
-                      "code":  "Ⅷ-149",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "江西省宁红公司",
-                      "teaType":  "红茶",
-                      "teaTypeEn":  "Black Tea",
-                      "icon":  "ember",
-                      "color":  "#8b4b34",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Black Tea Processing Technique (Ninghong Tea) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  58.3,
-                      "y":  53.06,
-                      "provinceX":  60,
-                      "provinceY":  56,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-34",
-                      "province":  "广东省",
-                      "city":  "广东省",
-                      "name":  "凉茶",
-                      "nameEn":  "Herbal Tea Preparation",
-                      "code":  "Ⅷ-89",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2006 第一批",
-                      "protectionUnit":  "广东省食品行业协会",
-                      "teaType":  "凉茶",
-                      "teaTypeEn":  "Herbal Tea",
-                      "icon":  "herb",
-                      "color":  "#3d7f59",
-                      "descriptionZh":  "于2006 第一批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Herbal Tea Preparation was inscribed on the national intangible cultural heritage list in 2006 第一批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  61.2,
-                      "y":  73,
-                      "provinceX":  59,
-                      "provinceY":  73,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-35",
-                      "province":  "广东省",
-                      "city":  "潮州市",
-                      "name":  "茶艺（潮州工夫茶艺）",
-                      "nameEn":  "Tea Art (Chaozhou Gongfu Tea)",
-                      "code":  "Ⅹ-107",
-                      "category":  "民俗",
-                      "categoryEn":  "Folk Custom",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "潮州市文化馆",
-                      "teaType":  "茶艺",
-                      "teaTypeEn":  "Tea Art",
-                      "icon":  "cup",
-                      "color":  "#5a5ea2",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Tea Art (Chaozhou Gongfu Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Folk Custom. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  56.8,
-                      "y":  73,
-                      "provinceX":  59,
-                      "provinceY":  73,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-36",
-                      "province":  "北京市",
-                      "city":  "北京市",
-                      "name":  "花茶制作技艺（张一元茉莉花茶制作技艺）",
-                      "nameEn":  "Scented Tea Processing Technique (Zhang Yiyuan Jasmine Tea)",
-                      "code":  "Ⅷ-147",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "北京张一元茶叶公司",
-                      "teaType":  "花茶",
-                      "teaTypeEn":  "Scented Tea",
-                      "icon":  "flower",
-                      "color":  "#c66d63",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Scented Tea Processing Technique (Zhang Yiyuan Jasmine Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  59.2,
-                      "y":  24,
-                      "provinceX":  57,
-                      "provinceY":  24,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-37",
-                      "province":  "北京市",
-                      "city":  "北京市东城区",
-                      "name":  "花茶制作技艺（吴裕泰茉莉花茶制作技艺）",
-                      "nameEn":  "Scented Tea Processing Technique (Wuyutai Jasmine Tea)",
-                      "code":  "Ⅷ-147",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2011 第三批",
-                      "protectionUnit":  "北京吴裕泰茶业",
-                      "teaType":  "花茶",
-                      "teaTypeEn":  "Scented Tea",
-                      "icon":  "flower",
-                      "color":  "#c66d63",
-                      "descriptionZh":  "于2011 第三批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Scented Tea Processing Technique (Wuyutai Jasmine Tea) was inscribed on the national intangible cultural heritage list in 2011 第三批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  54.8,
-                      "y":  24,
-                      "provinceX":  57,
-                      "provinceY":  24,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-38",
-                      "province":  "四川省",
-                      "city":  "雅安市",
-                      "name":  "黑茶制作技艺（南路边茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Nanlu Bian Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2008 第二批",
-                      "protectionUnit":  "雅安市非遗和茶马古道中心",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2008 第二批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Nanlu Bian Tea) was inscribed on the national intangible cultural heritage list in 2008 第二批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  41.2,
-                      "y":  54,
-                      "provinceX":  39,
-                      "provinceY":  54,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-39",
-                      "province":  "四川省",
-                      "city":  "雅安市名山区",
-                      "name":  "绿茶制作技艺（蒙山茶传统制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Mengshan Tea Traditional Craft)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "名山区非遗保护中心",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Mengshan Tea Traditional Craft) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  36.8,
-                      "y":  54,
-                      "provinceX":  39,
-                      "provinceY":  54,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-40",
-                      "province":  "广西",
-                      "city":  "梧州市苍梧县",
-                      "name":  "黑茶制作技艺（六堡茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Liubao Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "苍梧县文化馆",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Liubao Tea) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  52.2,
-                      "y":  73,
-                      "provinceX":  50,
-                      "provinceY":  73,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-41",
-                      "province":  "广西",
-                      "city":  "桂林市恭城县",
-                      "name":  "茶俗（瑶族油茶习俗）",
-                      "nameEn":  "Tea Custom (Yao Oil Tea Custom)",
-                      "code":  "Ⅹ-107",
-                      "category":  "民俗",
-                      "categoryEn":  "Folk Custom",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "恭城县油茶协会",
-                      "teaType":  "茶俗",
-                      "teaTypeEn":  "Tea Custom",
-                      "icon":  "cup",
-                      "color":  "#4a6b60",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Tea Custom (Yao Oil Tea Custom) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Folk Custom. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  47.8,
-                      "y":  73,
-                      "provinceX":  50,
-                      "provinceY":  73,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-42",
-                      "province":  "河南省",
-                      "city":  "信阳市",
-                      "name":  "绿茶制作技艺（信阳毛尖茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Xinyang Maojian)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "信阳市茶叶商会",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Xinyang Maojian) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  57.2,
-                      "y":  39,
-                      "provinceX":  55,
-                      "provinceY":  39,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-43",
-                      "province":  "陕西省",
-                      "city":  "咸阳市",
-                      "name":  "黑茶制作技艺（咸阳茯茶制作技艺）",
-                      "nameEn":  "Dark Tea Processing Technique (Xianyang Fu Tea)",
-                      "code":  "Ⅷ-152",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2021 第五批",
-                      "protectionUnit":  "咸阳市群众艺术馆",
-                      "teaType":  "黑茶",
-                      "teaTypeEn":  "Dark Tea",
-                      "icon":  "mountain",
-                      "color":  "#5b4636",
-                      "descriptionZh":  "于2021 第五批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Dark Tea Processing Technique (Xianyang Fu Tea) was inscribed on the national intangible cultural heritage list in 2021 第五批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  47.2,
-                      "y":  40,
-                      "provinceX":  45,
-                      "provinceY":  40,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-44",
-                      "province":  "贵州省",
-                      "city":  "黔南州都匀市",
-                      "name":  "绿茶制作技艺（都匀毛尖茶制作技艺）",
-                      "nameEn":  "Green Tea Processing Technique (Duyun Maojian)",
-                      "code":  "Ⅷ-148",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2014 第四批",
-                      "protectionUnit":  "都匀市文保中心",
-                      "teaType":  "绿茶",
-                      "teaTypeEn":  "Green Tea",
-                      "icon":  "leaf",
-                      "color":  "#5f8f4e",
-                      "descriptionZh":  "于2014 第四批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Green Tea Processing Technique (Duyun Maojian) was inscribed on the national intangible cultural heritage list in 2014 第四批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  47.2,
-                      "y":  66,
-                      "provinceX":  45,
-                      "provinceY":  66,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-45",
-                      "province":  "香港",
-                      "city":  "香港特别行政区",
-                      "name":  "凉茶",
-                      "nameEn":  "Herbal Tea Preparation",
-                      "code":  "Ⅷ-89",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2006 第一批",
-                      "protectionUnit":  "香港文体旅游局",
-                      "teaType":  "凉茶",
-                      "teaTypeEn":  "Herbal Tea",
-                      "icon":  "herb",
-                      "color":  "#3d7f59",
-                      "descriptionZh":  "于2006 第一批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Herbal Tea Preparation was inscribed on the national intangible cultural heritage list in 2006 第一批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  68.2,
-                      "y":  81,
-                      "provinceX":  66,
-                      "provinceY":  81,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  },
-                  {
-                      "id":  "tea-item-46",
-                      "province":  "澳门",
-                      "city":  "澳门特别行政区",
-                      "name":  "凉茶",
-                      "nameEn":  "Herbal Tea Preparation",
-                      "code":  "Ⅷ-89",
-                      "category":  "传统技艺",
-                      "categoryEn":  "Traditional Craft",
-                      "yearBatch":  "2006 第一批",
-                      "protectionUnit":  "澳门文化局",
-                      "teaType":  "凉茶",
-                      "teaTypeEn":  "Herbal Tea",
-                      "icon":  "herb",
-                      "color":  "#3d7f59",
-                      "descriptionZh":  "于2006 第一批列入国家级非物质文化遗产代表性项目名录，所属地区为，类别为，保护单位为。首版页面将先基于清单数据展示，后续继续补充工艺流程、历史脉络、代表性图像与视频素材。",
-                      "descriptionEn":  "Herbal Tea Preparation was inscribed on the national intangible cultural heritage list in 2006 第一批. It is associated with  and is classified as Traditional Craft. The current version uses structured list data first, and richer background materials, visuals, and video references will be added in the next content pass.",
-                      "x":  64.2,
-                      "y":  80,
-                      "provinceX":  62,
-                      "provinceY":  80,
-                      "videoUrl":  "",
-                      "imageUrl":  "",
-                      "sourceUrl":  "",
-                      "sourceStatus":  "seed-docx"
-                  }
-              ]
-}
-;
+window.TEA_HERITAGE_DATA = {
+  "generatedAt": "2026-04-21 23:59:00",
+  "source": "非遗数据采集新/05_详情页投喂/详情页候选数据.csv + ihchina 官方项目页",
+  "totalItems": 46,
+  "totalProvinces": 17,
+  "teaTypes": [
+    {
+      "key": "green",
+      "zh": "绿茶",
+      "en": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e"
+    },
+    {
+      "key": "black",
+      "zh": "红茶",
+      "en": "Black Tea",
+      "icon": "ember",
+      "color": "#8b4b34"
+    },
+    {
+      "key": "dark",
+      "zh": "黑茶",
+      "en": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636"
+    },
+    {
+      "key": "oolong",
+      "zh": "乌龙茶",
+      "en": "Oolong Tea",
+      "icon": "swirl",
+      "color": "#7c5b3f"
+    },
+    {
+      "key": "yellow",
+      "zh": "黄茶",
+      "en": "Yellow Tea",
+      "icon": "sun",
+      "color": "#b9932f"
+    },
+    {
+      "key": "white",
+      "zh": "白茶",
+      "en": "White Tea",
+      "icon": "petal",
+      "color": "#c6bea5"
+    },
+    {
+      "key": "flower",
+      "zh": "花茶",
+      "en": "Scented Tea",
+      "icon": "flower",
+      "color": "#c66d63"
+    },
+    {
+      "key": "puer",
+      "zh": "普洱茶",
+      "en": "Pu'er Tea",
+      "icon": "disc",
+      "color": "#7e4f2f"
+    },
+    {
+      "key": "custom",
+      "zh": "茶俗",
+      "en": "Tea Custom",
+      "icon": "cup",
+      "color": "#4a6b60"
+    },
+    {
+      "key": "art",
+      "zh": "茶艺",
+      "en": "Tea Art",
+      "icon": "cup",
+      "color": "#5a5ea2"
+    },
+    {
+      "key": "pastry",
+      "zh": "茶点",
+      "en": "Tea Pastry",
+      "icon": "tray",
+      "color": "#d27b42"
+    },
+    {
+      "key": "herbal",
+      "zh": "凉茶",
+      "en": "Herbal Tea",
+      "icon": "herb",
+      "color": "#3d7f59"
+    },
+    {
+      "key": "other",
+      "zh": "茶类相关",
+      "en": "Tea Heritage",
+      "icon": "marker",
+      "color": "#7a6a52"
+    }
+  ],
+  "provinces": [
+    {
+      "province": "福建省",
+      "count": 6,
+      "x": 72,
+      "y": 60,
+      "teaTypes": [
+        "茶类相关",
+        "花茶",
+        "红茶",
+        "白茶",
+        "乌龙茶"
+      ]
+    },
+    {
+      "province": "云南省",
+      "count": 6,
+      "x": 30,
+      "y": 72,
+      "teaTypes": [
+        "红茶",
+        "普洱茶",
+        "黑茶",
+        "茶俗",
+        "茶类相关"
+      ]
+    },
+    {
+      "province": "浙江省",
+      "count": 5,
+      "x": 70,
+      "y": 50,
+      "teaTypes": [
+        "绿茶",
+        "茶俗"
+      ]
+    },
+    {
+      "province": "安徽省",
+      "count": 4,
+      "x": 62,
+      "y": 45,
+      "teaTypes": [
+        "绿茶",
+        "红茶"
+      ]
+    },
+    {
+      "province": "江苏省",
+      "count": 3,
+      "x": 69,
+      "y": 40,
+      "teaTypes": [
+        "绿茶",
+        "茶点"
+      ]
+    },
+    {
+      "province": "湖北省",
+      "count": 3,
+      "x": 53,
+      "y": 48,
+      "teaTypes": [
+        "绿茶",
+        "黑茶"
+      ]
+    },
+    {
+      "province": "湖南省",
+      "count": 3,
+      "x": 53,
+      "y": 58,
+      "teaTypes": [
+        "黑茶",
+        "黄茶"
+      ]
+    },
+    {
+      "province": "江西省",
+      "count": 3,
+      "x": 60,
+      "y": 56,
+      "teaTypes": [
+        "绿茶",
+        "红茶"
+      ]
+    },
+    {
+      "province": "广东省",
+      "count": 2,
+      "x": 59,
+      "y": 73,
+      "teaTypes": [
+        "凉茶",
+        "茶艺"
+      ]
+    },
+    {
+      "province": "北京市",
+      "count": 2,
+      "x": 57,
+      "y": 24,
+      "teaTypes": [
+        "花茶"
+      ]
+    },
+    {
+      "province": "四川省",
+      "count": 2,
+      "x": 39,
+      "y": 54,
+      "teaTypes": [
+        "黑茶",
+        "绿茶"
+      ]
+    },
+    {
+      "province": "广西",
+      "count": 2,
+      "x": 50,
+      "y": 73,
+      "teaTypes": [
+        "黑茶",
+        "茶俗"
+      ]
+    },
+    {
+      "province": "河南省",
+      "count": 1,
+      "x": 55,
+      "y": 39,
+      "teaTypes": [
+        "绿茶"
+      ]
+    },
+    {
+      "province": "陕西省",
+      "count": 1,
+      "x": 45,
+      "y": 40,
+      "teaTypes": [
+        "黑茶"
+      ]
+    },
+    {
+      "province": "贵州省",
+      "count": 1,
+      "x": 45,
+      "y": 66,
+      "teaTypes": [
+        "绿茶"
+      ]
+    },
+    {
+      "province": "香港",
+      "count": 1,
+      "x": 66,
+      "y": 81,
+      "teaTypes": [
+        "凉茶"
+      ]
+    },
+    {
+      "province": "澳门",
+      "count": 1,
+      "x": 62,
+      "y": 80,
+      "teaTypes": [
+        "凉茶"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "tea-item-01",
+      "province": "福建省",
+      "city": "南平市武夷山市",
+      "name": "武夷岩茶（大红袍）制作技艺",
+      "nameEn": "Wuyi Rock Tea (Da Hong Pao) Processing Technique",
+      "code": "Ⅷ-63",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2006 第一批",
+      "protectionUnit": "武夷山市文化馆",
+      "teaType": "茶类相关",
+      "teaTypeEn": "Tea Heritage",
+      "icon": "marker",
+      "color": "#7a6a52",
+      "descriptionZh": "武夷岩茶（大红袍）制作技艺于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为南平市武夷山市，保护单位为武夷山市文化馆。武夷岩茶的制作可追溯到汉代，经历代的发展沿革，到清代初年出现了岩茶制作的完善技艺，首开乌龙茶制作的先河。武夷岩茶（大红袍）独有的“岩骨花香”是由武夷山独特的生态环境、气候条件和精湛的传统制作技艺造就的，其传统制作流程共有10道工序，环环相扣，不可或缺，其中对茶质起关键作用的是“复式萎凋”、“看青做青，看大做青”、“走水返阳”、“双炒双揉”、“低温久烘”等环节。",
+      "descriptionEn": "Wuyi Rock Tea (Da Hong Pao) Processing Technique is a national-level intangible cultural heritage item inscribed in 2006 (First Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省武夷山市 and protected by 武夷山市文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 76.5,
+      "y": 60,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14373.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "南平市武夷山市",
+      "representativeInheritors": [
+        {
+          "name": "王顺明",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "叶启桐",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1329"
+        },
+        {
+          "name": "陈德华",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1854"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "武夷岩茶（大红袍）制作技艺",
+          "url": "https://www.ihchina.cn/project_details/14373.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "武夷岩茶（大红袍）制作技艺于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为南平市武夷山市，保护单位为武夷山市文化馆。武夷岩茶的制作可追溯到汉代，经历代的发展沿革，到清代初年出现了岩茶制作的完善技艺，首开乌龙茶制作的先河。武夷岩茶（大红袍）独有的“岩骨花香”是由武夷山独特的生态环境、气候条件和精湛的传统制作技艺造就的，其传统制作流程共有10道工序，环环相扣，不可或缺，其中对茶质起关键作用的是“复式萎凋”、“看青做青，看大做青”、“走水返阳”、“双炒双揉”、“低温久烘”等环节。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "武夷岩茶的制作可追溯到汉代，经历代的发展沿革，到清代初年出现了岩茶制作的完善技艺，首开乌龙茶制作的先河。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "武夷岩茶的制作可追溯到汉代，经历代的发展沿革，到清代初年出现了岩茶制作的完善技艺，首开乌龙茶制作的先河。武夷岩茶（大红袍）独有的“岩骨花香”是由武夷山独特的生态环境、气候条件和精湛的传统制作技艺造就的，其传统制作流程共有10道工序，环环相扣，不可或缺，其中对茶质起关键作用的是“复式萎凋”、“看青做青，看大做青”、“走水返阳”、“双炒双揉”、“低温久烘”等环节。武夷山为红茶、乌龙茶的发源地，与武夷岩茶制作技艺相伴而生的茶俗有浓郁的地方特色，喊山、斗茶赛、茶艺等风俗雅俗共赏，拥有广泛的群众基础。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "武夷岩茶（大红袍）独有的“岩骨花香”是由武夷山独特的生态环境、气候条件和精湛的传统制作技艺造就的，其传统制作流程共有10道工序，环环相扣，不可或缺，其中对茶质起关键作用的是“复式萎凋”、“看青做青，看大做青”、“走水返阳”、“双炒双揉”、“低温久烘”等环节。武夷山为红茶、乌龙茶的发源地，与武夷岩茶制作技艺相伴而生的茶俗有浓郁的地方特色，喊山、斗茶赛、茶艺等风俗雅俗共赏，拥有广泛的群众基础。但由于受到市场经济利益的驱使和机械生产工艺的冲击，加上老艺人疏于传技，传统岩茶制作工艺出现濒危迹象，急需加以保护。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，武夷岩茶（大红袍）制作技艺的申报地区或单位为南平市武夷山市，保护单位为武夷山市文化馆。官方项目页当前关联的相关传承人包括王顺明、叶启桐、陈德华等。但由于受到市场经济利益的驱使和机械生产工艺的冲击，加上老艺人疏于传技，传统岩茶制作工艺出现濒危迹象，急需加以保护。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为南平市武夷山市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-02",
+      "province": "福建省",
+      "city": "福州市仓山区",
+      "name": "花茶制作技艺（福州茉莉花茶窨制工艺）",
+      "nameEn": "Scented Tea Processing Technique (Fuzhou Jasmine Tea Scenting)",
+      "code": "Ⅷ-147",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "福州海峡茶业交流协会",
+      "teaType": "花茶",
+      "teaTypeEn": "Scented Tea",
+      "icon": "flower",
+      "color": "#c66d63",
+      "descriptionZh": "花茶制作技艺（福州茉莉花茶窨制工艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为福州市仓山区，保护单位为福州海峡茶业交流协会。福州茉莉花茶窨制工艺是以烘青绿茶为茶坯，和以茉莉鲜花，经过一系列复杂窨制工艺拼和，使茶品与茉莉花香交互融合，最后去花而成茶的传统技艺。福州茉莉花茶窨制工艺流布区域为福建省福州市境内的晋安区、仓山区、马尾区、闽侯县、长乐市、福清市、闽清县、永泰县、罗源县、连江县等地。",
+      "descriptionEn": "Scented Tea Processing Technique (Fuzhou Jasmine Tea Scenting) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省福州市仓山区 and protected by 福州海峡茶业交流协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 74.25,
+      "y": 63.9,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14604.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "福州市仓山区",
+      "representativeInheritors": [
+        {
+          "name": "王德星",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "傅天龙",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "陈成忠",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2841"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "花茶制作技艺（福州茉莉花茶窨制工艺）",
+          "url": "https://www.ihchina.cn/project_details/14604.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "花茶制作技艺（福州茉莉花茶窨制工艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为福州市仓山区，保护单位为福州海峡茶业交流协会。福州茉莉花茶窨制工艺是以烘青绿茶为茶坯，和以茉莉鲜花，经过一系列复杂窨制工艺拼和，使茶品与茉莉花香交互融合，最后去花而成茶的传统技艺。福州茉莉花茶窨制工艺流布区域为福建省福州市境内的晋安区、仓山区、马尾区、闽侯县、长乐市、福清市、闽清县、永泰县、罗源县、连江县等地。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "明代徐勃《茗谭》载：“闽人多以茉莉之属，浸水瀹茶。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "福州茉莉花茶窨制工艺是以烘青绿茶为茶坯，和以茉莉鲜花，经过一系列复杂窨制工艺拼和，使茶品与茉莉花香交互融合，最后去花而成茶的传统技艺。福州茉莉花茶窨制工艺流布区域为福建省福州市境内的晋安区、仓山区、马尾区、闽侯县、长乐市、福清市、闽清县、永泰县、罗源县、连江县等地。福州茉莉花茶窨制工艺细致繁复，根据每年茉莉花的品质不同和茶坯质量，最高可做到八到十窨，六窨以上不提花。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "福州茉莉花茶窨制工艺是以烘青绿茶为茶坯，和以茉莉鲜花，经过一系列复杂窨制工艺拼和，使茶品与茉莉花香交互融合，最后去花而成茶的传统技艺。福州茉莉花茶窨制工艺流布区域为福建省福州市境内的晋安区、仓山区、马尾区、闽侯县、长乐市、福清市、闽清县、永泰县、罗源县、连江县等地。福州茉莉花茶窨制工艺具有采用福州原料和传统工艺，用花用茶选料精良，需要四窨一提及以上，目前已制定国家标准和地理标志标准。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，花茶制作技艺（福州茉莉花茶窨制工艺）的申报地区或单位为福州市仓山区，保护单位为福州海峡茶业交流协会。官方项目页当前关联的相关传承人包括王德星、傅天龙、陈成忠等。福州茉莉花茶窨制工艺流布区域为福建省福州市境内的晋安区、仓山区、马尾区、闽侯县、长乐市、福清市、闽清县、永泰县、罗源县、连江县等地。” 福州茉莉花茶窨制技艺靠口传心授世代传承，存续状况良好。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为福州市仓山区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-03",
+      "province": "福建省",
+      "city": "宁德市福安市",
+      "name": "红茶制作技艺（坦洋工夫茶制作技艺）",
+      "nameEn": "Black Tea Processing Technique (Tanyang Congou Tea)",
+      "code": "Ⅷ-149",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "福安市茶业协会",
+      "teaType": "红茶",
+      "teaTypeEn": "Black Tea",
+      "icon": "ember",
+      "color": "#8b4b34",
+      "descriptionZh": "红茶制作技艺（坦洋工夫茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宁德市福安市，保护单位为福安市茶业协会。坦洋工夫茶制作技艺是我国红茶制作技艺的代表之一，以福建省宁德市福安市社口镇坦洋村为中心世代传承。除坦洋村外，该项目还流布于福安市辖区内的社口、晓阳、上白石等18个乡镇和赛岐开发区、福安畲族开发区，并辐射至邻县。",
+      "descriptionEn": "Black Tea Processing Technique (Tanyang Congou Tea) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省宁德市福安市 and protected by 福安市茶业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 69.75,
+      "y": 63.9,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23782.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "宁德市福安市",
+      "representativeInheritors": [
+        {
+          "name": "林鸿",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "红茶制作技艺（坦洋工夫茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23782.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "红茶制作技艺（坦洋工夫茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宁德市福安市，保护单位为福安市茶业协会。坦洋工夫茶制作技艺是我国红茶制作技艺的代表之一，以福建省宁德市福安市社口镇坦洋村为中心世代传承。除坦洋村外，该项目还流布于福安市辖区内的社口、晓阳、上白石等18个乡镇和赛岐开发区、福安畲族开发区，并辐射至邻县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "坦洋工夫红茶名列“闽红”三大工夫茶之首，其制作技艺始创于1851年，传承至今已有170多年。坦洋工夫红茶制作繁复，工序严格，从初制加工到精制筛分，形成了以“抖、分、捞、选、簸、漂”为核心的十几道制作工艺和手法，每道工序皆有诀窍，精彩迭出。从绿叶到红茶，要经过“渥红”等诸多复杂工序，讲究看天做茶，同时手法善变，独创的改单式为复式的萎凋法和精制筛分法，形成了一套科学的“揉茶绝活”，即轻、重、轻和慢、快、慢、抖散，反复3次，从而做成最佳的条索。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "坦洋工夫茶制作技艺是我国红茶制作技艺的代表之一，以福建省宁德市福安市社口镇坦洋村为中心世代传承。坦洋工夫红茶名列“闽红”三大工夫茶之首，其制作技艺始创于1851年，传承至今已有170多年。坦洋工夫红茶制作繁复，工序严格，从初制加工到精制筛分，形成了以“抖、分、捞、选、簸、漂”为核心的十几道制作工艺和手法，每道工序皆有诀窍，精彩迭出。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "坦洋工夫茶制作技艺是我国红茶制作技艺的代表之一，以福建省宁德市福安市社口镇坦洋村为中心世代传承。除坦洋村外，该项目还流布于福安市辖区内的社口、晓阳、上白石等18个乡镇和赛岐开发区、福安畲族开发区，并辐射至邻县。坦洋工夫红茶制作技艺是红茶制作技艺的重要组成部分与推动者，对于研究红茶发展历史和相关文化事项具有重要的参考价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，红茶制作技艺（坦洋工夫茶制作技艺）的申报地区或单位为宁德市福安市，保护单位为福安市茶业协会。官方项目页当前关联的相关传承人包括林鸿等。坦洋工夫茶制作技艺是我国红茶制作技艺的代表之一，以福建省宁德市福安市社口镇坦洋村为中心世代传承。除坦洋村外，该项目还流布于福安市辖区内的社口、晓阳、上白石等18个乡镇和赛岐开发区、福安畲族开发区，并辐射至邻县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为宁德市福安市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-04",
+      "province": "福建省",
+      "city": "宁德市福鼎市",
+      "name": "白茶制作技艺（福鼎白茶制作技艺）",
+      "nameEn": "White Tea Processing Technique (Fuding White Tea)",
+      "code": "Ⅷ-203",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "福鼎市茶业协会",
+      "teaType": "白茶",
+      "teaTypeEn": "White Tea",
+      "icon": "petal",
+      "color": "#c6bea5",
+      "descriptionZh": "白茶制作技艺（福鼎白茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宁德市福鼎市，保护单位为福鼎市茶业协会。福鼎太姥山是白茶的发源地，具有悠久的历史。唐陆羽《茶经》载：“永嘉县东三百里有白茶山。",
+      "descriptionEn": "White Tea Processing Technique (Fuding White Tea) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省福鼎市 and protected by 福鼎市茶业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 67.5,
+      "y": 60,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14724.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "宁德市福鼎市",
+      "representativeInheritors": [
+        {
+          "name": "林振传",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "梅相靖",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1931"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "白茶制作技艺（福鼎白茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14724.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "白茶制作技艺（福鼎白茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宁德市福鼎市，保护单位为福鼎市茶业协会。福鼎太姥山是白茶的发源地，具有悠久的历史。唐陆羽《茶经》载：“永嘉县东三百里有白茶山。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "福鼎太姥山是白茶的发源地，具有悠久的历史。明代田艺蘅《煮泉水品》认为：“茶者以火作为次，生晒者为上，亦更近自然。现代白茶工艺盛于清代福鼎，清周亮工在《闽小记》中记载：“太姥山古有绿雪芽，今呼白毫，色香俱绝，而成尤以鸿雪洞为最。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "……生晒茶沦于瓯中，则旗枪对鲜叶采摘标准与制茶工艺，被认为是白茶制作的雏形。现代白茶工艺盛于清代福鼎，清周亮工在《闽小记》中记载：“太姥山古有绿雪芽，今呼白毫，色香俱绝，而成尤以鸿雪洞为最。福鼎白茶因成制品芽头肥壮，满披白毫，如银似雪而得名，制作中不炒不揉，文火足干，以适度的自然氧化，而保留了丰富的活性酶和多酚类物质。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "白茶制作技艺（福鼎白茶制作技艺）与宁德市福鼎市的地域文化联系紧密，是国家级非物质文化遗产代表性项目中与当地茶事传统、生活实践或区域文化表达相关的重要内容。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，白茶制作技艺（福鼎白茶制作技艺）的申报地区或单位为宁德市福鼎市，保护单位为福鼎市茶业协会。官方项目页当前关联的相关传承人包括林振传、梅相靖等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为宁德市福鼎市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-05",
+      "province": "福建省",
+      "city": "泉州市安溪县",
+      "name": "乌龙茶制作技艺（铁观音制作技艺）",
+      "nameEn": "Oolong Tea Processing Technique (Tieguanyin)",
+      "code": "Ⅷ-150",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "安溪县茶文化研究中心",
+      "teaType": "乌龙茶",
+      "teaTypeEn": "Oolong Tea",
+      "icon": "swirl",
+      "color": "#7c5b3f",
+      "descriptionZh": "乌龙茶制作技艺（铁观音制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为泉州市安溪县，保护单位为安溪县茶文化研究中心。清代雍正、乾隆年间，因安溪所产茶品质特异，乌润结实，沉重似铁，香韵形美，犹如观音，故此得名“铁观音”。安溪铁观音精湛的制作技艺在我国茶类制作技艺中别具一格。",
+      "descriptionEn": "Oolong Tea Processing Technique (Tieguanyin) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省安溪县 and protected by 安溪县茶文化研究中心. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 69.75,
+      "y": 56.1,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14620.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "泉州市安溪县",
+      "representativeInheritors": [
+        {
+          "name": "王文礼",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1421"
+        },
+        {
+          "name": "魏月德",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1420"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "乌龙茶制作技艺（铁观音制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14620.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "乌龙茶制作技艺（铁观音制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为泉州市安溪县，保护单位为安溪县茶文化研究中心。清代雍正、乾隆年间，因安溪所产茶品质特异，乌润结实，沉重似铁，香韵形美，犹如观音，故此得名“铁观音”。安溪铁观音精湛的制作技艺在我国茶类制作技艺中别具一格。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "清代雍正、乾隆年间，因安溪所产茶品质特异，乌润结实，沉重似铁，香韵形美，犹如观音，故此得名“铁观音”。制作安溪铁观音，先要以晒青、凉青、摇青等方法控制和调节茶青，使之发生一系列物理、生物变化，形成“绿叶红镶边”和独特的色、香、味，再以高温杀青，制止酶的活性，最后进行揉捻和反复多次的包揉、烘焙，形成带有天然兰花香和特殊韵味的高雅茶品。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "安溪铁观音精湛的制作技艺在我国茶类制作技艺中别具一格。安溪茶农综合借鉴红茶全发酵和绿茶不发酵的制作原理，结合当地实际，发明出一套半发酵的独特制茶工艺，并以此制作出我国六大茶类之一的乌龙茶。安溪铁观音传统制作技艺由采摘、初制、精制三个部分组成。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "安溪铁观音传统制作技艺由采摘、初制、精制三个部分组成。安溪铁观音传统制作技艺是安溪茶农长期生产经验和劳动智慧的结晶，具有较高的科学价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，乌龙茶制作技艺（铁观音制作技艺）的申报地区或单位为泉州市安溪县，保护单位为安溪县茶文化研究中心。官方项目页当前关联的相关传承人包括王文礼、魏月德等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为泉州市安溪县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-06",
+      "province": "福建省",
+      "city": "龙岩市漳平市",
+      "name": "乌龙茶制作技艺（漳平水仙茶制作技艺）",
+      "nameEn": "Oolong Tea Processing Technique (Zhangping Shuixian)",
+      "code": "Ⅷ-150",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "漳平市文化馆",
+      "teaType": "乌龙茶",
+      "teaTypeEn": "Oolong Tea",
+      "icon": "swirl",
+      "color": "#7c5b3f",
+      "descriptionZh": "乌龙茶制作技艺（漳平水仙茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为龙岩市漳平市，保护单位为漳平市文化馆。漳平水仙茶制作技艺是我国乌龙茶制作技艺的代表之一，流布于福建省漳平市及其周边区域。漳平市位于福建省西南部，是典型的“九山半水半分田”地貌。",
+      "descriptionEn": "Oolong Tea Processing Technique (Zhangping Shuixian) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 福建省龙岩市 and protected by 漳平市文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 74.25,
+      "y": 56.1,
+      "provinceX": 72,
+      "provinceY": 60,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23784.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "龙岩市漳平市",
+      "representativeInheritors": [
+        {
+          "name": "张兴裕",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "乌龙茶制作技艺（漳平水仙茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23784.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "乌龙茶制作技艺（漳平水仙茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为龙岩市漳平市，保护单位为漳平市文化馆。漳平水仙茶制作技艺是我国乌龙茶制作技艺的代表之一，流布于福建省漳平市及其周边区域。漳平市位于福建省西南部，是典型的“九山半水半分田”地貌。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "该地处于南亚热带山地农业区，气候温和，光照充足，雨量充沛，78.1%的森林覆盖提供的肥厚腐殖层与红壤、黄壤形成特定的土层结构，为茶叶的生长创造了优厚的条件。漳平水仙茶制作技艺吸收了闽北、闽南乌龙茶的优点，对于研究我国茶叶制作工艺及茶文化的交流发展具有重要意义。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "漳平水仙茶制作技艺是我国乌龙茶制作技艺的代表之一，流布于福建省漳平市及其周边区域。漳平水仙茶制作技艺在继承了闽北、闽南乌龙茶传统制作工艺的基础上又有所创新。从“看天做青”到“看青做茶”，这些由茶农在长期实践中总结出来的经验，贯穿着每一道工序。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "漳平水仙茶制作技艺是我国乌龙茶制作技艺的代表之一，流布于福建省漳平市及其周边区域。漳平水仙茶制作技艺在继承了闽北、闽南乌龙茶传统制作工艺的基础上又有所创新。更为重要的是，紧压后的天然空隙，既能有效控制香气外溢，又使茶叶能较好地二次发酵，让有益菌的发酵更为全面。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，乌龙茶制作技艺（漳平水仙茶制作技艺）的申报地区或单位为龙岩市漳平市，保护单位为漳平市文化馆。官方项目页当前关联的相关传承人包括张兴裕等。漳平水仙茶制作技艺是我国乌龙茶制作技艺的代表之一，流布于福建省漳平市及其周边区域。水仙茶制作技艺始终以师带徒方式传承，刘永发除将技艺传承给子孙外，还传承给客家人邓观金，邓观金又传承给闽南人张旗生，目前已传承至第四代。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为龙岩市漳平市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-07",
+      "province": "云南省",
+      "city": "临沧市凤庆县",
+      "name": "红茶制作技艺（滇红茶制作技艺）",
+      "nameEn": "Black Tea Processing Technique (Dianhong Tea)",
+      "code": "Ⅷ-149",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "云南滇红集团股份有限公司",
+      "teaType": "红茶",
+      "teaTypeEn": "Black Tea",
+      "icon": "ember",
+      "color": "#8b4b34",
+      "descriptionZh": "红茶制作技艺（滇红茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为临沧市凤庆县，保护单位为云南滇红集团股份有限公司。滇红茶制作技艺是以云南大叶种茶树鲜叶为原料，经过多重工序精制而成的红茶制作技艺，主要流布于云南省凤庆县的凤山镇、大寺乡、勐佑镇、三岔河镇、雪山镇、鲁史镇、小湾镇、洛党镇和腰街乡等9个乡镇。滇红茶主要有红毛茶、精制茶系列产品，成品外形各有特定规格，身骨重实，色泽调匀，冲泡后汤色红鲜明亮，金圈突出，香气鲜爽，滋味浓强。",
+      "descriptionEn": "Black Tea Processing Technique (Dianhong Tea) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 云南省凤庆县 and protected by 云南滇红集团股份有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 34.5,
+      "y": 72,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14619.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "临沧市凤庆县",
+      "representativeInheritors": [
+        {
+          "name": "张成仁",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2850"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "红茶制作技艺（滇红茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14619.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "红茶制作技艺（滇红茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为临沧市凤庆县，保护单位为云南滇红集团股份有限公司。滇红茶制作技艺是以云南大叶种茶树鲜叶为原料，经过多重工序精制而成的红茶制作技艺，主要流布于云南省凤庆县的凤山镇、大寺乡、勐佑镇、三岔河镇、雪山镇、鲁史镇、小湾镇、洛党镇和腰街乡等9个乡镇。滇红茶主要有红毛茶、精制茶系列产品，成品外形各有特定规格，身骨重实，色泽调匀，冲泡后汤色红鲜明亮，金圈突出，香气鲜爽，滋味浓强。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "云南省凤庆县旧称“顺宁”，种茶、制茶、饮茶历史悠久。两类传承人相得益彰，共同推动了该遗产项目传承与发展。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "滇红茶制作技艺是以云南大叶种茶树鲜叶为原料，经过多重工序精制而成的红茶制作技艺，主要流布于云南省凤庆县的凤山镇、大寺乡、勐佑镇、三岔河镇、雪山镇、鲁史镇、小湾镇、洛党镇和腰街乡等9个乡镇。滇红茶主要有红毛茶、精制茶系列产品，成品外形各有特定规格，身骨重实，色泽调匀，冲泡后汤色红鲜明亮，金圈突出，香气鲜爽，滋味浓强。滇红茶制作技艺主要有萎凋、揉捻、发酵、干燥四道工序。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "滇红茶制作技艺是以云南大叶种茶树鲜叶为原料，经过多重工序精制而成的红茶制作技艺，主要流布于云南省凤庆县的凤山镇、大寺乡、勐佑镇、三岔河镇、雪山镇、鲁史镇、小湾镇、洛党镇和腰街乡等9个乡镇。一类是民间小批量生产的制茶师傅，这部分人员同样掌握着滇红茶传统制作技艺的精华。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，红茶制作技艺（滇红茶制作技艺）的申报地区或单位为临沧市凤庆县，保护单位为云南滇红集团股份有限公司。官方项目页当前关联的相关传承人包括张成仁等。滇红茶制作技艺是以云南大叶种茶树鲜叶为原料，经过多重工序精制而成的红茶制作技艺，主要流布于云南省凤庆县的凤山镇、大寺乡、勐佑镇、三岔河镇、雪山镇、鲁史镇、小湾镇、洛党镇和腰街乡等9个乡镇。因而，不同的传承人可生产出不同口感的滇红茶。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为临沧市凤庆县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-08",
+      "province": "云南省",
+      "city": "普洱市宁洱县",
+      "name": "普洱茶制作技艺（贡茶制作技艺）",
+      "nameEn": "Pu'er Tea Processing Technique (Tribute Tea)",
+      "code": "Ⅷ-151",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "宁洱县文化馆",
+      "teaType": "普洱茶",
+      "teaTypeEn": "Pu'er Tea",
+      "icon": "disc",
+      "color": "#7e4f2f",
+      "descriptionZh": "普洱茶制作技艺（贡茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为普洱市宁洱县，保护单位为宁洱县文化馆。宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+      "descriptionEn": "Pu'er Tea Processing Technique (Tribute Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 云南省宁洱哈尼族彝族自治县 and protected by 宁洱哈尼族彝族自治县文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 32.25,
+      "y": 75.9,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14621.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "普洱市宁洱县",
+      "representativeInheritors": [
+        {
+          "name": "李兴昌",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "普洱茶制作技艺（贡茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14621.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "普洱茶制作技艺（贡茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为普洱市宁洱县，保护单位为宁洱县文化馆。宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "云南普洱茶主要产于宁洱哈尼族彝族自治县和勐海县等地，在长期生产过程中形成了独特的制作技艺。宁洱县普洱茶制作技艺又称“贡茶制作技艺”，是当地茶工在千百年的实践中积累经验而逐步形成的。这种技艺与地方民俗紧密结合在一起。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "宋代，在“茶马互市”的贸易政策中占有重要的地位。普洱贡茶独特的传统制作技艺、深厚的历史文化内涵及与之相关的民俗文化是中华茶文化的重要组成部分，其合理的生产流程则成为现代普洱茶工艺研发的基础。普洱贡茶在历史文化、民族学、民俗学、科技史等方面均有较高的研究价值，从现代人追求回归自然生态、追求健康的文化消费趋势看，它还有许多潜在的开发利用价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，普洱茶制作技艺（贡茶制作技艺）的申报地区或单位为普洱市宁洱县，保护单位为宁洱县文化馆。官方项目页当前关联的相关传承人包括李兴昌等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为普洱市宁洱县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-09",
+      "province": "云南省",
+      "city": "西双版纳勐海县",
+      "name": "普洱茶制作技艺（大益茶制作技艺）",
+      "nameEn": "Pu'er Tea Processing Technique (Dayi Tea)",
+      "code": "Ⅷ-151",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "勐海茶厂",
+      "teaType": "普洱茶",
+      "teaTypeEn": "Pu'er Tea",
+      "icon": "disc",
+      "color": "#7e4f2f",
+      "descriptionZh": "普洱茶制作技艺（大益茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为西双版纳勐海县，保护单位为勐海茶厂。宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+      "descriptionEn": "Pu'er Tea Processing Technique (Dayi Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 云南省勐海县 and protected by 勐海茶厂（普通合伙）. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 27.75,
+      "y": 75.9,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14622.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "西双版纳勐海县",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "普洱茶制作技艺（大益茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14622.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "普洱茶制作技艺（大益茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为西双版纳勐海县，保护单位为勐海茶厂。宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "宋代，在“茶马互市”的贸易政策中占有重要的地位。明代，普洱茶销行更广，出现了“士庶所有，皆普洱茶”的盛况。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "云南普洱茶主要产于宁洱哈尼族彝族自治县和勐海县等地，在长期生产过程中形成了独特的制作技艺。大益茶制作技艺的关键在于拼配和发酵。拼配是根据各个茶叶品种的特点进行有效、合理的组合，取长补短，以弥补单一品种之不足；",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "宋代，在“茶马互市”的贸易政策中占有重要的地位。大益茶制作技艺的研究成功为普洱茶生产的发展作出了重大贡献。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，普洱茶制作技艺（大益茶制作技艺）的申报地区或单位为西双版纳勐海县，保护单位为勐海茶厂。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为西双版纳勐海县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-10",
+      "province": "云南省",
+      "city": "大理州",
+      "name": "黑茶制作技艺（下关沱茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Xiaguan Tuo Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "云南下关沱茶集团",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（下关沱茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为大理州，保护单位为云南下关沱茶集团。下关沱茶是白族人民创造的十分典型的传统技艺，它由明代的“团茶”演变而来，以云南大叶种晒青茶作为基本原料，经拼配、筛分、拣剔、半制品拼配、称量、蒸揉、压制成型、干燥、包装等十余道工艺制作而成，多为手工操作，蕴含着丰富的具有地区特征的技术知识。云南下关地处大理白族自治州大理市。",
+      "descriptionEn": "Dark Tea Processing Technique (Xiaguan Tuo Tea) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 云南省大理白族自治州 and protected by 云南下关沱茶（集团）股份有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 25.5,
+      "y": 72,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14626.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "大理州",
+      "representativeInheritors": [
+        {
+          "name": "陈国风",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（下关沱茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14626.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（下关沱茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为大理州，保护单位为云南下关沱茶集团。下关沱茶是白族人民创造的十分典型的传统技艺，它由明代的“团茶”演变而来，以云南大叶种晒青茶作为基本原料，经拼配、筛分、拣剔、半制品拼配、称量、蒸揉、压制成型、干燥、包装等十余道工艺制作而成，多为手工操作，蕴含着丰富的具有地区特征的技术知识。云南下关地处大理白族自治州大理市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "下关沱茶是白族人民创造的十分典型的传统技艺，它由明代的“团茶”演变而来，以云南大叶种晒青茶作为基本原料，经拼配、筛分、拣剔、半制品拼配、称量、蒸揉、压制成型、干燥、包装等十余道工艺制作而成，多为手工操作，蕴含着丰富的具有地区特征的技术知识。沱茶历史悠久，明代谢肇淛的《滇略》一书有“士庶所用，皆普茶也，蒸而团之”的记载，为沱茶的早期形式。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "下关沱茶是白族人民创造的十分典型的传统技艺，它由明代的“团茶”演变而来，以云南大叶种晒青茶作为基本原料，经拼配、筛分、拣剔、半制品拼配、称量、蒸揉、压制成型、干燥、包装等十余道工艺制作而成，多为手工操作，蕴含着丰富的具有地区特征的技术知识。1902年，大理喜洲白族商帮永昌祥在下关开设第一家茶叶精制加工厂，加工紧茶和饼茶，标志着沱茶工艺的诞生。沱茶生产是一门特殊的技艺，百余年来，白族人民用这种技艺生产的产品曾经通过著名的“茶马古道”源源不断地输送到滇西北、西藏和四川等地，满足了各族人民的生活需要，特别在藏胞中影响极大，在一百多年来的各民族友好往来中发挥过十分重要的作用。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "下关沱茶是白族人民创造的十分典型的传统技艺，它由明代的“团茶”演变而来，以云南大叶种晒青茶作为基本原料，经拼配、筛分、拣剔、半制品拼配、称量、蒸揉、压制成型、干燥、包装等十余道工艺制作而成，多为手工操作，蕴含着丰富的具有地区特征的技术知识。整个云南地区空气湿润，四季温和，日照时间长，适于茶叶生长。沱茶生产是一门特殊的技艺，百余年来，白族人民用这种技艺生产的产品曾经通过著名的“茶马古道”源源不断地输送到滇西北、西藏和四川等地，满足了各族人民的生活需要，特别在藏胞中影响极大，在一百多年来的各民族友好往来中发挥过十分重要的作用。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（下关沱茶制作技艺）的申报地区或单位为大理州，保护单位为云南下关沱茶集团。官方项目页当前关联的相关传承人包括陈国风等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为大理州。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-11",
+      "province": "云南省",
+      "city": "大理州大理市",
+      "name": "茶俗（白族三道茶）",
+      "nameEn": "Tea Custom (Bai Three-Course Tea)",
+      "code": "Ⅹ-107",
+      "category": "民俗",
+      "categoryEn": "Folk Custom",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "大理市非遗保护所",
+      "teaType": "茶俗",
+      "teaTypeEn": "Tea Custom",
+      "icon": "cup",
+      "color": "#4a6b60",
+      "descriptionZh": "茶俗（白族三道茶）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为大理州大理市，保护单位为大理市非遗保护所。三道茶是白族一种古老的品茶艺术，起源于8世纪的南诏时期，至今已有千余年历史。据唐樊绰《蛮书》记载，早在南诏时期，白族的先民就有“以椒、姜、桂和烹而饮之”的饮茶习惯。",
+      "descriptionEn": "Tea Custom (Bai Three-Course Tea) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Folk Custom. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 大理州大理市 and protected by 大理市非遗保护所. The official record emphasizes ceremonial procedures, social etiquette, and community customs built around preparing, serving, and sharing tea.",
+      "x": 27.75,
+      "y": 68.1,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/15248.html",
+      "sourceStatus": "official-partial",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official-partial；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "大理州大理市",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "茶俗（白族三道茶）",
+          "url": "https://www.ihchina.cn/project_details/15248.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "茶俗（白族三道茶）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为大理州大理市，保护单位为大理市非遗保护所。三道茶是白族一种古老的品茶艺术，起源于8世纪的南诏时期，至今已有千余年历史。据唐樊绰《蛮书》记载，早在南诏时期，白族的先民就有“以椒、姜、桂和烹而饮之”的饮茶习惯。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "三道茶是白族一种古老的品茶艺术，起源于8世纪的南诏时期，至今已有千余年历史。明代大旅行家徐霞客到大理时，曾被鸡足山僧众以三道茶招待，他在游记中记录为“注茶为玩，初清茶，中盐茶，次蜜茶”。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "礼俗流程",
+          "contentZh": "三道茶是白族一种古老的品茶艺术，起源于8世纪的南诏时期，至今已有千余年历史。明代大旅行家徐霞客到大理时，曾被鸡足山僧众以三道茶招待，他在游记中记录为“注茶为玩，初清茶，中盐茶，次蜜茶”。经过世代相传，三道茶逐渐演变成以云南省大理市为主要流布区域的白族茶俗。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "经过世代相传，三道茶逐渐演变成以云南省大理市为主要流布区域的白族茶俗。三道茶，三种口味，先苦后甜，蕴含着人生的各种感触，意义深远，能够引起客人的共鸣。三道茶作为白族人民待客礼俗中的重要仪式，反映了白族人民热情、文明、好客的特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，茶俗（白族三道茶）的申报地区或单位为大理州大理市，保护单位为大理市非遗保护所。经过世代相传，三道茶逐渐演变成以云南省大理市为主要流布区域的白族茶俗。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源已获取，仍待补充核验”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为大理州大理市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-12",
+      "province": "云南省",
+      "city": "德宏州芒市",
+      "name": "德昂族酸茶制作技艺",
+      "nameEn": "De'ang Sour Tea Making Technique",
+      "code": "Ⅷ-268",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "芒市文化馆",
+      "teaType": "茶类相关",
+      "teaTypeEn": "Tea Heritage",
+      "icon": "marker",
+      "color": "#7a6a52",
+      "descriptionZh": "德昂族酸茶制作技艺于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为德宏州芒市，保护单位为芒市文化馆。德昂酸茶制作技艺是主要流布于云南省德宏傣族景颇族自治州芒市的一项传统手工艺。芒市位于云南省西南部，地处低纬高原，属南亚热带季风气候，年平均气温19.6℃,干湿分明、冬无严寒、夏无酷暑，日照时间长、雨量充沛，适宜茶树种植，为德昂族酸茶制作技艺提供了优质原材料。",
+      "descriptionEn": "De'ang Sour Tea Making Technique is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 云南省德宏傣族景颇族自治州芒市 and protected by 芒市文化馆（芒市非物质文化遗产保护中心）. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 32.25,
+      "y": 68.1,
+      "provinceX": 30,
+      "provinceY": 72,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23582.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "德宏州芒市",
+      "representativeInheritors": [
+        {
+          "name": "杨腊三",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "德昂族酸茶制作技艺",
+          "url": "https://www.ihchina.cn/project_details/23582.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "德昂族酸茶制作技艺于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为德宏州芒市，保护单位为芒市文化馆。德昂酸茶制作技艺是主要流布于云南省德宏傣族景颇族自治州芒市的一项传统手工艺。芒市位于云南省西南部，地处低纬高原，属南亚热带季风气候，年平均气温19.6℃,干湿分明、冬无严寒、夏无酷暑，日照时间长、雨量充沛，适宜茶树种植，为德昂族酸茶制作技艺提供了优质原材料。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "德昂族酸茶制作技艺渗透到了德昂人社会生活的每一个角落，形成了丰富多彩的茶俗，在德昂族民众的婚姻生活、朋友交往、迎来送往、宗教祭祀等活动中具有重要作用。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "德昂酸茶制作技艺是主要流布于云南省德宏傣族景颇族自治州芒市的一项传统手工艺。芒市位于云南省西南部，地处低纬高原，属南亚热带季风气候，年平均气温19.6℃,干湿分明、冬无严寒、夏无酷暑，日照时间长、雨量充沛，适宜茶树种植，为德昂族酸茶制作技艺提供了优质原材料。德昂酸茶分食用茶和饮用茶两种，食用茶是经发酵完成后的湿茶，与各种配料以不同烹饪方式制成不同的菜肴，是德昂族传统美食；",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "德昂酸茶制作技艺是主要流布于云南省德宏傣族景颇族自治州芒市的一项传统手工艺。德昂酸茶分食用茶和饮用茶两种，食用茶是经发酵完成后的湿茶，与各种配料以不同烹饪方式制成不同的菜肴，是德昂族传统美食；德昂族酸茶制作技艺渗透到了德昂人社会生活的每一个角落，形成了丰富多彩的茶俗，在德昂族民众的婚姻生活、朋友交往、迎来送往、宗教祭祀等活动中具有重要作用。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，德昂族酸茶制作技艺的申报地区或单位为德宏州芒市，保护单位为芒市文化馆。官方项目页当前关联的相关传承人包括杨腊三等。德昂酸茶制作技艺是主要流布于云南省德宏傣族景颇族自治州芒市的一项传统手工艺。目前，德昂族酸茶制作技艺主要依靠师徒之间的口传心授，通过生产实践得以传承。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为德宏州芒市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-13",
+      "province": "浙江省",
+      "city": "杭州市",
+      "name": "绿茶制作技艺（西湖龙井）",
+      "nameEn": "Green Tea Processing Technique (West Lake Longjing)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "西湖区龙井茶产业协会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（西湖龙井）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为杭州市，保护单位为西湖区龙井茶产业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+      "descriptionEn": "Green Tea Processing Technique (West Lake Longjing) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 浙江省杭州市 and protected by 杭州市西湖区龙井茶产业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 74.5,
+      "y": 50,
+      "provinceX": 70,
+      "provinceY": 50,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14605.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "杭州市",
+      "representativeInheritors": [
+        {
+          "name": "樊生华",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "杨继昌",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1418"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（西湖龙井）",
+          "url": "https://www.ihchina.cn/project_details/14605.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（西湖龙井）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为杭州市，保护单位为西湖区龙井茶产业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "唐代茶风大盛，玄宗在《开元文字音义》中将“荼”改为“茶”，其后还出现了陆羽的《茶经》。宋代以前，饮用的茶多为紧压茶，即将茶叶蒸后捣碎，制成团块状，饮时用水烹煮，有时还在茶中放入瓜仁、松子等干果。至清代改为沸水冲泡，相沿至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "至清代改为沸水冲泡，相沿至今。绿茶是以高温杀青而未经氧化、发酵的茶种，又称“不发酵茶”。其制作流程主要包括采摘鲜叶、杀青、揉捻、干燥等步骤。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "西湖龙井茶是中国名茶，以西湖龙井茶为代表的绿茶与中国人的日常生活密切相关。通过长期生产实践，西湖龙井茶区的茶叶栽植和制作逐渐形成了选育良种、勤耕栽培、精细采摘、科学炒制等一系列茶叶生产经验，特别是在炒制过程中摸索出了一套具有鲜明技术特色的炒制工艺，其中包括抖、带、挤、甩、挺、拓、扣、抓、压、磨等龙井茶炒制“十大手法”。整套茶叶制作工艺凝聚了当地茶农的智慧，显现出深厚的文化内涵。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（西湖龙井）的申报地区或单位为杭州市，保护单位为西湖区龙井茶产业协会。官方项目页当前关联的相关传承人包括樊生华、杨继昌等。传承保护西湖龙井茶采摘和制作技艺已经时不我待，必须尽快提到工作日程上来。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为杭州市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-14",
+      "province": "浙江省",
+      "city": "杭州市余杭区",
+      "name": "径山茶宴",
+      "nameEn": "Jingshan Tea Banquet",
+      "code": "Ⅹ-140",
+      "category": "民俗",
+      "categoryEn": "Folk Custom",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "径山万寿禅寺",
+      "teaType": "茶俗",
+      "teaTypeEn": "Tea Custom",
+      "icon": "cup",
+      "color": "#4a6b60",
+      "descriptionZh": "径山茶宴于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为杭州市余杭区，保护单位为径山万寿禅寺。径山茶宴起源于唐朝中期，《余杭县志》有唐朝径山寺开山祖师法钦“佛供茶”条目，盛行于宋元时期，后流传至日本，成为日本茶道之源。按照寺里传统，每当贵客光临，住持就在明月堂举办茶宴招待客人。",
+      "descriptionEn": "Jingshan Tea Banquet is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Folk Custom. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 浙江省杭州市余杭区 and protected by 杭州市余杭区径山万寿禅寺. The official record emphasizes ceremonial procedures, social etiquette, and community customs built around preparing, serving, and sharing tea.",
+      "x": 71.39,
+      "y": 54.28,
+      "provinceX": 70,
+      "provinceY": 50,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/15309.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "杭州市余杭区",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "径山茶宴",
+          "url": "https://www.ihchina.cn/project_details/15309.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "径山茶宴于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为杭州市余杭区，保护单位为径山万寿禅寺。径山茶宴起源于唐朝中期，《余杭县志》有唐朝径山寺开山祖师法钦“佛供茶”条目，盛行于宋元时期，后流传至日本，成为日本茶道之源。按照寺里传统，每当贵客光临，住持就在明月堂举办茶宴招待客人。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "径山茶宴起源于唐朝中期，《余杭县志》有唐朝径山寺开山祖师法钦“佛供茶”条目，盛行于宋元时期，后流传至日本，成为日本茶道之源。径山茶宴具有悠久的历史价值和丰富的文化内涵，以茶论道，禅茶一味，体现了中国禅茶文化的精神品格，丰富并提升了中国茶文化的内涵，具有学术研究价值。径山茶宴对于近代“茶话会”礼仪的形成，对杭州地区民间饮茶礼仪习俗的存续都有重要影响，民俗学价值突出。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "礼俗流程",
+          "contentZh": "径山茶宴起源于唐朝中期，《余杭县志》有唐朝径山寺开山祖师法钦“佛供茶”条目，盛行于宋元时期，后流传至日本，成为日本茶道之源。按照寺里传统，每当贵客光临，住持就在明月堂举办茶宴招待客人。径山茶宴从张茶榜、击茶鼓、恭请入堂、上香礼佛、煎汤点茶、行盏分茶、说偈吃茶到谢茶退堂，有十多道仪式程序，宾主或师徒之间用“参话头”的形式问答交谈，机锋偈语，慧光灵现。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "按照寺里传统，每当贵客光临，住持就在明月堂举办茶宴招待客人。径山茶宴具有悠久的历史价值和丰富的文化内涵，以茶论道，禅茶一味，体现了中国禅茶文化的精神品格，丰富并提升了中国茶文化的内涵，具有学术研究价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，径山茶宴的申报地区或单位为杭州市余杭区，保护单位为径山万寿禅寺。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为杭州市余杭区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-15",
+      "province": "浙江省",
+      "city": "金华市",
+      "name": "绿茶制作技艺（婺州举岩）",
+      "nameEn": "Green Tea Processing Technique (Wuzhou Juyan)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "浙江采云间茶业",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（婺州举岩）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为金华市，保护单位为浙江采云间茶业。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+      "descriptionEn": "Green Tea Processing Technique (Wuzhou Juyan) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 浙江省金华市 and protected by 浙江采云间茶业有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 66.36,
+      "y": 52.65,
+      "provinceX": 70,
+      "provinceY": 50,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14606.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "金华市",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（婺州举岩）",
+          "url": "https://www.ihchina.cn/project_details/14606.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（婺州举岩）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为金华市，保护单位为浙江采云间茶业。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "唐代茶风大盛，玄宗在《开元文字音义》中将“荼”改为“茶”，其后还出现了陆羽的《茶经》。宋代以前，饮用的茶多为紧压茶，即将茶叶蒸后捣碎，制成团块状，饮时用水烹煮，有时还在茶中放入瓜仁、松子等干果。至清代改为沸水冲泡，相沿至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "至清代改为沸水冲泡，相沿至今。绿茶是以高温杀青而未经氧化、发酵的茶种，又称“不发酵茶”。其制作流程主要包括采摘鲜叶、杀青、揉捻、干燥等步骤。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "炒制时以焙为主，炒焙结合，形成独具特色的工艺。这种茶具有很高的药用价值，唐代的《本草拾遗》、宋代的《茶赋》及明代李时珍的《本草纲目》中对此都有记载。同时，许多制茶技师年事已高，年轻人大都不愿学习这门传统手工艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（婺州举岩）的申报地区或单位为金华市，保护单位为浙江采云间茶业。现在能够制作举岩茶的技师只剩下6人，婺州举岩茶制作技艺面临后继无人的状况，急需抢救保护。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为金华市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-16",
+      "province": "浙江省",
+      "city": "湖州市长兴县",
+      "name": "绿茶制作技艺（紫笋茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Zisun Tea)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "长兴县紫笋茶文化研究会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（紫笋茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为湖州市长兴县，保护单位为长兴县紫笋茶文化研究会。其名由《茶经》中“紫者上，绿者次；笋者上，芽者次”的论述得来，无论是形状，还是颜色，乃“上品中的上品”，茶圣陆羽称为“芳香甘冽，冠于他境”。",
+      "descriptionEn": "Green Tea Processing Technique (Zisun Tea) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 浙江省长兴县 and protected by 长兴县紫笋茶文化研究会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 66.36,
+      "y": 47.35,
+      "provinceX": 70,
+      "provinceY": 50,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14611.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "湖州市长兴县",
+      "representativeInheritors": [
+        {
+          "name": "郑福年",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2843"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（紫笋茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14611.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（紫笋茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为湖州市长兴县，保护单位为长兴县紫笋茶文化研究会。其名由《茶经》中“紫者上，绿者次；笋者上，芽者次”的论述得来，无论是形状，还是颜色，乃“上品中的上品”，茶圣陆羽称为“芳香甘冽，冠于他境”。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "水口顾渚山至今还保留有五百亩左右的古茶园。水口紫笋茶制作技艺经过几十代人的传承和发展，已成为我国茶制作技艺中一朵奇葩。但随着紫笋茶种植面积的不断扩大，村民在紫笋茶制作过程中，为追求快捷性，采用了现代制作工具，忽视了对传统手工技艺的运用，又因紫笋茶传统制作技艺培训和人才缺乏，紫笋茶传统制作技艺不能得到有效的传承与发展。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "紫笋茶的制作要求每年于清明至谷雨期采摘一芽一叶或一芽二叶初展，经摊青、杀青、理条、摊凉、初烘、复烘等过程完成。水口紫笋茶制作技艺经过几十代人的传承和发展，已成为我国茶制作技艺中一朵奇葩。但随着紫笋茶种植面积的不断扩大，村民在紫笋茶制作过程中，为追求快捷性，采用了现代制作工具，忽视了对传统手工技艺的运用，又因紫笋茶传统制作技艺培训和人才缺乏，紫笋茶传统制作技艺不能得到有效的传承与发展。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "因为奉诏督茶，含秀孕媚的顾渚山也迎来了无数的督贡刺史、文化名人，颜真卿、袁高、皎然、刘禹锡、卢仝、杜牧等，一时之间，顾渚山前，群星璀璨。长期以来，顾渚村民把制茶作为一项重要产业，以家庭为单位，妇女采茶、分拣，男人制茶的“合族业茶”的情况屡见不鲜。但随着紫笋茶种植面积的不断扩大，村民在紫笋茶制作过程中，为追求快捷性，采用了现代制作工具，忽视了对传统手工技艺的运用，又因紫笋茶传统制作技艺培训和人才缺乏，紫笋茶传统制作技艺不能得到有效的传承与发展。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（紫笋茶制作技艺）的申报地区或单位为湖州市长兴县，保护单位为长兴县紫笋茶文化研究会。官方项目页当前关联的相关传承人包括郑福年等。水口紫笋茶制作技艺经过几十代人的传承和发展，已成为我国茶制作技艺中一朵奇葩。但随着紫笋茶种植面积的不断扩大，村民在紫笋茶制作过程中，为追求快捷性，采用了现代制作工具，忽视了对传统手工技艺的运用，又因紫笋茶传统制作技艺培训和人才缺乏，紫笋茶传统制作技艺不能得到有效的传承与发展。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为湖州市长兴县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-17",
+      "province": "浙江省",
+      "city": "湖州市安吉县",
+      "name": "绿茶制作技艺（安吉白茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Anji White Tea)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "安吉白茶小镇茶产业商会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（安吉白茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为湖州市安吉县，保护单位为安吉白茶小镇茶产业商会。白茶自古种源难得，茶树难养，以野茶为稀贵。据宋赵佶《大观茶论》记载：“白茶自为一种，与常茶不同，其条敷阐，其叶莹薄，崖林之间，偶然生出，虽非人力所致，有者不过四五家，生者不过一二株，所造止于二三胯而已。",
+      "descriptionEn": "Green Tea Processing Technique (Anji White Tea) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 浙江省安吉县 and protected by 安吉白茶小镇茶产业商会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 71.39,
+      "y": 45.72,
+      "provinceX": 70,
+      "provinceY": 50,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14612.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "湖州市安吉县",
+      "representativeInheritors": [
+        {
+          "name": "陈达有",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（安吉白茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14612.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（安吉白茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为湖州市安吉县，保护单位为安吉白茶小镇茶产业商会。白茶自古种源难得，茶树难养，以野茶为稀贵。据宋赵佶《大观茶论》记载：“白茶自为一种，与常茶不同，其条敷阐，其叶莹薄，崖林之间，偶然生出，虽非人力所致，有者不过四五家，生者不过一二株，所造止于二三胯而已。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "绿茶制作技艺（安吉白茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，申报地区或单位为湖州市安吉县。当前详情以中国非物质文化遗产网项目页公开信息为准。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "安吉白茶手工炒制过程分为：采摘、摊放、杀青理条、初烘、摊凉、复烘、收灰干燥七道工序。每道工序都有特别要求，其中鲜叶只能用春茶前期二十来天的鲜叶，采摘一芽带一片或二片真叶，不带奶叶、鱼叶。由于叶片极薄，茎梗粗，杀青理条对温度有苛刻要求，否则非焦叶即红梗。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "” 安吉白茶以白、活、香、鲜、清为特色，其鲜叶、干茶均叶白脉绿，颜色鲜活，茶叶汤色清澈、透亮，鲜味足，香气高而持久。安吉县溪龙乡已着手对白茶手工炒制技艺进行培训，进一步传承推广这一传统手工技艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（安吉白茶制作技艺）的申报地区或单位为湖州市安吉县，保护单位为安吉白茶小镇茶产业商会。官方项目页当前关联的相关传承人包括陈达有等。安吉县溪龙乡已着手对白茶手工炒制技艺进行培训，进一步传承推广这一传统手工技艺。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为湖州市安吉县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-18",
+      "province": "安徽省",
+      "city": "黄山市徽州区",
+      "name": "绿茶制作技艺（黄山毛峰）",
+      "nameEn": "Green Tea Processing Technique (Huangshan Maofeng)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "谢裕大茶业股份",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（黄山毛峰）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市徽州区，保护单位为谢裕大茶业股份。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+      "descriptionEn": "Green Tea Processing Technique (Huangshan Maofeng) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 安徽省黄山市徽州区 and protected by 谢裕大茶业股份有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 65.4,
+      "y": 45,
+      "provinceX": 62,
+      "provinceY": 45,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14608.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "黄山市徽州区",
+      "representativeInheritors": [
+        {
+          "name": "谢四十",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1419"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（黄山毛峰）",
+          "url": "https://www.ihchina.cn/project_details/14608.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（黄山毛峰）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市徽州区，保护单位为谢裕大茶业股份。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "唐代茶风大盛，玄宗在《开元文字音义》中将“荼”改为“茶”，其后还出现了陆羽的《茶经》。宋代以前，饮用的茶多为紧压茶，即将茶叶蒸后捣碎，制成团块状，饮时用水烹煮，有时还在茶中放入瓜仁、松子等干果。至清代改为沸水冲泡，相沿至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "至清代改为沸水冲泡，相沿至今。绿茶是以高温杀青而未经氧化、发酵的茶种，又称“不发酵茶”。其制作流程主要包括采摘鲜叶、杀青、揉捻、干燥等步骤。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "绿茶制作技艺（黄山毛峰）与黄山市徽州区的地域文化联系紧密，是国家级非物质文化遗产代表性项目中与当地茶事传统、生活实践或区域文化表达相关的重要内容。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（黄山毛峰）的申报地区或单位为黄山市徽州区，保护单位为谢裕大茶业股份。官方项目页当前关联的相关传承人包括谢四十等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为黄山市徽州区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-19",
+      "province": "安徽省",
+      "city": "黄山市黄山区",
+      "name": "绿茶制作技艺（太平猴魁）",
+      "nameEn": "Green Tea Processing Technique (Taiping Houkui)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "黄山区茶业协会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（太平猴魁）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市黄山区，保护单位为黄山区茶业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+      "descriptionEn": "Green Tea Processing Technique (Taiping Houkui) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 安徽省黄山市黄山区 and protected by 黄山区茶业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 62,
+      "y": 48.4,
+      "provinceX": 62,
+      "provinceY": 45,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14607.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "黄山市黄山区",
+      "representativeInheritors": [
+        {
+          "name": "方继凡",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1905"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（太平猴魁）",
+          "url": "https://www.ihchina.cn/project_details/14607.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（太平猴魁）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市黄山区，保护单位为黄山区茶业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "唐代茶风大盛，玄宗在《开元文字音义》中将“荼”改为“茶”，其后还出现了陆羽的《茶经》。宋代以前，饮用的茶多为紧压茶，即将茶叶蒸后捣碎，制成团块状，饮时用水烹煮，有时还在茶中放入瓜仁、松子等干果。至清代改为沸水冲泡，相沿至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "至清代改为沸水冲泡，相沿至今。绿茶是以高温杀青而未经氧化、发酵的茶种，又称“不发酵茶”。其制作流程主要包括采摘鲜叶、杀青、揉捻、干燥等步骤。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "绿茶制作技艺（太平猴魁）与黄山市黄山区的地域文化联系紧密，是国家级非物质文化遗产代表性项目中与当地茶事传统、生活实践或区域文化表达相关的重要内容。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（太平猴魁）的申报地区或单位为黄山市黄山区，保护单位为黄山区茶业协会。官方项目页当前关联的相关传承人包括方继凡等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为黄山市黄山区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-20",
+      "province": "安徽省",
+      "city": "黄山市祁门县",
+      "name": "红茶制作技艺（祁门红茶制作技艺）",
+      "nameEn": "Black Tea Processing Technique (Keemun Black Tea)",
+      "code": "Ⅷ-149",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "祁门县红茶协会",
+      "teaType": "红茶",
+      "teaTypeEn": "Black Tea",
+      "icon": "ember",
+      "color": "#8b4b34",
+      "descriptionZh": "红茶制作技艺（祁门红茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市祁门县，保护单位为祁门县红茶协会。祁门产茶历史悠久，可远溯至南北朝时期。清代光绪二年（1876），祁门红茶创制成功，一经问世，即以其超凡出众的品质蜚声中外。",
+      "descriptionEn": "Black Tea Processing Technique (Keemun Black Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 安徽省祁门县 and protected by 祁门县祁门红茶协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 58.6,
+      "y": 45,
+      "provinceX": 62,
+      "provinceY": 45,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14618.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "黄山市祁门县",
+      "representativeInheritors": [
+        {
+          "name": "王昶",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2849"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "红茶制作技艺（祁门红茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14618.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "红茶制作技艺（祁门红茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黄山市祁门县，保护单位为祁门县红茶协会。祁门产茶历史悠久，可远溯至南北朝时期。清代光绪二年（1876），祁门红茶创制成功，一经问世，即以其超凡出众的品质蜚声中外。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "祁门产茶历史悠久，可远溯至南北朝时期。清代光绪二年（1876），祁门红茶创制成功，一经问世，即以其超凡出众的品质蜚声中外。为此，祁门县委、县政府专门制定发展规划，采取了多种有效措施，努力促进祁红生产，以期振兴和弘扬传统的祁门红茶制作技艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "传统的祁门红茶全系手工制作，其质量取决于制作工夫，因此祁红又有“祁门工夫”之称。祁红制作技艺分为初制和精制两大部分，其中初制包括萎凋、揉捻、发酵、干燥等工序，精制包括筛分、切断、风选、拣剔、复火、匀堆等工序。制成的祁红色泽乌润，条索紧细，锋尖秀丽，冲泡时汤色红艳透明，叶底鲜红明亮。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "传统的祁门红茶全系手工制作，其质量取决于制作工夫，因此祁红又有“祁门工夫”之称。近年来，由于受国内外茶叶市场行情的影响，祁门红茶销路不畅，传统手工制作技艺也后继乏人。为此，祁门县委、县政府专门制定发展规划，采取了多种有效措施，努力促进祁红生产，以期振兴和弘扬传统的祁门红茶制作技艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，红茶制作技艺（祁门红茶制作技艺）的申报地区或单位为黄山市祁门县，保护单位为祁门县红茶协会。官方项目页当前关联的相关传承人包括王昶等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为黄山市祁门县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-21",
+      "province": "安徽省",
+      "city": "六安市裕安区",
+      "name": "绿茶制作技艺（六安瓜片）",
+      "nameEn": "Green Tea Processing Technique (Lu'an Guapian)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "裕安区茶叶产业协会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（六安瓜片）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为六安市裕安区，保护单位为裕安区茶叶产业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+      "descriptionEn": "Green Tea Processing Technique (Lu'an Guapian) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 安徽省六安市裕安区 and protected by 六安市裕安区茶叶产业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 62,
+      "y": 41.6,
+      "provinceX": 62,
+      "provinceY": 45,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14609.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "六安市裕安区",
+      "representativeInheritors": [
+        {
+          "name": "储昭伟",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1904"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（六安瓜片）",
+          "url": "https://www.ihchina.cn/project_details/14609.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（六安瓜片）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为六安市裕安区，保护单位为裕安区茶叶产业协会。三千多年前，西周祭祀的仪礼上已出现了用来佐饮的茶。古代茶称为“荼”，名见《诗经》。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "唐代茶风大盛，玄宗在《开元文字音义》中将“荼”改为“茶”，其后还出现了陆羽的《茶经》。宋代以前，饮用的茶多为紧压茶，即将茶叶蒸后捣碎，制成团块状，饮时用水烹煮，有时还在茶中放入瓜仁、松子等干果。至清代改为沸水冲泡，相沿至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "至清代改为沸水冲泡，相沿至今。绿茶是以高温杀青而未经氧化、发酵的茶种，又称“不发酵茶”。其制作流程主要包括采摘鲜叶、杀青、揉捻、干燥等步骤。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "绿茶制作技艺（六安瓜片）与六安市裕安区的地域文化联系紧密，是国家级非物质文化遗产代表性项目中与当地茶事传统、生活实践或区域文化表达相关的重要内容。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（六安瓜片）的申报地区或单位为六安市裕安区，保护单位为裕安区茶叶产业协会。官方项目页当前关联的相关传承人包括储昭伟等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为六安市裕安区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-22",
+      "province": "江苏省",
+      "city": "苏州市吴中区",
+      "name": "绿茶制作技艺（碧螺春制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Biluochun)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "洞庭山碧螺春茶业协会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（碧螺春制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为苏州市吴中区，保护单位为洞庭山碧螺春茶业协会。据地方史记载，苏州种茶始于两晋南北朝，唐代陆羽《茶经》有茶叶出自“长洲县（今苏州市）洞庭山”的记述。北宋朱长文《吴郡图经续记》记载：“洞庭出美茶，旧入为贡……”清初，洞庭茶俗称“吓煞人香”，清康熙三十八年（1699），康熙南巡太湖，以该茶色碧形曲似螺，采于早春为由，钦定茶名“碧螺春”。",
+      "descriptionEn": "Green Tea Processing Technique (Biluochun) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江苏省苏州市吴中区 and protected by 苏州市吴中区洞庭山碧螺春茶业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 72.4,
+      "y": 40,
+      "provinceX": 69,
+      "provinceY": 40,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14610.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "苏州市吴中区",
+      "representativeInheritors": [
+        {
+          "name": "施跃文",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2842"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（碧螺春制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14610.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（碧螺春制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为苏州市吴中区，保护单位为洞庭山碧螺春茶业协会。据地方史记载，苏州种茶始于两晋南北朝，唐代陆羽《茶经》有茶叶出自“长洲县（今苏州市）洞庭山”的记述。北宋朱长文《吴郡图经续记》记载：“洞庭出美茶，旧入为贡……”清初，洞庭茶俗称“吓煞人香”，清康熙三十八年（1699），康熙南巡太湖，以该茶色碧形曲似螺，采于早春为由，钦定茶名“碧螺春”。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "据地方史记载，苏州种茶始于两晋南北朝，唐代陆羽《茶经》有茶叶出自“长洲县（今苏州市）洞庭山”的记述。碧螺春茶的采制流程全部由手工完成，至今仍完全采取传统的采制技艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "碧螺春茶的采制流程全部由手工完成，至今仍完全采取传统的采制技艺。其制作技艺分“采摘、拣剔、摊放、高温杀青、揉捻整形、搓团显毫、文火干燥”七道工序。“摘得早、采得嫩、拣得净”和“手不离茶，茶不离锅，揉中带炒，炒揉结合，连续操作，起锅即成”是洞庭山碧螺春采制技艺的技术要领。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "碧螺春茶的采制流程全部由手工完成，至今仍完全采取传统的采制技艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（碧螺春制作技艺）的申报地区或单位为苏州市吴中区，保护单位为洞庭山碧螺春茶业协会。官方项目页当前关联的相关传承人包括施跃文等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为苏州市吴中区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-23",
+      "province": "江苏省",
+      "city": "南京市",
+      "name": "绿茶制作技艺（雨花茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Yuhua Tea)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "南京盛峰茶业",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（雨花茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为南京市，保护单位为南京盛峰茶业。雨花茶制作技艺是中国传统绿茶针形类茶制作技艺代表之一，江苏省南京中山陵景区、雨花台景区是其流布的核心区域。茶园主要分布在海拔20-50米之间的黄土岗地，土壤为黄红壤，呈弱酸性，有机质1.89％，土壤肥力中等，有利于茶树的生长，南京独特的地理环境培育了雨花茶特有的内在品质。",
+      "descriptionEn": "Green Tea Processing Technique (Yuhua Tea) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江苏省南京市 and protected by 南京盛峰茶业有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 67.3,
+      "y": 42.94,
+      "provinceX": 69,
+      "provinceY": 40,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23780.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "南京市",
+      "representativeInheritors": [
+        {
+          "name": "陈盛峰",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（雨花茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23780.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（雨花茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为南京市，保护单位为南京盛峰茶业。雨花茶制作技艺是中国传统绿茶针形类茶制作技艺代表之一，江苏省南京中山陵景区、雨花台景区是其流布的核心区域。茶园主要分布在海拔20-50米之间的黄土岗地，土壤为黄红壤，呈弱酸性，有机质1.89％，土壤肥力中等，有利于茶树的生长，南京独特的地理环境培育了雨花茶特有的内在品质。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "它将搓条、抓条、理条工艺完美结合，形成了集扁形茶类、卷曲形茶类优点于一身的独特针形茶工艺。其中，第五代传承群体52人、第六代传承群体103人是当前雨花茶技艺传承发展的主力，活跃在南京市雨花茶技艺传承、培训、展演展示、品牌创建及生产一线。百年历史的雨花茶是南京及江苏的文化名片，雨花茶产业已成为南京都市农业的主导产业。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "雨花茶制作技艺是中国传统绿茶针形类茶制作技艺代表之一，江苏省南京中山陵景区、雨花台景区是其流布的核心区域。雨花茶制作技艺主要包括鲜叶采摘、摊放、杀青、揉捻、毛火、整形、足火、精制、烘焙、包装数道工序，其中整形工艺最为关键。它将搓条、抓条、理条工艺完美结合，形成了集扁形茶类、卷曲形茶类优点于一身的独特针形茶工艺。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "雨花茶制作技艺是中国传统绿茶针形类茶制作技艺代表之一，江苏省南京中山陵景区、雨花台景区是其流布的核心区域。茶园主要分布在海拔20-50米之间的黄土岗地，土壤为黄红壤，呈弱酸性，有机质1.89％，土壤肥力中等，有利于茶树的生长，南京独特的地理环境培育了雨花茶特有的内在品质。雨花茶人因茶制艺，坚守最适合雨花茶的传统筛分方法精选茶叶，通过抖、撩、飘等独特筛法，将茶叶按粗细、长短、轻重分开。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（雨花茶制作技艺）的申报地区或单位为南京市，保护单位为南京盛峰茶业。官方项目页当前关联的相关传承人包括陈盛峰等。雨花茶制作技艺是中国传统绿茶针形类茶制作技艺代表之一，江苏省南京中山陵景区、雨花台景区是其流布的核心区域。1907年，第一代传承人陆溁等于南京紫金山创立全国性茶叶研究机构江南植茶公所，在灵谷寺一带植茶制茶，是为雨花茶的开篇人。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为南京市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-24",
+      "province": "江苏省",
+      "city": "扬州市",
+      "name": "茶点制作技艺（富春茶点制作技艺）",
+      "nameEn": "Tea Pastry Making Technique (Fuchun Tea Pastry)",
+      "code": "Ⅷ-161",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "扬州富春茶社",
+      "teaType": "茶点",
+      "teaTypeEn": "Tea Pastry",
+      "icon": "tray",
+      "color": "#d27b42",
+      "descriptionZh": "茶点制作技艺（富春茶点制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为扬州市，保护单位为扬州富春茶社。2006年12月，富春茶社被商业部认定为首批“中华老字号”。它将花卉、茶艺、点心、菜肴结合在一起，让人在闲静雅致的环境中品赏色、香、味、形俱佳的美食。",
+      "descriptionEn": "Tea Pastry Making Technique (Fuchun Tea Pastry) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江苏省扬州市 and protected by 扬州富春饮服集团有限公司富春茶社. The official record focuses on pastry-making procedures, tea-house practice, and the local food culture that developed around tea drinking.",
+      "x": 67.3,
+      "y": 37.06,
+      "provinceX": 69,
+      "provinceY": 40,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14648.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "扬州市",
+      "representativeInheritors": [
+        {
+          "name": "徐永珍",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1426"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "茶点制作技艺（富春茶点制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14648.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "茶点制作技艺（富春茶点制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为扬州市，保护单位为扬州富春茶社。2006年12月，富春茶社被商业部认定为首批“中华老字号”。它将花卉、茶艺、点心、菜肴结合在一起，让人在闲静雅致的环境中品赏色、香、味、形俱佳的美食。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "富春“魁龙珠”茶系富春茶社独家创制，它取浙江龙井之味、安徽魁针（太平猴魁绿茶）之色、福建珠兰之香，以扬子江水沏泡，谓之“一壶水煮三省茶”。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心品种与制作要点",
+          "contentZh": "官方项目页将茶点制作技艺（富春茶点制作技艺）归入传统技艺项目，本轮整理重点保留其茶点制作流程、代表品类和与饮茶场景的结合方式。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "茶点制作技艺（富春茶点制作技艺）与扬州市的地域文化联系紧密，是国家级非物质文化遗产代表性项目中与当地茶事传统、生活实践或区域文化表达相关的重要内容。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，茶点制作技艺（富春茶点制作技艺）的申报地区或单位为扬州市，保护单位为扬州富春茶社。官方项目页当前关联的相关传承人包括徐永珍等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为扬州市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-25",
+      "province": "湖北省",
+      "city": "恩施州恩施市",
+      "name": "绿茶制作技艺（恩施玉露制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Enshi Yulu)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "恩施玉露茶产业协会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（恩施玉露制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为恩施州恩施市，保护单位为恩施玉露茶产业协会。恩施玉露制作技艺是以蒸青灶和焙炉为工具，采用多重工序制作蒸青针形绿茶的传统技艺，主要流布于湖北省恩施市芭蕉侗族乡、舞阳坝街道办事处五峰山一带。恩施玉露在特有的自然生态环境条件下生长，其“形似松针、清香持久”，是我国现存的蒸青针形绿茶，当地已培育出适制恩施玉露的鄂茶14新品种，创制成四种针形绿茶新花色。",
+      "descriptionEn": "Green Tea Processing Technique (Enshi Yulu) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖北省恩施市 and protected by 恩施玉露茶产业协会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 56.4,
+      "y": 48,
+      "provinceX": 53,
+      "provinceY": 48,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14616.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "恩施州恩施市",
+      "representativeInheritors": [
+        {
+          "name": "杨胜伟",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2847"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（恩施玉露制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14616.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（恩施玉露制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为恩施州恩施市，保护单位为恩施玉露茶产业协会。恩施玉露制作技艺是以蒸青灶和焙炉为工具，采用多重工序制作蒸青针形绿茶的传统技艺，主要流布于湖北省恩施市芭蕉侗族乡、舞阳坝街道办事处五峰山一带。恩施玉露在特有的自然生态环境条件下生长，其“形似松针、清香持久”，是我国现存的蒸青针形绿茶，当地已培育出适制恩施玉露的鄂茶14新品种，创制成四种针形绿茶新花色。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "恩施玉露在特有的自然生态环境条件下生长，其“形似松针、清香持久”，是我国现存的蒸青针形绿茶，当地已培育出适制恩施玉露的鄂茶14新品种，创制成四种针形绿茶新花色。恩施玉露制作技艺于清康熙年间（1680年）由恩施芭蕉黄连溪一蓝姓茶商创立。清代，恩施玉露与西湖龙井、武夷岩茶、黄山毛峰等一起被列入清代40余支名茶品目。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "恩施玉露制作技艺是以蒸青灶和焙炉为工具，采用多重工序制作蒸青针形绿茶的传统技艺，主要流布于湖北省恩施市芭蕉侗族乡、舞阳坝街道办事处五峰山一带。恩施玉露传统制作技艺工序包含蒸、搧、抖、揉、铲、整六大核心技术和搂、端、搓、扎四大手法。之后揉捻：在焙炉上进行回转揉和对揉，卷叶成条；",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "恩施玉露制作技艺是以蒸青灶和焙炉为工具，采用多重工序制作蒸青针形绿茶的传统技艺，主要流布于湖北省恩施市芭蕉侗族乡、舞阳坝街道办事处五峰山一带。恩施玉露传统制作技艺工序包含蒸、搧、抖、揉、铲、整六大核心技术和搂、端、搓、扎四大手法。恩施玉露制作技艺展现了茶人的精湛技艺与卓越智慧，丰富了中国茶文化的内涵，具有较高的历史、经济、科技与文化价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（恩施玉露制作技艺）的申报地区或单位为恩施州恩施市，保护单位为恩施玉露茶产业协会。官方项目页当前关联的相关传承人包括杨胜伟等。恩施玉露制作技艺是以蒸青灶和焙炉为工具，采用多重工序制作蒸青针形绿茶的传统技艺，主要流布于湖北省恩施市芭蕉侗族乡、舞阳坝街道办事处五峰山一带。该遗产项目一直以师徒制和家族制世代传承。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为恩施州恩施市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-26",
+      "province": "湖北省",
+      "city": "咸宁市赤壁市",
+      "name": "黑茶制作技艺（赵李桥砖茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Zhaoliqiao Brick Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "湖北省赵李桥茶厂",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（赵李桥砖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为咸宁市赤壁市，保护单位为湖北省赵李桥茶厂。赵李桥砖茶制作技艺是以鲜叶为原料，经过杀青、揉捻、渥堆发酵、压制、干燥等多道工序精制而成的青砖茶和米砖茶制作技艺。流布区域为湖北省的赤壁市全境及崇阳县、通城县、湖南省临湘县。",
+      "descriptionEn": "Dark Tea Processing Technique (Zhaoliqiao Brick Tea) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖北省赤壁市 and protected by 湖北省赵李桥茶厂有限责任公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 51.3,
+      "y": 50.94,
+      "provinceX": 53,
+      "provinceY": 48,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14627.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "咸宁市赤壁市",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（赵李桥砖茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14627.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（赵李桥砖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为咸宁市赤壁市，保护单位为湖北省赵李桥茶厂。赵李桥砖茶制作技艺是以鲜叶为原料，经过杀青、揉捻、渥堆发酵、压制、干燥等多道工序精制而成的青砖茶和米砖茶制作技艺。流布区域为湖北省的赤壁市全境及崇阳县、通城县、湖南省临湘县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "清乾隆年间，山西茶商在羊楼洞镇开设“三玉川”“巨盛川”等茶厂生产帽合茶，后将帽合茶改制成长方形方砖生产出青砖茶、米砖茶，制作工艺与帽合茶相似。清咸丰、同治年间，先后有俄国、德国、日本等外商洋行和汉口、镇江、天津、广州等地商人来羊楼洞镇开设茶厂，制作砖茶、红茶，争相外销。赵李桥砖茶制作技艺历史悠久，工艺精湛，适于高寒地带及高脂饮食地区人群饮用，是我国内蒙古自治区、新疆维吾尔自治区、甘肃省、宁夏回族自治区等地及俄罗斯、蒙古等国家人民的生活必需品。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "赵李桥砖茶制作技艺是以鲜叶为原料，经过杀青、揉捻、渥堆发酵、压制、干燥等多道工序精制而成的青砖茶和米砖茶制作技艺。其中，青砖茶的制作技艺，首先是选叶环节，要求选取叶面大且叶厚的叶片，这样的叶片便于后续进行多次加工初制。紧接着进入初制阶段，通过杀青揉出茶汁，为后续的渥堆发酵做好准备。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "流布区域为湖北省的赤壁市全境及崇阳县、通城县、湖南省临湘县。运用传统的人工渥堆发酵工艺是赵李桥砖茶制作技艺的核心特征。赵李桥砖茶制作技艺历史悠久，工艺精湛，适于高寒地带及高脂饮食地区人群饮用，是我国内蒙古自治区、新疆维吾尔自治区、甘肃省、宁夏回族自治区等地及俄罗斯、蒙古等国家人民的生活必需品。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（赵李桥砖茶制作技艺）的申报地区或单位为咸宁市赤壁市，保护单位为湖北省赵李桥茶厂。流布区域为湖北省的赤壁市全境及崇阳县、通城县、湖南省临湘县。赵李桥砖茶制作技艺以师带徒方式传承，近年来传习所的建立也使技艺得到进一步弘扬。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为咸宁市赤壁市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-27",
+      "province": "湖北省",
+      "city": "宜昌市伍家岗区",
+      "name": "黑茶制作技艺（长盛川青砖茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Changshengchuan Brick Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "鑫鼎生物科技",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（长盛川青砖茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宜昌市伍家岗区，保护单位为鑫鼎生物科技。长盛川青砖茶制作技艺是我国传统黑茶制作技艺的代表之一，发源于湖北咸宁，流传至湖北宜昌并辐射至恩施、神农架、襄阳等地。湖北省宜昌市位于鄂西山区向江汉平原过渡地带，境内山脉纵横，属亚热带季风性气候，该地土质肥沃，土壤的排水和透气性佳良，十分适宜茶树生长。",
+      "descriptionEn": "Dark Tea Processing Technique (Changshengchuan Brick Tea) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖北省宜昌市伍家岗区 and protected by 鑫鼎生物科技有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 51.3,
+      "y": 45.06,
+      "provinceX": 53,
+      "provinceY": 48,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23785.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "宜昌市伍家岗区",
+      "representativeInheritors": [
+        {
+          "name": "何建刚",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（长盛川青砖茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23785.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（长盛川青砖茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为宜昌市伍家岗区，保护单位为鑫鼎生物科技。长盛川青砖茶制作技艺是我国传统黑茶制作技艺的代表之一，发源于湖北咸宁，流传至湖北宜昌并辐射至恩施、神农架、襄阳等地。湖北省宜昌市位于鄂西山区向江汉平原过渡地带，境内山脉纵横，属亚热带季风性气候，该地土质肥沃，土壤的排水和透气性佳良，十分适宜茶树生长。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "长盛川青砖茶制作技艺是我国传统黑茶制作技艺的代表之一，发源于湖北咸宁，流传至湖北宜昌并辐射至恩施、神农架、襄阳等地。长盛川青砖茶制作技艺历史悠久，工艺复杂。其中杀青、渥堆、筛分、汽蒸、成型、烘制等传统工艺，经世代相传一直沿用至今。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "长盛川青砖茶制作技艺是我国传统黑茶制作技艺的代表之一，发源于湖北咸宁，流传至湖北宜昌并辐射至恩施、神农架、襄阳等地。长盛川青砖茶制作技艺历史悠久，工艺复杂。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "长盛川青砖茶制作技艺是我国传统黑茶制作技艺的代表之一，发源于湖北咸宁，流传至湖北宜昌并辐射至恩施、神农架、襄阳等地。其中杀青、渥堆、筛分、汽蒸、成型、烘制等传统工艺，经世代相传一直沿用至今。当前，该技艺主要传承群体集中在湖北长盛川青砖茶研究所，传承骨干有10人，另有10余人掌握着该技艺的核心工艺流程。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（长盛川青砖茶制作技艺）的申报地区或单位为宜昌市伍家岗区，保护单位为鑫鼎生物科技。官方项目页当前关联的相关传承人包括何建刚等。长盛川是湖北老字号，其创始者何氏家族于1368年从江西迁徙到湖北咸宁柏墩一带，潜心制茶、贩茶，迄今已传承至20代。当前，该技艺主要传承群体集中在湖北长盛川青砖茶研究所，传承骨干有10人，另有10余人掌握着该技艺的核心工艺流程。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为宜昌市伍家岗区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-28",
+      "province": "湖南省",
+      "city": "益阳市安化县",
+      "name": "黑茶制作技艺（千两茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Qianliang Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "安化县文化馆",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（千两茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为益阳市安化县，保护单位为安化县文化馆。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+      "descriptionEn": "Dark Tea Processing Technique (Qianliang Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖南省安化县 and protected by 安化县文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 56.4,
+      "y": 58,
+      "provinceX": 53,
+      "provinceY": 58,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14624.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "益阳市安化县",
+      "representativeInheritors": [
+        {
+          "name": "李胜夫",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2851"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（千两茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14624.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（千两茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为益阳市安化县，保护单位为安化县文化馆。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。唐代中期，这里出产的“渠江薄片”茶被列为贡品。宋代熙宁年间，安化置县时，当地的茶已“甲于诸州市”。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。安化千两茶的制作分黑毛茶制作和精深加工两个阶段，黑毛茶制作包括杀青、揉捻、渥堆、复揉、烘焙5道工序，精深加工工序则要复杂得多，包括筛分、拼配、软化、装篓、踩压、扎箍、锁口、冷却、干燥等一系列环节，经日晒夜露55天制作成黑茶成品。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（千两茶制作技艺）的申报地区或单位为益阳市安化县，保护单位为安化县文化馆。官方项目页当前关联的相关传承人包括李胜夫等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为益阳市安化县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-29",
+      "province": "湖南省",
+      "city": "益阳市",
+      "name": "黑茶制作技艺（茯砖茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Fuzhuan Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "益阳茶厂",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（茯砖茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为益阳市，保护单位为益阳茶厂。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+      "descriptionEn": "Dark Tea Processing Technique (Fuzhuan Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖南省益阳市 and protected by 益阳茶厂有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 51.3,
+      "y": 60.94,
+      "provinceX": 53,
+      "provinceY": 58,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14623.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "益阳市",
+      "representativeInheritors": [
+        {
+          "name": "刘杏益",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2852"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（茯砖茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14623.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（茯砖茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为益阳市，保护单位为益阳茶厂。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。数百年来，在我国西北地区，茯砖茶与奶、肉并列，以其不可替代的独特功效成为各少数民族的生活必需品，被誉为中国古丝绸之路的“神秘之茶”和西北各少数民族的“生命之茶”。茯砖茶集医药价值、收藏价值于一体，对人们的物质和文化生活产生了深刻的影响。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（茯砖茶制作技艺）的申报地区或单位为益阳市，保护单位为益阳茶厂。官方项目页当前关联的相关传承人包括刘杏益等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为益阳市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-30",
+      "province": "湖南省",
+      "city": "岳阳市君山区",
+      "name": "黄茶制作技艺（君山银针茶制作技艺）",
+      "nameEn": "Yellow Tea Processing Technique (Junshan Yinzhen)",
+      "code": "Ⅷ-267",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "君山区文化馆",
+      "teaType": "黄茶",
+      "teaTypeEn": "Yellow Tea",
+      "icon": "sun",
+      "color": "#b9932f",
+      "descriptionZh": "黄茶制作技艺（君山银针茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为岳阳市君山区，保护单位为君山区文化馆。君山银针茶制作技艺是我国黄茶制作技艺的代表之一，主要分布于湖南省岳阳市君山区君山岛及许市镇等地。君山岛四面环水，岛上峰峦盘结，沟壑回环，竹木苍翠，特殊的地理环境和湿润的气候环境为茶树的生长创造了条件。",
+      "descriptionEn": "Yellow Tea Processing Technique (Junshan Yinzhen) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 湖南省岳阳市君山区 and protected by 岳阳市君山区文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 51.3,
+      "y": 55.06,
+      "provinceX": 53,
+      "provinceY": 58,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23581.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "岳阳市君山区",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黄茶制作技艺（君山银针茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23581.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黄茶制作技艺（君山银针茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为岳阳市君山区，保护单位为君山区文化馆。君山银针茶制作技艺是我国黄茶制作技艺的代表之一，主要分布于湖南省岳阳市君山区君山岛及许市镇等地。君山岛四面环水，岛上峰峦盘结，沟壑回环，竹木苍翠，特殊的地理环境和湿润的气候环境为茶树的生长创造了条件。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "双式闷黄，是指采用两次闷黄的发酵工艺，形成发酵程度≤50%且味醇耐泡、酵香持久、汤色明亮的黄茶产品，使茶叶在空气湿度的交融复合作用下，形成独特的品味。君山银针茶生产历史悠久，始于唐，定于宋，兴于清。在清代被指定为贡品。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "君山银针茶制作技艺是我国黄茶制作技艺的代表之一，主要分布于湖南省岳阳市君山区君山岛及许市镇等地。君山银针茶色、香、味、形俱佳，采用“一芽一叶”历经摊晾、杀青、摊凉、初烘、初包、复烘、复包、足火、精选等9道工序精心制作而成。双式闷黄，是指采用两次闷黄的发酵工艺，形成发酵程度≤50%且味醇耐泡、酵香持久、汤色明亮的黄茶产品，使茶叶在空气湿度的交融复合作用下，形成独特的品味。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "君山银针茶制作技艺是我国黄茶制作技艺的代表之一，主要分布于湖南省岳阳市君山区君山岛及许市镇等地。其中“九不采”和“双式闷黄”是确保君山银针芽身金黄、鲜醇爽口、回味悠长的重要保障。近年来，已逐步形成20余家集茶叶科研、种植、加工、销售、茶文化传播于一体的现代化科技型茶企，还衍生出各类茶馆千余所，直接从业人员万余人。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黄茶制作技艺（君山银针茶制作技艺）的申报地区或单位为岳阳市君山区，保护单位为君山区文化馆。历史上君山银针茶制作技艺主要依靠家族和师徒传承，传承体系较为完整，有清晰记载的传承谱系已至4代。位于君山岛的君山区生态茶园是该项目的主要传承场所。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为岳阳市君山区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-31",
+      "province": "江西省",
+      "city": "赣州市全南县",
+      "name": "绿茶制作技艺（赣南客家擂茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Southern Jiangxi Hakka Lei Cha)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "全南县文化馆",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（赣南客家擂茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为赣州市全南县，保护单位为全南县文化馆。赣南客家擂茶制作技艺是赣南客家人以鲜茶叶、糯米、芝麻、黄豆、花生、盐及各类青草药等为原料，通过擂钵和擂棍研磨成茶泥，再冲泡饮用的传统制茶技艺。赣南客家擂茶制作遍布江西省全南、赣县、兴国、于都等县，尤以全南县较具代表性。",
+      "descriptionEn": "Green Tea Processing Technique (Southern Jiangxi Hakka Lei Cha) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江西省全南县 and protected by 全南县文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 63.4,
+      "y": 56,
+      "provinceX": 60,
+      "provinceY": 56,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14613.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "赣州市全南县",
+      "representativeInheritors": [
+        {
+          "name": "廖永传",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2844"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（赣南客家擂茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14613.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（赣南客家擂茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为赣州市全南县，保护单位为全南县文化馆。赣南客家擂茶制作技艺是赣南客家人以鲜茶叶、糯米、芝麻、黄豆、花生、盐及各类青草药等为原料，通过擂钵和擂棍研磨成茶泥，再冲泡饮用的传统制茶技艺。赣南客家擂茶制作遍布江西省全南、赣县、兴国、于都等县，尤以全南县较具代表性。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "相传擂茶起源于中原人将青草药擂烂冲服的“药饮”，是客家先民在迁徙、生产、生活积累形成的一种饮食习惯。据史料记载，客家擂茶由汉魏的粥茶和唐宋的点茶衍变而成，始于黄河以北，客家祖先南迁时把它带到赣南。到赣南后又融入当地的茶俗，形成特有赣南客家饮茶习俗世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "赣南客家擂茶制作技艺是赣南客家人以鲜茶叶、糯米、芝麻、黄豆、花生、盐及各类青草药等为原料，通过擂钵和擂棍研磨成茶泥，再冲泡饮用的传统制茶技艺。赣南客家擂茶制作遍布江西省全南、赣县、兴国、于都等县，尤以全南县较具代表性。赣南客家擂茶制作技艺特别，融合了研磨、冲泡等多道工序。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "赣南客家擂茶制作技艺是赣南客家人以鲜茶叶、糯米、芝麻、黄豆、花生、盐及各类青草药等为原料，通过擂钵和擂棍研磨成茶泥，再冲泡饮用的传统制茶技艺。赣南客家擂茶制作遍布江西省全南、赣县、兴国、于都等县，尤以全南县较具代表性。赣南客家擂茶制作技艺特别，融合了研磨、冲泡等多道工序。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（赣南客家擂茶制作技艺）的申报地区或单位为赣州市全南县，保护单位为全南县文化馆。官方项目页当前关联的相关传承人包括廖永传等。赣南客家擂茶制作技艺融合多种食材，是赣南客家文化传承的重要载体。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为赣州市全南县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-32",
+      "province": "江西省",
+      "city": "上饶市婺源县",
+      "name": "绿茶制作技艺（婺源绿茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Wuyuan Green Tea)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "婺源县文化馆",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（婺源绿茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为上饶市婺源县，保护单位为婺源县文化馆。婺源绿茶制作技艺是以清明后采摘的一芽二叶为原料，经过杀青、造型揉捻、分段干燥等多道工序精制而成的传统制茶工艺，主要流布于江西省婺源县。婺源绿茶具有香高色翠、汤青叶绿、味浓耐泡的特点，有“头泡香，二泡浓，三泡味不减，四泡味亦醇”之称。",
+      "descriptionEn": "Green Tea Processing Technique (Wuyuan Green Tea) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江西省婺源县 and protected by 婺源县文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 58.3,
+      "y": 58.94,
+      "provinceX": 60,
+      "provinceY": 56,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14614.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "上饶市婺源县",
+      "representativeInheritors": [
+        {
+          "name": "方根民",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2845"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（婺源绿茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14614.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（婺源绿茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为上饶市婺源县，保护单位为婺源县文化馆。婺源绿茶制作技艺是以清明后采摘的一芽二叶为原料，经过杀青、造型揉捻、分段干燥等多道工序精制而成的传统制茶工艺，主要流布于江西省婺源县。婺源绿茶具有香高色翠、汤青叶绿、味浓耐泡的特点，有“头泡香，二泡浓，三泡味不减，四泡味亦醇”之称。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "婺源绿茶制作技艺的特征在于，在历史松萝茶制法基础上采取了高温杀青、小桶揉捻、干燥低温长烚的工艺，使绿茶条索紧结匀正，色泽绿润，水色清澈，香气芬芳，滋味鲜爽。明代炒青茶代替了蒸青茶，沈周在其《书岕茶别论后》载“武林之龙井，新安之松萝，其名大噪”。可见，婺源自古就有“千年茶乡”之誉，绿茶制作技艺历史悠久，以家族和群体传承为主。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "婺源绿茶制作技艺是以清明后采摘的一芽二叶为原料，经过杀青、造型揉捻、分段干燥等多道工序精制而成的传统制茶工艺，主要流布于江西省婺源县。婺源绿茶制作技艺繁复，主要采用手工制作，具体流程包括采摘、摊片、杀青、揉捻、解块、烘坯、做形（初干）、烘干（提香）等。每年春分前后开园采茶，采摘时，芽茶按单芽或一芽一叶初展标准，叶茶按一芽一叶或一芽二叶标准。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "婺源绿茶制作技艺是以清明后采摘的一芽二叶为原料，经过杀青、造型揉捻、分段干燥等多道工序精制而成的传统制茶工艺，主要流布于江西省婺源县。婺源绿茶制作技艺至今仍然是婺源诸多山区茶农赖以谋生的主要手工艺，密切反映了当地的民俗文化特质。它不仅是地方特色文化的代表，也见证了中华茶文化的发展与交流，体现了人与自然和谐共生的理念，具有鲜明的历史、经济与社会文化价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（婺源绿茶制作技艺）的申报地区或单位为上饶市婺源县，保护单位为婺源县文化馆。官方项目页当前关联的相关传承人包括方根民等。婺源绿茶制作技艺是以清明后采摘的一芽二叶为原料，经过杀青、造型揉捻、分段干燥等多道工序精制而成的传统制茶工艺，主要流布于江西省婺源县。可见，婺源自古就有“千年茶乡”之誉，绿茶制作技艺历史悠久，以家族和群体传承为主。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为上饶市婺源县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-33",
+      "province": "江西省",
+      "city": "九江市修水县",
+      "name": "红茶制作技艺（宁红茶制作技艺）",
+      "nameEn": "Black Tea Processing Technique (Ninghong Tea)",
+      "code": "Ⅷ-149",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "江西省宁红公司",
+      "teaType": "红茶",
+      "teaTypeEn": "Black Tea",
+      "icon": "ember",
+      "color": "#8b4b34",
+      "descriptionZh": "红茶制作技艺（宁红茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为九江市修水县，保护单位为江西省宁红公司。宁红茶制作技艺是我国红茶制作技艺的代表之一，在江西省修水县及其周边地区流布并传承。因修水古名分宁、义宁，所产茶叶又属我国特有的工夫红茶，故被称为“宁红”或“宁红工夫茶”。",
+      "descriptionEn": "Black Tea Processing Technique (Ninghong Tea) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 江西省九江市修水县 and protected by 江西省宁红有限责任公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 58.3,
+      "y": 53.06,
+      "provinceX": 60,
+      "provinceY": 56,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23783.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "九江市修水县",
+      "representativeInheritors": [
+        {
+          "name": "俞旦华",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "红茶制作技艺（宁红茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23783.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "红茶制作技艺（宁红茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为九江市修水县，保护单位为江西省宁红公司。宁红茶制作技艺是我国红茶制作技艺的代表之一，在江西省修水县及其周边地区流布并传承。因修水古名分宁、义宁，所产茶叶又属我国特有的工夫红茶，故被称为“宁红”或“宁红工夫茶”。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "初制工序主要为萎凋、揉捻、发酵、烘干，精制工序主要为筛分、拣剔、复火、匀堆、装箱，并创造性地形成了轻萎凋、重揉捻、足发酵等独门绝技。宁红茶制作技艺起源于清代乾隆晚期，名扬于道光初年，鼎盛于光绪年间。宁红茶制作技艺的传承发展历史与近代国家民族命运息息相关，相关采茶歌、采茶戏、茶诗、茶唱本和品茶文化应运而生，具有重要的历史文化价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "宁红茶制作技艺是我国红茶制作技艺的代表之一，在江西省修水县及其周边地区流布并传承。宁红茶属全发酵类中小叶种红茶，制作技艺严谨精良，选料优等精细。一般在清明前开摘，采摘时间多在云雾初散的早上8点后，标准为单芽、一芽一叶初展、一芽一叶开展，部分一芽二叶。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "宁红茶制作技艺是我国红茶制作技艺的代表之一，在江西省修水县及其周边地区流布并传承。制作宁红的工序严谨讲究，传统制法包括初制和精制两个流程十余道工序。在200多年的岁月里，该技艺以家族传承、师徒传承、社会传承等方式世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，红茶制作技艺（宁红茶制作技艺）的申报地区或单位为九江市修水县，保护单位为江西省宁红公司。官方项目页当前关联的相关传承人包括俞旦华等。宁红茶制作技艺是我国红茶制作技艺的代表之一，在江西省修水县及其周边地区流布并传承。在200多年的岁月里，该技艺以家族传承、师徒传承、社会传承等方式世代相传。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为九江市修水县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-34",
+      "province": "广东省",
+      "city": "广东省",
+      "name": "凉茶",
+      "nameEn": "Herbal Tea Preparation",
+      "code": "Ⅷ-89",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2006 第一批",
+      "protectionUnit": "广东省食品行业协会",
+      "teaType": "凉茶",
+      "teaTypeEn": "Herbal Tea",
+      "icon": "herb",
+      "color": "#3d7f59",
+      "descriptionZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为广东省，保护单位为广东省食品行业协会。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+      "descriptionEn": "Herbal Tea Preparation is a national-level intangible cultural heritage item inscribed in 2006 (First Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 广东省文化厅 and protected by 广东省食品行业协会. The official record highlights the preparation and use of herbal tea formulas in Lingnan, showing how local communities combined climate knowledge, plant ingredients, and everyday health practices.",
+      "x": 61.2,
+      "y": 73,
+      "provinceX": 59,
+      "provinceY": 73,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14440.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "reviewFlags=multiple-project-candidates；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "广东省",
+      "representativeInheritors": [
+        {
+          "name": "郑荣波",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "王永辉",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2783"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "凉茶",
+          "url": "https://www.ihchina.cn/project_details/14440.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为广东省，保护单位为广东省食品行业协会。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，凉茶的申报地区或单位为广东省，保护单位为广东省食品行业协会。官方项目页当前关联的相关传承人包括郑荣波、王永辉等。凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为广东省。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-35",
+      "province": "广东省",
+      "city": "潮州市",
+      "name": "茶艺（潮州工夫茶艺）",
+      "nameEn": "Tea Art (Chaozhou Gongfu Tea)",
+      "code": "Ⅹ-107",
+      "category": "民俗",
+      "categoryEn": "Folk Custom",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "潮州市文化馆",
+      "teaType": "茶艺",
+      "teaTypeEn": "Tea Art",
+      "icon": "cup",
+      "color": "#5a5ea2",
+      "descriptionZh": "茶艺（潮州工夫茶艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为潮州市，保护单位为潮州市文化馆。潮州工夫茶的冲泡有其一定的程式，主要由茶具讲示、茶师净手、泥炉生火、砂铫（煮水器具）掏水、榄炭煮水、开水热罐、再温茶盅、茗倾素纸、壶纳乌龙、甘泉洗茶、提铫高冲、壶盖刮沫、淋盖追热、烫杯滚杯、低洒茶汤、关公巡城、韩信点兵、敬请品味、先闻茶香、和气细啜、三嗅杯底、瑞气圆融等多个环节组成。除冲泡独特外，潮州工夫茶艺另有一个突出的特点，就是以乌龙茶为主要茶品。",
+      "descriptionEn": "Tea Art (Chaozhou Gongfu Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Folk Custom. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 广东省潮州市 and protected by 潮州市文化馆. The official record emphasizes ceremonial procedures, social etiquette, and community customs built around preparing, serving, and sharing tea.",
+      "x": 56.8,
+      "y": 73,
+      "provinceX": 59,
+      "provinceY": 73,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/15247.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "潮州市",
+      "representativeInheritors": [
+        {
+          "name": "叶汉钟",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "茶艺（潮州工夫茶艺）",
+          "url": "https://www.ihchina.cn/project_details/15247.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "茶艺（潮州工夫茶艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为潮州市，保护单位为潮州市文化馆。潮州工夫茶的冲泡有其一定的程式，主要由茶具讲示、茶师净手、泥炉生火、砂铫（煮水器具）掏水、榄炭煮水、开水热罐、再温茶盅、茗倾素纸、壶纳乌龙、甘泉洗茶、提铫高冲、壶盖刮沫、淋盖追热、烫杯滚杯、低洒茶汤、关公巡城、韩信点兵、敬请品味、先闻茶香、和气细啜、三嗅杯底、瑞气圆融等多个环节组成。除冲泡独特外，潮州工夫茶艺另有一个突出的特点，就是以乌龙茶为主要茶品。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "随着社会的发展，人们的生活节奏不断加快，大多数年轻人对工夫茶已不甚了解,传统潮州工夫茶技艺为简化的冲泡程式所取代，潮州工夫茶技艺呈现出衰退的趋势，亟待保护。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "礼俗流程",
+          "contentZh": "潮州工夫茶的冲泡有其一定的程式，主要由茶具讲示、茶师净手、泥炉生火、砂铫（煮水器具）掏水、榄炭煮水、开水热罐、再温茶盅、茗倾素纸、壶纳乌龙、甘泉洗茶、提铫高冲、壶盖刮沫、淋盖追热、烫杯滚杯、低洒茶汤、关公巡城、韩信点兵、敬请品味、先闻茶香、和气细啜、三嗅杯底、瑞气圆融等多个环节组成。除冲泡独特外，潮州工夫茶艺另有一个突出的特点，就是以乌龙茶为主要茶品。随着社会的发展，人们的生活节奏不断加快，大多数年轻人对工夫茶已不甚了解,传统潮州工夫茶技艺为简化的冲泡程式所取代，潮州工夫茶技艺呈现出衰退的趋势，亟待保护。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "潮州工夫茶艺是潮州传统文化的重要组成部分，具有民俗学、潮学、社会生活史等方面的研究价值。随着社会的发展，人们的生活节奏不断加快，大多数年轻人对工夫茶已不甚了解,传统潮州工夫茶技艺为简化的冲泡程式所取代，潮州工夫茶技艺呈现出衰退的趋势，亟待保护。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，茶艺（潮州工夫茶艺）的申报地区或单位为潮州市，保护单位为潮州市文化馆。官方项目页当前关联的相关传承人包括叶汉钟等。随着社会的发展，人们的生活节奏不断加快，大多数年轻人对工夫茶已不甚了解,传统潮州工夫茶技艺为简化的冲泡程式所取代，潮州工夫茶技艺呈现出衰退的趋势，亟待保护。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为潮州市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-36",
+      "province": "北京市",
+      "city": "北京市",
+      "name": "花茶制作技艺（张一元茉莉花茶制作技艺）",
+      "nameEn": "Scented Tea Processing Technique (Zhang Yiyuan Jasmine Tea)",
+      "code": "Ⅷ-147",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "北京张一元茶叶公司",
+      "teaType": "花茶",
+      "teaTypeEn": "Scented Tea",
+      "icon": "flower",
+      "color": "#c66d63",
+      "descriptionZh": "花茶制作技艺（张一元茉莉花茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为北京市，保护单位为北京张一元茶叶公司。这是我国特有的茶种，茶以花名，花因茶胜。花茶源于宋、始于明而成于清。",
+      "descriptionEn": "Scented Tea Processing Technique (Zhang Yiyuan Jasmine Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 北京张一元茶叶有限责任公司 and protected by 北京张一元茶叶有限责任公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 59.2,
+      "y": 24,
+      "provinceX": 57,
+      "provinceY": 24,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14602.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "北京市",
+      "representativeInheritors": [
+        {
+          "name": "王秀兰",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 03-1417"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "花茶制作技艺（张一元茉莉花茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14602.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "花茶制作技艺（张一元茉莉花茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为北京市，保护单位为北京张一元茶叶公司。这是我国特有的茶种，茶以花名，花因茶胜。花茶源于宋、始于明而成于清。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "花茶源于宋、始于明而成于清。清代末年，张昌翼开办张一元茶庄，世代传承，专门制作销售茉莉花茶。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "清代末年，张昌翼开办张一元茶庄，世代传承，专门制作销售茉莉花茶。1992年，张一元传统茉莉花茶制作工艺重新得以恢复。张一元茉莉花茶制作时采用福建烘青绿茶——春茶为茶坯，初制过程主要包括萎凋、杀青、揉捻、烘焙等工序。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "1956年公私合营后，张一元逐渐失去了专销花茶的原有特色。1992年，张一元传统茉莉花茶制作工艺重新得以恢复。这种深受京城百姓喜爱的花茶风味独特，物美价廉，蕴涵着深厚的老北京文化底蕴，具有广泛的市场。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，花茶制作技艺（张一元茉莉花茶制作技艺）的申报地区或单位为北京市，保护单位为北京张一元茶叶公司。官方项目页当前关联的相关传承人包括王秀兰等。清代末年，张昌翼开办张一元茶庄，世代传承，专门制作销售茉莉花茶。但张一元茉莉花茶制作技艺较为复杂，手工劳动相当辛苦，所以愿意学习这一技艺的人越来越少，花茶窨制工艺的传承和发展成为当前亟待解决的问题。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为北京市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-37",
+      "province": "北京市",
+      "city": "北京市东城区",
+      "name": "花茶制作技艺（吴裕泰茉莉花茶制作技艺）",
+      "nameEn": "Scented Tea Processing Technique (Wuyutai Jasmine Tea)",
+      "code": "Ⅷ-147",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2011 第三批",
+      "protectionUnit": "北京吴裕泰茶业",
+      "teaType": "花茶",
+      "teaTypeEn": "Scented Tea",
+      "icon": "flower",
+      "color": "#c66d63",
+      "descriptionZh": "花茶制作技艺（吴裕泰茉莉花茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为北京市东城区，保护单位为北京吴裕泰茶业。其中，茉莉花茶是绿茶经多次用茉莉鲜花窨制加工而成的，茶引花香，花增茶味，茶味与花香巧妙地融合，构成了茉莉花茶特有的品质，被称为花茶中之珍 品。始建于1887年的吴裕泰是国内知名的茶叶老字号，一贯秉承自采、自窨、自拼的独门窨制技艺，其主要包括茶坯制作、花源选择、鲜花养护、玉兰打底、窨制拼和、通花散热、起花、烘培、匀堆装箱九道工序。",
+      "descriptionEn": "Scented Tea Processing Technique (Wuyutai Jasmine Tea) is a national-level intangible cultural heritage item inscribed in 2011 (Third Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 北京市东城区 and protected by 北京吴裕泰茶业股份有限公司. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 54.8,
+      "y": 24,
+      "provinceX": 57,
+      "provinceY": 24,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14603.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "北京市东城区",
+      "representativeInheritors": [
+        {
+          "name": "孙丹威",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1903"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "花茶制作技艺（吴裕泰茉莉花茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14603.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "花茶制作技艺（吴裕泰茉莉花茶制作技艺）于2011 第三批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为北京市东城区，保护单位为北京吴裕泰茶业。其中，茉莉花茶是绿茶经多次用茉莉鲜花窨制加工而成的，茶引花香，花增茶味，茶味与花香巧妙地融合，构成了茉莉花茶特有的品质，被称为花茶中之珍 品。始建于1887年的吴裕泰是国内知名的茶叶老字号，一贯秉承自采、自窨、自拼的独门窨制技艺，其主要包括茶坯制作、花源选择、鲜花养护、玉兰打底、窨制拼和、通花散热、起花、烘培、匀堆装箱九道工序。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "只采用春茶茶坯，坚持茉莉花“三不采原则”，在拼配中适当增加徽茶茶坯所占比例，并且运用“低温慢烘”等独门技艺，最终形成了吴裕泰茉莉花茶“香气鲜灵持久、滋味醇厚回甘、汤色清澈明亮、耐泡”的特色。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "其中，茉莉花茶是绿茶经多次用茉莉鲜花窨制加工而成的，茶引花香，花增茶味，茶味与花香巧妙地融合，构成了茉莉花茶特有的品质，被称为花茶中之珍 品。始建于1887年的吴裕泰是国内知名的茶叶老字号，一贯秉承自采、自窨、自拼的独门窨制技艺，其主要包括茶坯制作、花源选择、鲜花养护、玉兰打底、窨制拼和、通花散热、起花、烘培、匀堆装箱九道工序。只采用春茶茶坯，坚持茉莉花“三不采原则”，在拼配中适当增加徽茶茶坯所占比例，并且运用“低温慢烘”等独门技艺，最终形成了吴裕泰茉莉花茶“香气鲜灵持久、滋味醇厚回甘、汤色清澈明亮、耐泡”的特色。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "其中，茉莉花茶是绿茶经多次用茉莉鲜花窨制加工而成的，茶引花香，花增茶味，茶味与花香巧妙地融合，构成了茉莉花茶特有的品质，被称为花茶中之珍 品。只采用春茶茶坯，坚持茉莉花“三不采原则”，在拼配中适当增加徽茶茶坯所占比例，并且运用“低温慢烘”等独门技艺，最终形成了吴裕泰茉莉花茶“香气鲜灵持久、滋味醇厚回甘、汤色清澈明亮、耐泡”的特色。在宣传方面，老百姓对茉莉花茶也有很大的误解，认为茉莉花茶是低质量茶叶，面对市场竞争，在企业里很多传统品种的茉莉花茶甚至在低价位赔本经营。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，花茶制作技艺（吴裕泰茉莉花茶制作技艺）的申报地区或单位为北京市东城区，保护单位为北京吴裕泰茶业。官方项目页当前关联的相关传承人包括孙丹威等。加上从业环境艰苦、技术难度大等原因，年轻人不愿意继承和学习茉莉花茶窨制技艺，这一传统技艺的传承面临着严峻的形势。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为北京市东城区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-38",
+      "province": "四川省",
+      "city": "雅安市",
+      "name": "黑茶制作技艺（南路边茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Nanlu Bian Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2008 第二批",
+      "protectionUnit": "雅安市非遗和茶马古道中心",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（南路边茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为雅安市，保护单位为雅安市非遗和茶马古道中心。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+      "descriptionEn": "Dark Tea Processing Technique (Nanlu Bian Tea) is a national-level intangible cultural heritage item inscribed in 2008 (Second Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 四川省雅安市 and protected by 雅安市非物质文化遗产和茶马古道研究保护中心. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 41.2,
+      "y": 54,
+      "provinceX": 39,
+      "provinceY": 54,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14625.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "雅安市",
+      "representativeInheritors": [
+        {
+          "name": "甘玉祥",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 04-1906"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（南路边茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14625.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（南路边茶制作技艺）于2008 第二批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为雅安市，保护单位为雅安市非遗和茶马古道中心。黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。我国黑茶以湖南省的安化千两茶、益阳茯砖茶和四川省的雅安南路边茶最为著名。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "黑茶以质优取胜，制作标准严格，精益求精，要求选茶准、烘茶干、装茶满、踩茶紧，生产流程环环相扣，一丝不苟。这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。南路边茶产于四川省雅安市，又称“乌茶”、“边销茶”、“南边茶”、“雅茶”、“藏茶”等，系采用自然干燥、特殊压制、包装等工序，以手工操作方式制作完成，其生产技艺具有重发酵、后发酵、多次发酵、非酶促发酵、转色发酵等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "这些黑茶都具有历史悠久、文化底蕴深厚、制作技艺科技含量高等特点。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（南路边茶制作技艺）的申报地区或单位为雅安市，保护单位为雅安市非遗和茶马古道中心。官方项目页当前关联的相关传承人包括甘玉祥等。整顿、规范黑茶市场，保护、弘扬黑茶制作技艺已成为目前刻不容缓的工作。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为雅安市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-39",
+      "province": "四川省",
+      "city": "雅安市名山区",
+      "name": "绿茶制作技艺（蒙山茶传统制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Mengshan Tea Traditional Craft)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "名山区非遗保护中心",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（蒙山茶传统制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为雅安市名山区，保护单位为名山区非遗保护中心。蒙山茶传统制作技艺是指使用蒙山地区茶叶、利用传统器具、按照传统工序和工艺制作蒙山茶的手工技艺，是我国绿茶制作技艺的代表之一。该技艺流布于四川省雅安市名山区，核心区域主要在名山蒙顶山、蒙阳镇、中峰乡等乡镇和永兴寺、千佛寺、智矩寺等寺庙，以及雨城区碧峰峡镇、北郊乡等。",
+      "descriptionEn": "Green Tea Processing Technique (Mengshan Tea Traditional Craft) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 四川省雅安市 and protected by 雅安市名山区非物质文化遗产保护中心. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 36.8,
+      "y": 54,
+      "provinceX": 39,
+      "provinceY": 54,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23781.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "雅安市名山区",
+      "representativeInheritors": [
+        {
+          "name": "张跃华",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（蒙山茶传统制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23781.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（蒙山茶传统制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为雅安市名山区，保护单位为名山区非遗保护中心。蒙山茶传统制作技艺是指使用蒙山地区茶叶、利用传统器具、按照传统工序和工艺制作蒙山茶的手工技艺，是我国绿茶制作技艺的代表之一。该技艺流布于四川省雅安市名山区，核心区域主要在名山蒙顶山、蒙阳镇、中峰乡等乡镇和永兴寺、千佛寺、智矩寺等寺庙，以及雨城区碧峰峡镇、北郊乡等。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "蒙山茶传统制作技艺起始于汉，兴盛于唐宋明清，一直通过师傅带徒弟的方式，在口授讲解和实践体悟的过程中传承发展至今。随着蒙山茶传统制作技艺的传承，制作技艺、茶艺活动和相关贸易涉及西南各省，成为中华茶文化的重要组成部分，也是多民族团结交流的生动见证，具有重要的历史、文化和经济价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "蒙山茶传统制作技艺是指使用蒙山地区茶叶、利用传统器具、按照传统工序和工艺制作蒙山茶的手工技艺，是我国绿茶制作技艺的代表之一。该技艺流布于四川省雅安市名山区，核心区域主要在名山蒙顶山、蒙阳镇、中峰乡等乡镇和永兴寺、千佛寺、智矩寺等寺庙，以及雨城区碧峰峡镇、北郊乡等。蒙山茶传统制作技艺以蒙顶甘露为主，包括蒙顶石花、万春银叶、玉叶长春的绿茶制作技艺和蒙顶黄芽的黄茶制作技艺，主要技艺有如下特点：一是根据芽叶原料季节、下树时间、含水量，秉承世代传承的口诀“看茶制茶”。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "蒙山茶传统制作技艺是指使用蒙山地区茶叶、利用传统器具、按照传统工序和工艺制作蒙山茶的手工技艺，是我国绿茶制作技艺的代表之一。该技艺流布于四川省雅安市名山区，核心区域主要在名山蒙顶山、蒙阳镇、中峰乡等乡镇和永兴寺、千佛寺、智矩寺等寺庙，以及雨城区碧峰峡镇、北郊乡等。蒙山茶传统制作技艺以蒙顶甘露为主，包括蒙顶石花、万春银叶、玉叶长春的绿茶制作技艺和蒙顶黄芽的黄茶制作技艺，主要技艺有如下特点：一是根据芽叶原料季节、下树时间、含水量，秉承世代传承的口诀“看茶制茶”。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（蒙山茶传统制作技艺）的申报地区或单位为雅安市名山区，保护单位为名山区非遗保护中心。官方项目页当前关联的相关传承人包括张跃华等。该技艺流布于四川省雅安市名山区，核心区域主要在名山蒙顶山、蒙阳镇、中峰乡等乡镇和永兴寺、千佛寺、智矩寺等寺庙，以及雨城区碧峰峡镇、北郊乡等。蒙山茶传统制作技艺以蒙顶甘露为主，包括蒙顶石花、万春银叶、玉叶长春的绿茶制作技艺和蒙顶黄芽的黄茶制作技艺，主要技艺有如下特点：一是根据芽叶原料季节、下树时间、含水量，秉承世代传承的口诀“看茶制茶”。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为雅安市名山区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-40",
+      "province": "广西",
+      "city": "梧州市苍梧县",
+      "name": "黑茶制作技艺（六堡茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Liubao Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "苍梧县文化馆",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（六堡茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为梧州市苍梧县，保护单位为苍梧县文化馆。六堡茶制作技艺是以苍梧县当地种植的茶叶为原料，经过多道工序制作出具有特殊品质的黑茶的传统技艺。六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。",
+      "descriptionEn": "Dark Tea Processing Technique (Liubao Tea) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 广西壮族自治区苍梧县 and protected by 苍梧县文化馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 52.2,
+      "y": 73,
+      "provinceX": 50,
+      "provinceY": 73,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14628.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "旧库中存在同项目重复文件，已在本轮合并为一条主数据。；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "梧州市苍梧县",
+      "representativeInheritors": [
+        {
+          "name": "韦洁群",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2853"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（六堡茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14628.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（六堡茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为梧州市苍梧县，保护单位为苍梧县文化馆。六堡茶制作技艺是以苍梧县当地种植的茶叶为原料，经过多道工序制作出具有特殊品质的黑茶的传统技艺。六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。几百年来，六堡茶生产持续得到繁荣和发展，六堡茶传统制茶技艺也靠师传和家传世代相承并广泛流传。六堡茶制作技艺是苍梧劳动人民长期生产实践中的劳动创造及智慧结晶，是我国黑茶制作技艺的代表之一，也是当地人文历史的重要载体，有着宝贵的历史文化价值。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "六堡茶制作技艺是以苍梧县当地种植的茶叶为原料，经过多道工序制作出具有特殊品质的黑茶的传统技艺。六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。六堡茶制作技艺复杂，采用当地种植的茶叶为原材料，先后经过低温烘焙杀青，茶叶揉捻整形为条状，再进行初蒸、沤堆、复蒸，最后经松柴明火烘焙及晾置、陈化而成。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "六堡茶制作技艺是以苍梧县当地种植的茶叶为原料，经过多道工序制作出具有特殊品质的黑茶的传统技艺。六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。六堡茶制作技艺的特征集中体现在初蒸到复蒸这一阶段，目的是通过湿热作用，促进内含物质的变化，减掉苦涩味，使滋味变醇，消除青呛气，使叶色变为深黄褐青。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（六堡茶制作技艺）的申报地区或单位为梧州市苍梧县，保护单位为苍梧县文化馆。官方项目页当前关联的相关传承人包括韦洁群等。六堡茶发源于广西壮族自治区东部苍梧县六堡镇，其制作技艺流布于六堡茶原产地的六堡镇不倚村、塘平村、四柳村、理冲村、山平村、公平村、蚕村等地。长久以来，苍梧地区的农民大多以种植茶叶为生，当地民间制茶技艺得以世代传承。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为梧州市苍梧县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-41",
+      "province": "广西",
+      "city": "桂林市恭城县",
+      "name": "茶俗（瑶族油茶习俗）",
+      "nameEn": "Tea Custom (Yao Oil Tea Custom)",
+      "code": "Ⅹ-107",
+      "category": "民俗",
+      "categoryEn": "Folk Custom",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "恭城县油茶协会",
+      "teaType": "茶俗",
+      "teaTypeEn": "Tea Custom",
+      "icon": "cup",
+      "color": "#4a6b60",
+      "descriptionZh": "茶俗（瑶族油茶习俗）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为桂林市恭城县，保护单位为恭城县油茶协会。瑶族油茶习俗是居住在南岭走廊的瑶族人民在与山地潮湿、瘴气重、寒热无常的自然环境长期相处过程中，摸索形成的独特的饮食习俗，是瑶族适应岭南山区环境的经验总结。油茶是将油茶叶、生姜、大蒜等原材料放入铁锅、反复捶打后，加入热水熬煮成的饮品，俗称“打油茶”，具有消食健胃、驱湿避瘴的功效。",
+      "descriptionEn": "Tea Custom (Yao Oil Tea Custom) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Folk Custom. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 广西壮族自治区桂林市恭城瑶族自治县 and protected by 恭城瑶族自治县油茶协会. The official record emphasizes ceremonial procedures, social etiquette, and community customs built around preparing, serving, and sharing tea.",
+      "x": 47.8,
+      "y": 73,
+      "provinceX": 50,
+      "provinceY": 73,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23894.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "桂林市恭城县",
+      "representativeInheritors": [
+        {
+          "name": "周黎维",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "茶俗（瑶族油茶习俗）",
+          "url": "https://www.ihchina.cn/project_details/23894.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "茶俗（瑶族油茶习俗）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为民俗，申报地区或单位为桂林市恭城县，保护单位为恭城县油茶协会。瑶族油茶习俗是居住在南岭走廊的瑶族人民在与山地潮湿、瘴气重、寒热无常的自然环境长期相处过程中，摸索形成的独特的饮食习俗，是瑶族适应岭南山区环境的经验总结。油茶是将油茶叶、生姜、大蒜等原材料放入铁锅、反复捶打后，加入热水熬煮成的饮品，俗称“打油茶”，具有消食健胃、驱湿避瘴的功效。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "瑶族油茶习俗是居住在南岭走廊的瑶族人民在与山地潮湿、瘴气重、寒热无常的自然环境长期相处过程中，摸索形成的独特的饮食习俗，是瑶族适应岭南山区环境的经验总结。唐代以来瑶族从湖南、广东、江西等地迁入后，将本地的饮茶习俗进行改良，增加了原料配方，改进了制作工艺和工具，形成了独特的瑶族油茶习俗。长期传承过程中，瑶族油茶习俗逐渐成为瑶族社交的重要手段和方式、人生礼仪的重要环节、招待贵客的最高礼节，并形成了特定的茶礼、茶俗、茶规。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "礼俗流程",
+          "contentZh": "唐代以来瑶族从湖南、广东、江西等地迁入后，将本地的饮茶习俗进行改良，增加了原料配方，改进了制作工艺和工具，形成了独特的瑶族油茶习俗。长期传承过程中，瑶族油茶习俗逐渐成为瑶族社交的重要手段和方式、人生礼仪的重要环节、招待贵客的最高礼节，并形成了特定的茶礼、茶俗、茶规。在具体表现形式上，当地瑶族民众有在房前屋后种植油茶树的习惯，一般认为谷雨茶最好，待杀青晒干制成茶叶后存放在火塘、土灶上方，在招待贵客和办喜事时取下。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "瑶族油茶习俗主要分布在广西壮族自治区桂林市恭城瑶族自治县及灌阳、资源、龙胜及贺州市的钟山、富川等县的瑶族居住区，湖南及广东的瑶族居住区也有分布。恭城在隋朝已经是茶叶种植和贸易的重要地区。在瑶族与当地壮、汉族交往过程，瑶族油茶习俗逐渐传入当地壮族、汉族中，成为多民族共享的习俗。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，茶俗（瑶族油茶习俗）的申报地区或单位为桂林市恭城县，保护单位为恭城县油茶协会。官方项目页当前关联的相关传承人包括周黎维等。长期传承过程中，瑶族油茶习俗逐渐成为瑶族社交的重要手段和方式、人生礼仪的重要环节、招待贵客的最高礼节，并形成了特定的茶礼、茶俗、茶规。瑶族油茶习俗主要以家族传承和社会传承的方式不断延续。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为桂林市恭城县。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-42",
+      "province": "河南省",
+      "city": "信阳市",
+      "name": "绿茶制作技艺（信阳毛尖茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Xinyang Maojian)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "信阳市茶叶商会",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（信阳毛尖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为信阳市，保护单位为信阳市茶叶商会。信阳毛尖茶制作技艺是将信阳毛尖通过鲜叶采摘、鲜叶摊晾、茶叶炒制、茶叶存储等工序制成茶叶的制茶技艺，流布于河南省信阳市浉河区、平桥区，以“五云（车云山、集云山、连云山、天云山、云雾山）、两潭（黑龙潭、白龙潭）、一寨（何家寨）、一山（震雷山）、一寺（灵山寺）”等地较为知名。信阳毛尖茶叶外形细圆挺秀，满毫匀齐，色泽翠绿，泡出的茶水汤清色绿，滋味醇香，有“龙潭”“五云山”“文新”“广义”等品牌。",
+      "descriptionEn": "Green Tea Processing Technique (Xinyang Maojian) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 河南省信阳市 and protected by 信阳市茶叶商会. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 57.2,
+      "y": 39,
+      "provinceX": 55,
+      "provinceY": 39,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14615.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "信阳市",
+      "representativeInheritors": [
+        {
+          "name": "刘文新",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        },
+        {
+          "name": "周祖宏",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2846"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（信阳毛尖茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14615.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（信阳毛尖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为信阳市，保护单位为信阳市茶叶商会。信阳毛尖茶制作技艺是将信阳毛尖通过鲜叶采摘、鲜叶摊晾、茶叶炒制、茶叶存储等工序制成茶叶的制茶技艺，流布于河南省信阳市浉河区、平桥区，以“五云（车云山、集云山、连云山、天云山、云雾山）、两潭（黑龙潭、白龙潭）、一寨（何家寨）、一山（震雷山）、一寺（灵山寺）”等地较为知名。信阳毛尖茶叶外形细圆挺秀，满毫匀齐，色泽翠绿，泡出的茶水汤清色绿，滋味醇香，有“龙潭”“五云山”“文新”“广义”等品牌。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "接着是茶叶炒制，鲜叶倒入旺火生锅“杀青”，用炒把挑动鲜叶沿锅边滚下形成条状，改用揉捻使茶叶条状紧缩，然后转入熟锅，用手抓茶叶向锅的上边沿甩动，在滚落中成条索；二是大茶把炒“熟锅”方法，强调手势自如，动作灵巧，形成信阳毛尖细圆紧直、光润的外形。信阳市固始县古墓中发掘出的古茶叶证明，信阳采茶技艺的历史可追溯到2300年前。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "信阳毛尖茶制作技艺是将信阳毛尖通过鲜叶采摘、鲜叶摊晾、茶叶炒制、茶叶存储等工序制成茶叶的制茶技艺，流布于河南省信阳市浉河区、平桥区，以“五云（车云山、集云山、连云山、天云山、云雾山）、两潭（黑龙潭、白龙潭）、一寨（何家寨）、一山（震雷山）、一寺（灵山寺）”等地较为知名。这一技艺较为繁复。先是茶叶采摘，一般在清明前，以晴天上午10点以前采茶为宜。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "信阳毛尖茶制作技艺是将信阳毛尖通过鲜叶采摘、鲜叶摊晾、茶叶炒制、茶叶存储等工序制成茶叶的制茶技艺，流布于河南省信阳市浉河区、平桥区，以“五云（车云山、集云山、连云山、天云山、云雾山）、两潭（黑龙潭、白龙潭）、一寨（何家寨）、一山（震雷山）、一寺（灵山寺）”等地较为知名。1926年，茶农改进了“熟锅”中甩条的手法和大茶把炒“熟锅”的方法，使技艺更加成熟，并在这一地区广泛流传至今。信阳毛尖茶颐养身心，陶冶情操，清心明目，提神醒脑，去腻消食，丰富了我国茶文化。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（信阳毛尖茶制作技艺）的申报地区或单位为信阳市，保护单位为信阳市茶叶商会。官方项目页当前关联的相关传承人包括刘文新、周祖宏等。信阳毛尖茶制作技艺是将信阳毛尖通过鲜叶采摘、鲜叶摊晾、茶叶炒制、茶叶存储等工序制成茶叶的制茶技艺，流布于河南省信阳市浉河区、平桥区，以“五云（车云山、集云山、连云山、天云山、云雾山）、两潭（黑龙潭、白龙潭）、一寨（何家寨）、一山（震雷山）、一寺（灵山寺）”等地较为知名。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为信阳市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-43",
+      "province": "陕西省",
+      "city": "咸阳市",
+      "name": "黑茶制作技艺（咸阳茯茶制作技艺）",
+      "nameEn": "Dark Tea Processing Technique (Xianyang Fu Tea)",
+      "code": "Ⅷ-152",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2021 第五批",
+      "protectionUnit": "咸阳市群众艺术馆",
+      "teaType": "黑茶",
+      "teaTypeEn": "Dark Tea",
+      "icon": "mountain",
+      "color": "#5b4636",
+      "descriptionZh": "黑茶制作技艺（咸阳茯茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为咸阳市，保护单位为咸阳市群众艺术馆。咸阳茯茶制作技艺是主要流布于陕西省咸阳市泾阳县、秦都区一带的传统黑茶制作技艺。咸阳地处陕西关中平原腹地，属暖温带大陆性季风气候。",
+      "descriptionEn": "Dark Tea Processing Technique (Xianyang Fu Tea) is a national-level intangible cultural heritage item inscribed in 2021 (Fifth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 陕西省咸阳市 and protected by 咸阳市群众艺术馆. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 47.2,
+      "y": 40,
+      "provinceX": 45,
+      "provinceY": 40,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/23786.html",
+      "sourceStatus": "official-complete",
+      "dataQuality": "complete",
+      "lastVerified": "2026-04-21",
+      "notes": "图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "咸阳市",
+      "representativeInheritors": [
+        {
+          "name": "贾根社",
+          "level": "",
+          "note": "ihchina 项目页相关传承人"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "黑茶制作技艺（咸阳茯茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/23786.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "黑茶制作技艺（咸阳茯茶制作技艺）于2021 第五批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为咸阳市，保护单位为咸阳市群众艺术馆。咸阳茯茶制作技艺是主要流布于陕西省咸阳市泾阳县、秦都区一带的传统黑茶制作技艺。咸阳地处陕西关中平原腹地，属暖温带大陆性季风气候。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "独有的地理环境、小流域气候、地下水天然资源及咸阳人发明的筑茶梆子，为茯茶制作技艺的产生和发展提供了优厚的条件。然后取适量老茶釉做酵母，配以适量茶叶和备用水文火熬制6小时，形成老釉待用。然后灌茶进封使之饱满，再将茶叶装入模具，捶压夯实，形成茶砖外形；",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "咸阳茯茶制作技艺是主要流布于陕西省咸阳市泾阳县、秦都区一带的传统黑茶制作技艺。独有的地理环境、小流域气候、地下水天然资源及咸阳人发明的筑茶梆子，为茯茶制作技艺的产生和发展提供了优厚的条件。咸阳茯茶是以湖南、陕南的黑毛茶为原料，采用传统技艺加工，并在发酵过程中自然生成“金花”（冠突散囊菌）的紧压茶。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "咸阳茯茶制作技艺是主要流布于陕西省咸阳市泾阳县、秦都区一带的传统黑茶制作技艺。咸阳茯茶是以湖南、陕南的黑毛茶为原料，采用传统技艺加工，并在发酵过程中自然生成“金花”（冠突散囊菌）的紧压茶。明洪武元年（公元1368年）茯茶加工技术正式定型，成为“茶马互市”的重要战略物资。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，黑茶制作技艺（咸阳茯茶制作技艺）的申报地区或单位为咸阳市，保护单位为咸阳市群众艺术馆。官方项目页当前关联的相关传承人包括贾根社等。咸阳茯茶制作技艺是主要流布于陕西省咸阳市泾阳县、秦都区一带的传统黑茶制作技艺。该技艺当前主要以师带徒、家族传承、院校培训等方式传承，传承人通过研究茯茶历史、建设非遗技艺传承馆、推广茯茶品牌等方式致力于相关技艺与文化的传承传播。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“官方来源完整交叉核验”，数据质量为“完整级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为咸阳市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-44",
+      "province": "贵州省",
+      "city": "黔南州都匀市",
+      "name": "绿茶制作技艺（都匀毛尖茶制作技艺）",
+      "nameEn": "Green Tea Processing Technique (Duyun Maojian)",
+      "code": "Ⅷ-148",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2014 第四批",
+      "protectionUnit": "都匀市文保中心",
+      "teaType": "绿茶",
+      "teaTypeEn": "Green Tea",
+      "icon": "leaf",
+      "color": "#5f8f4e",
+      "descriptionZh": "绿茶制作技艺（都匀毛尖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黔南州都匀市，保护单位为都匀市文保中心。都匀毛尖茶制作技艺是集杀青、揉捻、搓团、提毫、烘焙等工序于一体的传统绿茶制作技艺，在贵州省都匀市现辖的5个街道、10个镇、5个乡、3个民族乡中均有流布。都匀毛尖茶条索卷曲，色泽鲜绿，白毫显露，内质香气青嫩，汤色清澈，滋味鲜浓，回味甘甜。",
+      "descriptionEn": "Green Tea Processing Technique (Duyun Maojian) is a national-level intangible cultural heritage item inscribed in 2014 (Fourth Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 贵州省都匀市 and protected by 都匀市文物保护研究中心. The official record highlights locally transmitted tea-making knowledge, characteristic processing steps, and the regional tradition maintained through production and everyday use.",
+      "x": 47.2,
+      "y": 66,
+      "provinceX": 45,
+      "provinceY": 66,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14617.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "黔南州都匀市",
+      "representativeInheritors": [
+        {
+          "name": "张子全",
+          "level": "",
+          "note": "ihchina 项目页相关传承人 05-2848"
+        }
+      ],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "绿茶制作技艺（都匀毛尖茶制作技艺）",
+          "url": "https://www.ihchina.cn/project_details/14617.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "绿茶制作技艺（都匀毛尖茶制作技艺）于2014 第四批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为黔南州都匀市，保护单位为都匀市文保中心。都匀毛尖茶制作技艺是集杀青、揉捻、搓团、提毫、烘焙等工序于一体的传统绿茶制作技艺，在贵州省都匀市现辖的5个街道、10个镇、5个乡、3个民族乡中均有流布。都匀毛尖茶条索卷曲，色泽鲜绿，白毫显露，内质香气青嫩，汤色清澈，滋味鲜浓，回味甘甜。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "都匀毛尖茶历史悠久，《平越直隶州志》载：“茶、明《一统志》、州县具有。”清乾隆年间都匀知府宋文型的《重建西岳庙碑序》记载都匀已有官办茶园。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "都匀毛尖茶制作技艺是集杀青、揉捻、搓团、提毫、烘焙等工序于一体的传统绿茶制作技艺，在贵州省都匀市现辖的5个街道、10个镇、5个乡、3个民族乡中均有流布。都匀毛尖茶制作技艺流程复杂、精细。炒茶工序繁杂，完全凭艺人的眼神、听觉、嗅觉、手感和经验。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "都匀毛尖茶制作技艺是集杀青、揉捻、搓团、提毫、烘焙等工序于一体的传统绿茶制作技艺，在贵州省都匀市现辖的5个街道、10个镇、5个乡、3个民族乡中均有流布。作为中国十大名茶之一，都匀毛尖同其他名茶制作技艺一样，在中华茶文化中占据重要地位。都匀毛尖茶制作技艺是黔南布依族、苗族、水族等多民族群众的智慧结晶，带有鲜明的地域文化特色，在全国名茶中独树一帜，是研究当地少数民族生产生活的宝贵依据。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，绿茶制作技艺（都匀毛尖茶制作技艺）的申报地区或单位为黔南州都匀市，保护单位为都匀市文保中心。官方项目页当前关联的相关传承人包括张子全等。都匀毛尖茶制作技艺是集杀青、揉捻、搓团、提毫、烘焙等工序于一体的传统绿茶制作技艺，在贵州省都匀市现辖的5个街道、10个镇、5个乡、3个民族乡中均有流布。这一制作技艺传承方式包括家族和师徒传承，以家族传承为主。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为黔南州都匀市。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-45",
+      "province": "香港",
+      "city": "香港特别行政区",
+      "name": "凉茶",
+      "nameEn": "Herbal Tea Preparation",
+      "code": "Ⅷ-89",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2006 第一批",
+      "protectionUnit": "香港文体旅游局",
+      "teaType": "凉茶",
+      "teaTypeEn": "Herbal Tea",
+      "icon": "herb",
+      "color": "#3d7f59",
+      "descriptionZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为香港特别行政区，保护单位为香港文体旅游局。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+      "descriptionEn": "Herbal Tea Preparation is a national-level intangible cultural heritage item inscribed in 2006 (First Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 香港特别行政区民政事务局 and protected by 香港特别行政区政府文化体育及旅游局. The official record highlights the preparation and use of herbal tea formulas in Lingnan, showing how local communities combined climate knowledge, plant ingredients, and everyday health practices.",
+      "x": 68.2,
+      "y": 81,
+      "provinceX": 66,
+      "provinceY": 81,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14441.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=multiple-project-candidates;protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "香港特别行政区",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "凉茶",
+          "url": "https://www.ihchina.cn/project_details/14441.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为香港特别行政区，保护单位为香港文体旅游局。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，凉茶的申报地区或单位为香港特别行政区，保护单位为香港文体旅游局。凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为香港特别行政区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea-item-46",
+      "province": "澳门",
+      "city": "澳门特别行政区",
+      "name": "凉茶",
+      "nameEn": "Herbal Tea Preparation",
+      "code": "Ⅷ-89",
+      "category": "传统技艺",
+      "categoryEn": "Traditional Craft",
+      "yearBatch": "2006 第一批",
+      "protectionUnit": "澳门文化局",
+      "teaType": "凉茶",
+      "teaTypeEn": "Herbal Tea",
+      "icon": "herb",
+      "color": "#3d7f59",
+      "descriptionZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为澳门特别行政区，保护单位为澳门文化局。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+      "descriptionEn": "Herbal Tea Preparation is a national-level intangible cultural heritage item inscribed in 2006 (First Batch) under Traditional Craft. According to the official record on the China Intangible Cultural Heritage Network, it is reported from 澳门特别行政区文化局 and protected by 澳门特别行政区政府文化局. The official record highlights the preparation and use of herbal tea formulas in Lingnan, showing how local communities combined climate knowledge, plant ingredients, and everyday health practices.",
+      "x": 64.2,
+      "y": 80,
+      "provinceX": 62,
+      "provinceY": 80,
+      "videoUrl": "",
+      "imageUrl": "",
+      "sourceUrl": "https://www.ihchina.cn/project_details/14442.html",
+      "sourceStatus": "official+fallback",
+      "dataQuality": "basic",
+      "lastVerified": "2026-04-21",
+      "notes": "sourceStatus=official+fallback；reviewFlags=multiple-project-candidates;protection-unit-mismatch；图片/视频资源本轮未做批量下载或嵌入，只保留后续继续补采的状态说明。",
+      "declaredRegion": "澳门特别行政区",
+      "representativeInheritors": [],
+      "references": [
+        {
+          "id": "scope-docx",
+          "title": "各省国家级茶叶非遗分布.docx",
+          "url": "file:///D:/%E6%A1%8C%E9%9D%A2/%E9%9D%9E%E9%81%97%E5%9C%B0%E5%9B%BE%E8%AE%BE%E8%AE%A1/%E9%9D%9E%E9%81%97%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%97%A7%E7%89%88/%E5%90%84%E7%9C%81%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%8C%B6%E5%8F%B6%E9%9D%9E%E9%81%97%E5%88%86%E5%B8%83.docx",
+          "type": "local-docx",
+          "authorityLevel": "level-1",
+          "accessDate": "2026-04-20"
+        },
+        {
+          "id": "ihchina-project",
+          "title": "凉茶",
+          "url": "https://www.ihchina.cn/project_details/14442.html",
+          "type": "ihchina-project",
+          "authorityLevel": "level-2",
+          "accessDate": "2026-04-20"
+        }
+      ],
+      "detailSections": [
+        {
+          "key": "overview",
+          "titleZh": "项目简介",
+          "contentZh": "凉茶于2006 第一批列入国家级非物质文化遗产代表性项目名录，类别为传统技艺，申报地区或单位为澳门特别行政区，保护单位为澳门文化局。公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "history",
+          "titleZh": "历史脉络",
+          "contentZh": "葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "practice",
+          "titleZh": "核心工艺",
+          "contentZh": "凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "cultural_value",
+          "titleZh": "文化价值与地域关联",
+          "contentZh": "公元306年，东晋道学医药家葛洪南来岭南，由于当时瘴疠流行，他得以悉心研究岭南各种温病医药。葛洪所遗下的医学专著以及后世岭南温派医家总结劳动人民长期防治疾病过程中的丰富经验，形成了岭南文化底蕴深厚的凉茶，其配方、术语世代相传。",
+          "sourceIds": [
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "inheritance",
+          "titleZh": "传承保护",
+          "contentZh": "按国家级非遗权威清单与中国非物质文化遗产网项目页，凉茶的申报地区或单位为澳门特别行政区，保护单位为澳门文化局。凉茶配制技艺以家族世袭传承下来，已有数百年历史。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        },
+        {
+          "key": "source_audit",
+          "titleZh": "来源与核验状态",
+          "contentZh": "本页内容依据国家级非遗权威清单与中国非物质文化遗产网项目页重新整理，当前来源状态为“以官方来源为主，仍有字段差异待继续核对”，数据质量为“基础级”，最后核验日期为2026-04-21。项目当前申报地区或单位记为澳门特别行政区。",
+          "sourceIds": [
+            "scope-docx",
+            "ihchina-project"
+          ]
+        }
+      ]
+    }
+  ]
+};
