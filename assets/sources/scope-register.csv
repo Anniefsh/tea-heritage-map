@@ -1,0 +1,47 @@
+﻿id,official_name,province,city,code,category,year,batch,protection_unit,scope_source_local,primary_official_url,source_status,legacy_match,review_flag
+tea-item-01,武夷岩茶（大红袍）制作技艺,福建省,南平市武夷山市,Ⅷ-63,传统技艺,2006,第一批,武夷山市文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14373.html,official-complete,tea_001_武夷岩茶大红袍.md,
+tea-item-02,花茶制作技艺（福州茉莉花茶窨制工艺）,福建省,福州市仓山区,Ⅷ-147,传统技艺,2014,第四批,福州海峡茶业交流协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14604.html,official-complete,tea_002_福州茉莉花茶.md,
+tea-item-03,红茶制作技艺（坦洋工夫茶制作技艺）,福建省,宁德市福安市,Ⅷ-149,传统技艺,2021,第五批,福安市茶业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23782.html,official-complete,tea_003_坦洋工夫茶.md,
+tea-item-04,白茶制作技艺（福鼎白茶制作技艺）,福建省,宁德市福鼎市,Ⅷ-203,传统技艺,2011,第三批,福鼎市茶业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14724.html,official-complete,tea_004_福鼎白茶.md,
+tea-item-05,乌龙茶制作技艺（铁观音制作技艺）,福建省,泉州市安溪县,Ⅷ-150,传统技艺,2008,第二批,安溪县茶文化研究中心,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14620.html,official-complete,tea_005_铁观音.md,
+tea-item-06,乌龙茶制作技艺（漳平水仙茶制作技艺）,福建省,龙岩市漳平市,Ⅷ-150,传统技艺,2021,第五批,漳平市文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23784.html,official-complete,tea_006_漳平水仙茶.md,
+tea-item-07,红茶制作技艺（滇红茶制作技艺）,云南省,临沧市凤庆县,Ⅷ-149,传统技艺,2014,第四批,云南滇红集团股份有限公司,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14619.html,official-complete,tea_044_滇红茶.md,
+tea-item-08,普洱茶制作技艺（贡茶制作技艺）,云南省,普洱市宁洱县,Ⅷ-151,传统技艺,2008,第二批,宁洱县文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14621.html,official+fallback,tea_008_普洱茶.md,protection-unit-mismatch
+tea-item-09,普洱茶制作技艺（大益茶制作技艺）,云南省,西双版纳勐海县,Ⅷ-151,传统技艺,2008,第二批,勐海茶厂,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14622.html,official-complete,tea_008_普洱茶.md; tea_009_大益茶.md,
+tea-item-10,黑茶制作技艺（下关沱茶制作技艺）,云南省,大理州,Ⅷ-152,传统技艺,2011,第三批,云南下关沱茶集团,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14626.html,official+fallback,tea_010_下关沱茶.md,protection-unit-mismatch
+tea-item-11,茶俗（白族三道茶）,云南省,大理州大理市,Ⅹ-107,民俗,2014,第四批,大理市非遗保护所,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/15248.html,official-partial,tea_011_白族三道茶.md,
+tea-item-12,德昂族酸茶制作技艺,云南省,德宏州芒市,Ⅷ-268,传统技艺,2021,第五批,芒市文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23582.html,official-complete,,
+tea-item-13,绿茶制作技艺（西湖龙井）,浙江省,杭州市,Ⅷ-148,传统技艺,2008,第二批,西湖区龙井茶产业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14605.html,official-complete,tea_007_西湖龙井.md; tea_013_西湖龙井.md,
+tea-item-14,径山茶宴,浙江省,杭州市余杭区,Ⅹ-140,民俗,2011,第三批,径山万寿禅寺,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/15309.html,official-complete,tea_014_径山茶宴.md,
+tea-item-15,绿茶制作技艺（婺州举岩）,浙江省,金华市,Ⅷ-148,传统技艺,2008,第二批,浙江采云间茶业,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14606.html,official-complete,tea_015_婺州举岩.md,
+tea-item-16,绿茶制作技艺（紫笋茶制作技艺）,浙江省,湖州市长兴县,Ⅷ-148,传统技艺,2011,第三批,长兴县紫笋茶文化研究会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14611.html,official-complete,tea_017_紫笋茶.md,
+tea-item-17,绿茶制作技艺（安吉白茶制作技艺）,浙江省,湖州市安吉县,Ⅷ-148,传统技艺,2011,第三批,安吉白茶小镇茶产业商会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14612.html,official-complete,tea_018_安吉白茶.md,
+tea-item-18,绿茶制作技艺（黄山毛峰）,安徽省,黄山市徽州区,Ⅷ-148,传统技艺,2008,第二批,谢裕大茶业股份,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14608.html,official-complete,tea_019_黄山毛峰.md,
+tea-item-19,绿茶制作技艺（太平猴魁）,安徽省,黄山市黄山区,Ⅷ-148,传统技艺,2008,第二批,黄山区茶业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14607.html,official-complete,tea_020_太平猴魁.md,
+tea-item-20,红茶制作技艺（祁门红茶制作技艺）,安徽省,黄山市祁门县,Ⅷ-149,传统技艺,2008,第二批,祁门县红茶协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14618.html,official+fallback,tea_012_祁门红茶.md; tea_027_祁门红茶.md,protection-unit-mismatch
+tea-item-21,绿茶制作技艺（六安瓜片）,安徽省,六安市裕安区,Ⅷ-148,传统技艺,2008,第二批,裕安区茶叶产业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14609.html,official-complete,tea_021_六安瓜片.md,
+tea-item-22,绿茶制作技艺（碧螺春制作技艺）,江苏省,苏州市吴中区,Ⅷ-148,传统技艺,2011,第三批,洞庭山碧螺春茶业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14610.html,official-complete,tea_016_碧螺春.md; tea_022_碧螺春.md,
+tea-item-23,绿茶制作技艺（雨花茶制作技艺）,江苏省,南京市,Ⅷ-148,传统技艺,2021,第五批,南京盛峰茶业,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23780.html,official-complete,tea_023_雨花茶.md,
+tea-item-24,茶点制作技艺（富春茶点制作技艺）,江苏省,扬州市,Ⅷ-161,传统技艺,2008,第二批,扬州富春茶社,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14648.html,official+fallback,tea_024_富春茶点.md,protection-unit-mismatch
+tea-item-25,绿茶制作技艺（恩施玉露制作技艺）,湖北省,恩施州恩施市,Ⅷ-148,传统技艺,2014,第四批,恩施玉露茶产业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14616.html,official-complete,tea_042_恩施玉露.md,
+tea-item-26,黑茶制作技艺（赵李桥砖茶制作技艺）,湖北省,咸宁市赤壁市,Ⅷ-152,传统技艺,2014,第四批,湖北省赵李桥茶厂,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14627.html,official-complete,tea_040_赵李桥砖茶.md,
+tea-item-27,黑茶制作技艺（长盛川青砖茶制作技艺）,湖北省,宜昌市伍家岗区,Ⅷ-152,传统技艺,2021,第五批,鑫鼎生物科技,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23785.html,official-complete,,
+tea-item-28,黑茶制作技艺（千两茶制作技艺）,湖南省,益阳市安化县,Ⅷ-152,传统技艺,2008,第二批,安化县文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14624.html,official-complete,tea_031_千两茶.md,
+tea-item-29,黑茶制作技艺（茯砖茶制作技艺）,湖南省,益阳市,Ⅷ-152,传统技艺,2008,第二批,益阳茶厂,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14623.html,official-complete,tea_030_茯砖茶.md,
+tea-item-30,黄茶制作技艺（君山银针茶制作技艺）,湖南省,岳阳市君山区,Ⅷ-267,传统技艺,2021,第五批,君山区文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23581.html,official-complete,tea_025_君山银针.md; tea_029_君山银针.md,
+tea-item-31,绿茶制作技艺（赣南客家擂茶制作技艺）,江西省,赣州市全南县,Ⅷ-148,传统技艺,2014,第四批,全南县文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14613.html,official-complete,,
+tea-item-32,绿茶制作技艺（婺源绿茶制作技艺）,江西省,上饶市婺源县,Ⅷ-148,传统技艺,2014,第四批,婺源县文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14614.html,official-complete,,
+tea-item-33,红茶制作技艺（宁红茶制作技艺）,江西省,九江市修水县,Ⅷ-149,传统技艺,2021,第五批,江西省宁红公司,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23783.html,official+fallback,tea_028_宁红茶.md,protection-unit-mismatch
+tea-item-34,凉茶,广东省,广东省,Ⅷ-89,传统技艺,2006,第一批,广东省食品行业协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14440.html,official-complete,,multiple-project-candidates
+tea-item-35,茶艺（潮州工夫茶艺）,广东省,潮州市,Ⅹ-107,民俗,2008,第二批,潮州市文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/15247.html,official-complete,,
+tea-item-36,花茶制作技艺（张一元茉莉花茶制作技艺）,北京市,北京市,Ⅷ-147,传统技艺,2008,第二批,北京张一元茶叶公司,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14602.html,official+fallback,,protection-unit-mismatch
+tea-item-37,花茶制作技艺（吴裕泰茉莉花茶制作技艺）,北京市,北京市东城区,Ⅷ-147,传统技艺,2011,第三批,北京吴裕泰茶业,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14603.html,official-complete,,
+tea-item-38,黑茶制作技艺（南路边茶制作技艺）,四川省,雅安市,Ⅷ-152,传统技艺,2008,第二批,雅安市非遗和茶马古道中心,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14625.html,official+fallback,,protection-unit-mismatch
+tea-item-39,绿茶制作技艺（蒙山茶传统制作技艺）,四川省,雅安市名山区,Ⅷ-148,传统技艺,2021,第五批,名山区非遗保护中心,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23781.html,official+fallback,,protection-unit-mismatch
+tea-item-40,黑茶制作技艺（六堡茶制作技艺）,广西,梧州市苍梧县,Ⅷ-152,传统技艺,2014,第四批,苍梧县文化馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14628.html,official-complete,tea_032_六堡茶.md; tea_037_六堡茶.md,
+tea-item-41,茶俗（瑶族油茶习俗）,广西,桂林市恭城县,Ⅹ-107,民俗,2021,第五批,恭城县油茶协会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23894.html,official+fallback,,protection-unit-mismatch
+tea-item-42,绿茶制作技艺（信阳毛尖茶制作技艺）,河南省,信阳市,Ⅷ-148,传统技艺,2014,第四批,信阳市茶叶商会,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14615.html,official-complete,tea_036_信阳毛尖.md,
+tea-item-43,黑茶制作技艺（咸阳茯茶制作技艺）,陕西省,咸阳市,Ⅷ-152,传统技艺,2021,第五批,咸阳市群众艺术馆,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/23786.html,official-complete,,
+tea-item-44,绿茶制作技艺（都匀毛尖茶制作技艺）,贵州省,黔南州都匀市,Ⅷ-148,传统技艺,2014,第四批,都匀市文保中心,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14617.html,official+fallback,tea_038_都匀毛尖.md,protection-unit-mismatch
+tea-item-45,凉茶,香港,香港特别行政区,Ⅷ-89,传统技艺,2006,第一批,香港文体旅游局,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14441.html,official+fallback,,multiple-project-candidates;protection-unit-mismatch
+tea-item-46,凉茶,澳门,澳门特别行政区,Ⅷ-89,传统技艺,2006,第一批,澳门文化局,D:\桌面\非遗地图设计\非遗数据采集旧版\各省国家级茶叶非遗分布.docx,https://www.ihchina.cn/project_details/14442.html,official+fallback,,multiple-project-candidates;protection-unit-mismatch

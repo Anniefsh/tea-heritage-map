@@ -1,0 +1,42 @@
+{
+  "tea-item-07": {
+    "titleZh": "一片鲜叶的四次变化", "titleEn": "Four changes of a tea leaf", "kind": "process",
+    "noteZh": "四道主要工序导览，不是操作教程；不提供温度、时长或配比。",
+    "summary": "以云南大叶种茶树鲜叶为原料，通过萎凋、揉捻、发酵和干燥制作红茶。",
+    "feature": "四道主要工序；发酵环节涉及酶促氧化与叶色变化。",
+    "english": "Dianhong is a black-tea-making tradition associated with Fengqing in Yunnan. Its four main stages are withering, rolling, oxidation and drying.",
+    "steps": [
+      ["dh-01", "萎凋", "Withering", "鲜叶自然失水，梗叶逐渐变软，为后续加工创造条件。", "A02"],
+      ["dh-02", "揉捻", "Rolling", "将软叶揉成条形；叶细胞受到破坏，为下一步发酵作准备。", "A03"],
+      ["dh-03", "发酵", "Oxidation", "在酶的作用下发生氧化反应，叶色由绿色逐渐出现微红或偏黄色变化。", "A04"],
+      ["dh-04", "干燥", "Drying", "通过烘焙减少茶坯水分，获得成茶。图示不提供操作参数。", "A05"]
+    ]
+  },
+  "tea-item-11": {
+    "titleZh": "三盅茶，三种人生滋味", "titleEn": "Three courses of hospitality", "kind": "ritual",
+    "noteZh": "茶盅为通用示意器型；介绍待客礼俗，不规定各地唯一配方。",
+    "summary": "白族待客茶礼以苦茶、甜茶、回味茶依次迎客，将不同滋味与人生感悟相联系。",
+    "feature": "依次奉上苦茶、甜茶和回味茶，表达待客心意与人生感悟。",
+    "english": "Bai three-course tea is a hospitality custom associated with Dali, Yunnan. Bitter, sweet and lingering tastes invite guests to reflect on life.",
+    "steps": [
+      ["sd-01", "苦茶", "Bitter tea", "先烘茶、再冲水敬客。第一道茶以苦味开启茶礼，寓意人生会经历波折。", "A06"],
+      ["sd-02", "甜茶", "Sweet tea", "核桃、红糖等带来甜味，以苦尽甘来的寓意承接第一道茶。图中食材不表示配比。", "A07"],
+      ["sd-03", "回味茶", "Lingering tea", "最后一道茶以复合滋味引人回味人生。三道茶共同构成迎宾待客的礼俗体验。", "A08"]
+    ]
+  },
+  "tea-item-25": {
+    "titleZh": "认识玉露的六项核心技法", "titleEn": "Six core techniques of Enshi Yulu", "kind": "techniques",
+    "noteZh": "这是六项核心技法导览，不是完整制作流程；焙火提香、拣选等环节未在本互动中展开。",
+    "summary": "恩施玉露采用蒸汽杀青，制作针形绿茶；六项核心技法体现叶片从蒸青到整形的变化。",
+    "feature": "采用蒸汽杀青，形成细直针形；六项技法不等于完整工序。",
+    "english": "Enshi Yulu is a needle-shaped green tea made with steam fixation. This guide introduces six core techniques rather than the full production process.",
+    "steps": [
+      ["es-01", "蒸", "Steam", "借助蒸汽杀青，抑制酶促氧化。图中蒸汽仅表示作用方式，不复原蒸青灶。", "A09"],
+      ["es-02", "搧", "Cool", "薄摊蒸青叶，搧风降温并散去水分，避免茶叶闷黄。", "A10"],
+      ["es-03", "抖", "Shake", "通过抛抖散开叶片，帮助蒸发水分。运动线不代表实际抛起高度。", "A11"],
+      ["es-04", "揉", "Roll", "揉动叶片，使其卷成条形。插画只表现形态变化，不演示精确手法。", "A12"],
+      ["es-05", "铲", "Shape in motion", "在加热过程中以铲的手法移动、整理茶叶并散水。“铲”在此是手法名称。", "A13"],
+      ["es-06", "整", "Finish the shape", "通过整形形成细直的针形特征。随后还有焙火提香、拣选等制作环节。", "A14"]
+    ]
+  }
+}

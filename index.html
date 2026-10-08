@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>中国茶类非遗数字化地图</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="experience.css">
+  <link rel="stylesheet" href="detail-experience.css">
 </head>
 <body>
   <div class="paper-noise"></div>
@@ -16,11 +18,11 @@
       <span class="brand-emblem" aria-hidden="true"></span>
       <span class="brand-copy">
         <span class="brand-title" id="siteTitle">中国茶类非遗数字化地图</span>
-        <span class="brand-subtitle" id="siteSubtitle">China Tea Intangible Cultural Heritage</span>
       </span>
     </button>
     <nav class="breadcrumb" id="breadcrumb" aria-label="页面路径"></nav>
     <div class="site-actions">
+      <button id="footprintsButton" class="header-button" type="button" data-explore-action="footprints">我的足迹</button>
       <button id="globalBackButton" class="header-button" type="button">返回</button>
       <button id="langToggle" class="header-button header-button-accent" type="button">EN</button>
     </div>
@@ -32,26 +34,13 @@
         <p class="eyebrow" id="landingEyebrow">China Tea Intangible Cultural Heritage</p>
         <h1 id="landingTitle">中国茶类非遗数字化地图</h1>
         <p class="hero-subtitle" id="landingSubtitle">从全国地图出发，浏览不同地域的茶类非遗项目与文化脉络。</p>
-        <p class="hero-lead" id="landingLead">以官方行政区划地图为基础，用更轻量的方式理解“茶从哪里来、为何重要、今天如何传承”。</p>
         <div class="hero-actions">
           <button class="primary-link" id="enterMapButton" type="button">进入地图</button>
         </div>
+        <div class="hero-stats" id="heroStats" aria-label="收录概览"></div>
       </div>
       <div class="hero-aside">
-        <section class="hero-panel official-card">
-          <p class="section-index" id="landingPanelKicker">收录范围</p>
-          <h2 id="landingPanelTitle">从全国分布快速进入茶类非遗主题</h2>
-          <p class="hero-panel-body" id="landingPanelBody">项目以地图为入口，帮助你先建立空间印象，再逐步查看省份与单个项目的重点信息。</p>
-          <div class="official-tags" id="landingTags">
-            <span>官方地图基底</span>
-            <span>分层浏览</span>
-            <span>双语浏览</span>
-          </div>
-        </section>
-        <section class="hero-stats-panel">
-          <p class="section-index" id="landingStatsKicker">数据概览</p>
-          <div class="hero-stats" id="heroStats"></div>
-        </section>
+        <section class="discovery-entry" id="discoveryEntry" aria-label="探索茶文化"></section>
       </div>
     </header>
 
@@ -63,7 +52,8 @@
           <p class="section-note" id="mapSummary">从全国分布开始，选择省份进入下一层浏览。</p>
         </div>
       </div>
-      <div class="map-browse-row">
+      <div class="map-controls">
+        <div class="map-browse-row">
         <div class="map-browse-toggle" id="mapBrowseToggle" aria-label="地图浏览方式">
           <button type="button" class="map-mode-button is-active" id="provinceBrowseButton" data-browse-mode="province">省份浏览</button>
           <button type="button" class="map-mode-button" id="projectBrowseButton" data-browse-mode="project">项目浏览</button>
@@ -71,8 +61,9 @@
       </div>
       <div class="search-row" id="mapSearchRow">
         <div class="search-box">
-          <input id="searchInput" type="search" placeholder="搜索项目名 / 省份 / 地区">
+          <input id="searchInput" type="search" aria-label="搜索项目名 / 省份 / 地区" placeholder="搜索项目名 / 省份 / 地区">
         </div>
+      </div>
       </div>
 
       <div class="map-layout">
@@ -144,21 +135,25 @@
     </section>
 
     <section class="stage-shell detail-shell hidden" id="detailShell">
-      <div class="page-head">
-        <div>
-          <p class="section-index" id="detailKicker">03 / 项目详情</p>
-          <h2 id="detailPageTitle">项目详情</h2>
-          <p class="section-note" id="detailSummary">这里展示经过核验的权威内容，并保留返回上一层的路径。</p>
-        </div>
-      </div>
-      <aside class="detail-panel" id="detailPanel"></aside>
+      <article class="detail-panel" id="detailPanel"></article>
     </section>
+    <section class="stage-shell hidden" id="exploreShell" tabindex="-1"></section>
   </main>
+  <aside class="compare-tray hidden" id="compareTray" aria-label="项目对照栏"></aside>
+  <div class="explore-notice" id="exploreNotice" role="status" aria-live="polite"></div>
+  <dialog class="replace-dialog" id="replaceDialog" aria-labelledby="replaceDialogTitle"></dialog>
 
   <script src="data/tea_heritage_data.js"></script>
   <script src="assets/china_official_admin_v2.js"></script>
   <script src="assets/map_compliance_meta.js"></script>
+  <script src="data/explore_assets.js"></script>
+  <script src="experience-core.js"></script>
+  <script src="data/english_labels.js"></script>
   <script src="app.js"></script>
+  <script src="sort-pointer.js"></script>
+  <script src="detail-experience.js"></script>
+  <script src="experience-render.js"></script>
+  <script src="experience-ui.js"></script>
 </body>
 </html>
 

@@ -122,12 +122,15 @@ const cityCoordinateOverrides = {
   '澳门特别行政区': [113.538095, 22.189786]
 };
 
+let preferredLanguage = 'zh';
+try { if (localStorage.getItem('tea-map-language') === 'en') preferredLanguage = 'en'; } catch {}
 const state = {
   view: 'landing',
-  lang: 'zh',
+  lang: preferredLanguage,
   teaType: 'all',
   province: 'all',
   search: '',
+  topic: 'all',
   mapLegendTeaTypes: [],
   selectedId: null,
   mapPreviewId: null,
@@ -161,47 +164,19 @@ const DETAIL_SECTION_LABELS = Object.freeze({
     nav: { zh: '文化', en: 'Culture' }
   },
   inheritance: {
-    title: { zh: '传承保护', en: 'Inheritance' },
-    nav: { zh: '传承', en: 'Inheritance' }
+    title: { zh: '传承保护', en: 'Passing on the tradition' },
+    nav: { zh: '传承', en: 'Passing on the tradition' }
   },
   source_audit: {
     title: { zh: '来源与核验状态', en: 'Sources & Verification' },
     nav: { zh: '来源', en: 'Sources' }
   },
-  english_summary: {
-    title: { zh: 'English Summary', en: 'English Summary' }
-  }
 });
 
 const DETAIL_MISC_TEXT = Object.freeze({
   quickJump: { zh: '快速定位', en: 'Quick Jump' },
   leadLabel: { zh: '首屏导语', en: 'Lead' },
-  mediaTitle: { zh: '媒体状态', en: 'Media Status' },
-  mediaLabel: { zh: '媒体', en: 'Media' },
-  mediaBadgeNone: { zh: '待补充', en: 'Pending' },
-  mediaBadgeImageOnly: { zh: '图片已接入', en: 'Images Ready' },
-  mediaBadgeVideoOnly: { zh: '视频已接入', en: 'Video Ready' },
-  mediaBadgeMixed: { zh: '图像与视频已接入', en: 'Media Ready' },
-  mediaHeadingNone: { zh: '待补媒体', en: 'Media Pending' },
-  mediaHeadingImageOnly: { zh: '已提供图片', en: 'Image Available' },
-  mediaHeadingVideoOnly: { zh: '已提供视频', en: 'Video Available' },
-  mediaHeadingMixed: { zh: '已提供媒体入口', en: 'Media Available' },
-  mediaNone: {
-    zh: '图片与视频仍在分批整理中，当前优先展示经过核验的文字与来源信息。',
-    en: 'Images and videos are still being collected in batches. Verified text and source information are prioritized for now.'
-  },
-  mediaImageOnly: {
-    zh: '已提供图片资料，视频入口仍待补充。',
-    en: 'Image material is available, while video is still pending.'
-  },
-  mediaVideoOnly: {
-    zh: '已提供视频入口，图片资料仍待补充。',
-    en: 'A video entry is available, while images are still pending.'
-  },
-  mediaMixed: {
-    zh: '已提供图片资料与视频入口。',
-    en: 'Image material and a video entry are both available.'
-  },
+  imageTitle: { zh: '项目图片', en: 'Project Image' },
   mediaOpenSource: { zh: '查看权威来源', en: 'Open Official Source' }
 });
 
@@ -341,21 +316,10 @@ function normalizeMediaCollection(collection, fallbackUrl, fallbackTitle) {
   return normalized;
 }
 
-function deriveMediaStatus(images, videos) {
-  const hasImage = Array.isArray(images) && images.some((entry) => entry && entry.url);
-  const hasVideo = Array.isArray(videos) && videos.some((entry) => entry && entry.url);
-  if (hasImage && hasVideo) return 'mixed';
-  if (hasImage) return 'image-only';
-  if (hasVideo) return 'video-only';
-  return 'none';
-}
-
 function normalizeDataItem(item) {
   const imageUrl = String(item?.imageUrl || '').trim();
-  const videoUrl = String(item?.videoUrl || '').trim();
   const sourceUrl = String(item?.sourceUrl || '').trim();
   const images = normalizeMediaCollection(item?.images, imageUrl, item?.name);
-  const videos = normalizeMediaCollection(item?.videos, videoUrl, item?.name);
   const descriptionZh = normalizePlainText(item?.descriptionZh);
   const descriptionEn = normalizePlainText(item?.descriptionEn);
   return {
@@ -365,17 +329,14 @@ function normalizeDataItem(item) {
     descriptionZh,
     descriptionEn,
     imageUrl,
-    videoUrl,
     sourceUrl,
     notes: normalizePlainText(item?.notes),
     detailSections: normalizeDetailSections(item?.detailSections),
     representativeInheritors: normalizeInheritorList(item?.representativeInheritors),
     references: normalizeReferenceList(item?.references),
     images,
-    videos,
     leadZh: normalizePlainText(item?.leadZh) || clampZhLead(descriptionZh),
-    leadEn: normalizePlainText(item?.leadEn) || clampEnLead(descriptionEn),
-    mediaStatus: normalizePlainText(item?.mediaStatus) || deriveMediaStatus(images, videos)
+    leadEn: normalizePlainText(item?.leadEn) || clampEnLead(descriptionEn)
   };
 }
 
@@ -388,17 +349,12 @@ const uiText = {
     htmlLang: 'zh-CN',
     documentTitle: '中国茶类非遗数字化地图',
     siteTitle: '中国茶类非遗数字化地图',
-    siteSubtitle: '官方地图基础上的双语分层浏览',
+    siteSubtitle: '',
     interfaceToggle: 'EN',
     landingEyebrow: 'China Tea Intangible Cultural Heritage',
     landingTitle: '中国茶类非遗数字化地图',
-    landingSubtitle: '从全国地图出发，浏览不同地域的茶类非遗项目与文化脉络。',
-    landingLead: '以官方行政区划地图为基础，用更轻量的方式理解“茶从哪里来、为何重要、今天如何传承”。',
-    landingPanelKicker: '收录范围',
-    landingPanelTitle: '从全国分布快速进入茶类非遗主题',
-    landingPanelBody: '项目以地图为入口，帮助你先建立空间印象，再逐步查看省份与单个项目的重点信息。',
+    landingSubtitle: '选一处地方，认识一门手艺，发现一盏茶里的故事。',
     landingStatsKicker: '数据概览',
-    landingTags: ['官方地图基底', '分层浏览', '双语浏览'],
     enterMap: '进入地图',
     breadcrumbHome: '首页',
     breadcrumbMap: '地图总览',
@@ -408,8 +364,8 @@ const uiText = {
     backToMap: '返回地图',
     backToProvince: '返回省份页',
     mapKicker: '01 / 地图总览',
-    mapTitle: '在地图上浏览中国茶类非遗',
-    mapSummary: '切换省份浏览与项目浏览，在同一张地图上查看全国茶类非遗分布，并继续进入省份与项目详情。',
+    mapTitle: '这一站，想去哪里？',
+    mapSummary: '选择省份，或切换到项目点位，找到你感兴趣的一盏茶。',
     mapOverviewTitle: '地图概览',
     mapOverviewBody: '先在全国尺度建立分布印象，再选择省份或项目继续浏览。',
     mapGuideTitle: '浏览方式',
@@ -422,9 +378,9 @@ const uiText = {
     mapBrowseProvince: '省份浏览',
     mapBrowseProject: '项目浏览',
     mapBrowseProvinceTitle: '按省份浏览全国茶类非遗',
-    mapBrowseProvinceBody: '切换到省份浏览，点击地图上的省份名称标签或右侧目录，继续进入省份页面查看各地内容。',
+    mapBrowseProvinceBody: '点击省份名称，或从右侧目录选一站。',
     mapBrowseProjectTitle: '按项目点位查看全国分布',
-    mapBrowseProjectBody: '切换到项目浏览，在地图上放大并点击茶叶点位，右侧即可查看项目预览并继续进入详情。',
+    mapBrowseProjectBody: '点击茶叶点位预览项目，再进入详情探索。',
     mapBrowseModeLabel: '当前模式',
     mapProvinceStatLabel: '有茶类非遗的省份',
     mapProvinceDirectoryTitle: '省份目录',
@@ -474,9 +430,6 @@ const uiText = {
     mapLegendHint: '点击茶类可多选筛选，再次点击可取消。',
     mapLegendReset: '清空茶类',
     mapLegendEmpty: '当前搜索下没有可用茶类。',
-    detailVideoTitle: '视频入口',
-    detailVideoMissing: '暂未提供经过核验的视频入口',
-    detailVideoHint: '视频内容仅在通过权威核验后补充。',
     detailMetaProvince: '省份',
     detailMetaRegion: '所属地区',
     detailMetaCategory: '类别',
@@ -485,7 +438,6 @@ const uiText = {
     detailMetaCode: '项目编号',
     detailMetaDeclaredRegion: '申报地区',
     detailSectionZh: '项目简介',
-    detailSectionEn: 'English Summary',
     detailSectionStatus: '来源与状态',
     detailSectionSources: '本节来源',
     detailReferencesTitle: '可追溯来源',
@@ -495,30 +447,23 @@ const uiText = {
     detailInheritorsTitle: '相关传承人',
     detailStatusSeed: `当前底图已于 2026-03-26 依据天地图公开行政区划 API 重建，并将海南省边界中的南海诸岛拆分为附图表达；页面审图信息参考其服务页当前展示的 ${ADMIN.reviewNumber}。`,
     southSeaInsetTitle: '南海诸岛附图',
-    watchVideo: '查看外部视频',
-    detailVideoAvailable: '已提供外部视频入口，可继续查看相关内容。',
     cardLink: '查看详情',
     provinceCountSuffix: '项',
     zoomIn: '放大',
     zoomOut: '缩小',
     zoomReset: '复位',
-    mapHint: '滚轮缩放，拖拽平移；可在省份浏览与项目浏览之间切换继续探索。'
+    mapHint: '滚轮缩放 · 拖动平移 · 点击点位查看项目'
   },
   en: {
     htmlLang: 'en',
     documentTitle: 'China Tea Intangible Cultural Heritage Map',
     siteTitle: 'China Tea Heritage Map',
-    siteSubtitle: 'Layered bilingual browsing built on official map data',
+    siteSubtitle: '',
     interfaceToggle: '中文',
     landingEyebrow: 'China Tea Intangible Cultural Heritage',
     landingTitle: 'China Tea Intangible Cultural Heritage Map',
     landingSubtitle: 'Start from the national map to explore tea-related intangible cultural heritage across China.',
-    landingLead: 'Built on official administrative map data, this experience helps visitors understand where each tradition belongs and why it matters today.',
-    landingPanelKicker: 'Scope',
-    landingPanelTitle: 'Begin with the national view, then move into provinces',
-    landingPanelBody: 'The map gives visitors a quick sense of regional distribution before they narrow down inside a province and open a single project.',
     landingStatsKicker: 'Data Snapshot',
-    landingTags: ['Official Map Base', 'Layered Browsing', 'Bilingual Interface'],
     enterMap: 'Enter Map',
     breadcrumbHome: 'Home',
     breadcrumbMap: 'Map Overview',
@@ -529,7 +474,7 @@ const uiText = {
     backToProvince: 'Back to Province',
     mapKicker: '01 / Map Overview',
     mapTitle: 'Browse China tea heritage on the map',
-    mapSummary: 'Switch between province browsing and project browsing to explore national tea heritage distribution, then continue into province and detail pages.',
+    mapSummary: 'Choose a province or switch to project markers to find a tea tradition to explore.',
     mapOverviewTitle: 'Map Overview',
     mapOverviewBody: 'Use the national view to understand distribution first, then continue by province or by individual item.',
     mapGuideTitle: 'How to Explore',
@@ -539,8 +484,8 @@ const uiText = {
     mapStatFocused: 'Current View',
     mapStatFocusedDefault: 'National Overview',
     mapGuideSearch: 'Keyword',
-    mapBrowseProvince: 'Province Browse',
-    mapBrowseProject: 'Project Browse',
+    mapBrowseProvince: 'Browse provinces',
+    mapBrowseProject: 'Browse projects',
     mapBrowseProvinceTitle: 'Browse by province',
     mapBrowseProvinceBody: 'Switch to province browsing, then use the province labels on the map or the directory on the right to continue into a province page.',
     mapBrowseProjectTitle: 'Browse by project markers',
@@ -594,18 +539,14 @@ const uiText = {
     mapLegendHint: 'Click tea categories to build a multi-select filter. Click again to remove one.',
     mapLegendReset: 'Clear Tea Filters',
     mapLegendEmpty: 'No tea categories are available under the current search.',
-    detailVideoTitle: 'Video Entry',
-    detailVideoMissing: 'No verified video source is available yet.',
-    detailVideoHint: 'Video content will be added only after source verification.',
     detailMetaProvince: 'Province',
     detailMetaRegion: 'Region',
     detailMetaCategory: 'Category',
-    detailMetaBatch: 'Inscription',
-    detailMetaUnit: 'Protection Unit',
+    detailMetaBatch: 'National listing',
+    detailMetaUnit: 'Safeguarding body',
     detailMetaCode: 'Item Code',
     detailMetaDeclaredRegion: 'Declared Region',
     detailSectionZh: 'Chinese Introduction',
-    detailSectionEn: 'English Summary',
     detailSectionStatus: 'Source Status',
     detailSectionSources: 'Section Sources',
     detailReferencesTitle: 'Traceable Sources',
@@ -615,14 +556,12 @@ const uiText = {
     detailInheritorsTitle: 'Related Inheritors',
     detailStatusSeed: `The base map was rebuilt on March 26, 2026 from the public TianDiTu administrative API, and the South China Sea islands embedded in Hainan were split into a dedicated inset. The page references the current official review number shown on the source service page: ${ADMIN.reviewNumber}.`,
     southSeaInsetTitle: 'South China Sea Islands',
-    watchVideo: 'Open Video',
-    detailVideoAvailable: 'A verified external video entry is available for further viewing.',
     cardLink: 'Open details',
     provinceCountSuffix: ' items',
     zoomIn: 'Zoom In',
     zoomOut: 'Zoom Out',
     zoomReset: 'Reset View',
-    mapHint: 'Use the wheel to zoom and drag to pan. Switch between province browsing and project browsing to continue exploring.'
+    mapHint: 'Scroll to zoom · Drag to pan · Select a project marker'
   }
 };
 
@@ -699,6 +638,18 @@ const teaTypeConfigByKey = new Map(DATA.teaTypes.map((type) => [type.key, type])
 const teaTypeKeyByZh = new Map(DATA.teaTypes.map((type) => [type.zh, type.key]));
 const teaTypeKeyByEn = new Map(DATA.teaTypes.map((type) => [type.en, type.key]));
 
+function localizedField(record, field) {
+  return state.lang === 'zh' ? (record[field] || '') : (record[field + 'En'] || '');
+}
+
+function localizedPlace(value) {
+  return state.lang === 'zh' ? value : (window.TEA_ENGLISH_LABELS?.[value] || (/\p{Script=Han}/u.test(value || '') ? 'Unnamed region' : value));
+}
+
+function projectCount(count) {
+  return state.lang === 'zh' ? `${count}项` : `${count} ${count === 1 ? 'item' : 'items'}`;
+}
+
 function currentText() { return uiText[state.lang]; }
 function isReferenceCalibratedMode() { return MAP_RENDER_MODE === 'reference-calibrated-handdrawn'; }
 function mapCapability(name) { return Boolean(MAP_CAPABILITIES[name]); }
@@ -737,13 +688,13 @@ function uniqueList(values) {
 
 function formatSourceStatus(status) {
   const zh = {
-    'official-complete': '官方完整核验',
+    'official-complete': '官方来源字段齐备',
     'official-partial': '官方来源待补充核验',
     'official+fallback': '官方为主，仍有字段待核对',
     'needs-review': '仍需继续审核'
   };
   const en = {
-    'official-complete': 'Officially verified',
+    'official-complete': 'Official fields available',
     'official-partial': 'Official source, more verification needed',
     'official+fallback': 'Official-first, some fields still pending',
     'needs-review': 'Needs review'
@@ -776,6 +727,11 @@ function getDetailSectionConfig(key) {
 }
 
 function getDetailSectionTitle(section, fallbackTitle = '') {
+  if (state.lang === 'en' && section?.titleEn) return section.titleEn;
+  if (section?.key === 'practice' && section.titleZh) {
+    const titles = { '礼俗流程': 'Ritual & Hospitality', '核心品种与制作要点': 'Pastries & Preparation', '核心工艺': 'Core Craft' };
+    return state.lang === 'zh' ? section.titleZh : (titles[section.titleZh] || 'Practice');
+  }
   const config = getDetailSectionConfig(section?.key);
   if (config?.title) return config.title[state.lang] || config.title.zh || fallbackTitle;
   if (state.lang === 'zh') return section?.titleZh || fallbackTitle;
@@ -805,27 +761,6 @@ function getPrimaryImage(item) {
   return images.find((entry) => entry && entry.url) || null;
 }
 
-function getMediaStatusDescription(item) {
-  if (item.mediaStatus === 'mixed') return detailCopy('mediaMixed');
-  if (item.mediaStatus === 'image-only') return detailCopy('mediaImageOnly');
-  if (item.mediaStatus === 'video-only') return detailCopy('mediaVideoOnly');
-  return detailCopy('mediaNone');
-}
-
-function getMediaStatusBadge(item) {
-  if (item.mediaStatus === 'mixed') return detailCopy('mediaBadgeMixed');
-  if (item.mediaStatus === 'image-only') return detailCopy('mediaBadgeImageOnly');
-  if (item.mediaStatus === 'video-only') return detailCopy('mediaBadgeVideoOnly');
-  return detailCopy('mediaBadgeNone');
-}
-
-function getMediaStatusHeading(item) {
-  if (item.mediaStatus === 'mixed') return detailCopy('mediaHeadingMixed');
-  if (item.mediaStatus === 'image-only') return detailCopy('mediaHeadingImageOnly');
-  if (item.mediaStatus === 'video-only') return detailCopy('mediaHeadingVideoOnly');
-  return detailCopy('mediaHeadingNone');
-}
-
 function renderDetailParagraphs(content) {
   return String(content || '')
     .split(/\n+/)
@@ -836,20 +771,8 @@ function renderDetailParagraphs(content) {
 }
 
 function renderDetailSourcePills(referenceIds, referenceMap, text) {
-  const references = uniqueList(referenceIds || [])
-    .map((referenceId) => referenceMap.get(referenceId))
-    .filter(Boolean);
-  if (!references.length) return '';
-  return `
-    <div class="detail-section-sources">
-      <span class="detail-section-source-label">${text.detailSectionSources}</span>
-      <div class="detail-source-pills">
-        ${references.map((reference) => `
-          <a class="detail-source-pill" href="${escapeHtml(reference.url)}" target="_blank" rel="noreferrer">${escapeHtml(reference.title)}</a>
-        `).join('')}
-      </div>
-    </div>
-  `;
+  // Field-level provenance stays in the data; the page has one source entry in its footer.
+  return '';
 }
 
 function renderInheritorBlock(item, text) {
@@ -871,6 +794,7 @@ function renderInheritorBlock(item, text) {
 }
 
 function renderReferenceList(item, text) {
+  if (window.TeaExperience) return window.TeaExperience.references(item);
   const references = Array.isArray(item.references) ? item.references.filter((reference) => reference && reference.url) : [];
   if (!references.length) return '';
   return `
@@ -900,7 +824,7 @@ function renderSourceAuditMeta(item, text) {
 }
 
 function renderDetailLeadCard(item, text) {
-  const lead = item.leadZh || item.descriptionZh;
+  const lead = localizedField(item, 'lead') || localizedField(item, 'description');
   return `
     <section class="detail-lead-card">
       <span class="detail-lead-label">${detailCopy('leadLabel')}</span>
@@ -908,7 +832,6 @@ function renderDetailLeadCard(item, text) {
       <div class="detail-status-strip">
         <span class="meta-pill"><strong>${text.detailSourceStatusLabel}</strong> ${escapeHtml(formatSourceStatus(item.sourceStatus))}</span>
         <span class="meta-pill"><strong>${text.detailDataQualityLabel}</strong> ${escapeHtml(formatDataQuality(item.dataQuality))}</span>
-        <span class="meta-pill"><strong>${detailCopy('mediaLabel')}</strong> ${escapeHtml(getMediaStatusBadge(item))}</span>
       </div>
     </section>
   `;
@@ -931,58 +854,23 @@ function renderDetailQuickNav(item) {
   `;
 }
 
-function renderDetailMediaBlock(item, text) {
+function renderDetailImageBlock(item) {
   const primaryImage = getPrimaryImage(item);
-  const sourceAction = item.sourceUrl
-    ? `<a class="detail-media-link" href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noreferrer">${detailCopy('mediaOpenSource')}</a>`
-    : '';
-  const videoAction = item.videoUrl
-    ? `<a class="video-link" href="${escapeHtml(item.videoUrl)}" target="_blank" rel="noreferrer">${text.watchVideo}</a>`
-    : '';
-  const actions = [sourceAction, videoAction].filter(Boolean).join('');
-  const notes = item.notes || detailCopy('mediaNone');
-  if (primaryImage) {
-    return `
+  if (!primaryImage) return '';
+  return `
       <section class="detail-media-card has-image">
         <div class="detail-media-preview">
           <img src="${escapeHtml(primaryImage.url)}" alt="${escapeHtml(primaryImage.caption || `${item.name} 图片`)}">
         </div>
         <div class="detail-media-copy">
-          <span class="detail-media-label">${detailCopy('mediaTitle')}</span>
-          <strong class="detail-media-heading">${escapeHtml(getMediaStatusHeading(item))}</strong>
+          <strong class="detail-media-heading">${detailCopy('imageTitle')}</strong>
           ${primaryImage.caption ? `<p>${escapeHtml(primaryImage.caption)}</p>` : ''}
           ${primaryImage.source ? `<p>${escapeHtml(primaryImage.source)}</p>` : ''}
-          ${actions ? `<div class="detail-media-actions">${actions}</div>` : ''}
         </div>
       </section>
     `;
-  }
-  return `
-    <section class="detail-media-card ${item.mediaStatus === 'video-only' ? 'has-video' : 'is-empty'}">
-      <div class="detail-media-copy">
-        <span class="detail-media-label">${detailCopy('mediaTitle')}</span>
-        <strong class="detail-media-heading">${escapeHtml(getMediaStatusHeading(item))}</strong>
-        <p>${escapeHtml(notes)}</p>
-      </div>
-      ${actions ? `<div class="detail-media-actions">${actions}</div>` : ''}
-    </section>
-  `;
 }
 
-function renderEnglishSummarySection(item, text) {
-  if (!(item.leadEn || item.descriptionEn)) return '';
-  return `
-    <details class="detail-accordion detail-section detail-section-english" id="${getSectionId('english-summary')}">
-      <summary class="detail-accordion-summary">
-        <span class="detail-accordion-title">${escapeHtml(DETAIL_SECTION_LABELS.english_summary.title[state.lang])}</span>
-        <span class="detail-accordion-icon" aria-hidden="true"></span>
-      </summary>
-      <div class="detail-accordion-body">
-        ${renderDetailParagraphs(item.leadEn || item.descriptionEn)}
-      </div>
-    </details>
-  `;
-}
 
 function renderStructuredDetailSections(item, text) {
   const sections = Array.isArray(item.detailSections)
@@ -996,7 +884,7 @@ function renderStructuredDetailSections(item, text) {
           <span class="detail-accordion-icon" aria-hidden="true"></span>
         </summary>
         <div class="detail-accordion-body">
-          ${renderDetailParagraphs(item.descriptionZh)}
+          ${renderDetailParagraphs(localizedField(item, 'description'))}
         </div>
       </details>
     `;
@@ -1005,14 +893,15 @@ function renderStructuredDetailSections(item, text) {
   return sections.map((section) => {
     let extras = renderDetailSourcePills(section.sourceIds, referenceMap, text);
     if (section.key === 'inheritance') {
-      extras = `${renderInheritorBlock(item, text)}${renderDetailSourcePills(section.sourceIds, referenceMap, text)}`;
+      // Named people belong in reviewed narrative, not an automatically appended old list.
+      extras = renderDetailSourcePills(section.sourceIds, referenceMap, text);
     }
     if (section.key === 'source_audit') {
       extras = renderSourceAuditMeta(item, text);
     }
     const sectionId = getSectionId(section.key);
     const title = getDetailSectionTitle(section, text.detailSectionZh);
-    const isOpen = section.key === 'overview' || section.key === 'source_audit';
+    const isOpen = section.key === 'overview' || section.key === 'practice';
     return `
       <details class="detail-accordion detail-section detail-section-${escapeHtml(section.key || 'default')}" id="${sectionId}" ${isOpen ? 'open' : ''}>
         <summary class="detail-accordion-summary">
@@ -1020,7 +909,7 @@ function renderStructuredDetailSections(item, text) {
           <span class="detail-accordion-icon" aria-hidden="true"></span>
         </summary>
         <div class="detail-accordion-body">
-          ${renderDetailParagraphs(section.contentZh)}
+          ${renderDetailParagraphs(state.lang === 'zh' ? section.contentZh : section.contentEn)}
           ${extras}
         </div>
       </details>
@@ -1035,6 +924,7 @@ function getItemTeaTypeKey(item) {
 }
 
 function shortProvinceLabel(name) {
+  if (state.lang === 'en') return localizedPlace(provinceDisplayName(name));
   const display = provinceDisplayName(name);
   if (shortProvinceNameMap[display]) return shortProvinceNameMap[display];
   return display
@@ -1460,14 +1350,16 @@ function filteredItems(options = {}) {
     const teaMatch = state.teaType === 'all' ? true : item.teaType === state.teaType;
     const provinceMatch = state.province === 'all' ? true : item.province === state.province;
     const legendMatch = !activeLegendKeys.size ? true : activeLegendKeys.has(getItemTeaTypeKey(item));
-    const keywordMatch = !keyword ? true : [item.name, item.nameEn, item.province, item.city, item.teaType, item.teaTypeEn]
+    const keywordMatch = !keyword ? true : [item.name, item.nameEn, item.province, item.provinceEn, item.city, item.cityEn, item.teaType, item.teaTypeEn]
       .filter(Boolean)
       .some((value) => String(value).toLowerCase().includes(keyword));
-    return teaMatch && provinceMatch && legendMatch && keywordMatch;
+    const topicMatch = state.topic === 'all' || (state.topic === 'ritual' ? item.category === '民俗' : item.category === '传统技艺');
+    return teaMatch && provinceMatch && legendMatch && keywordMatch && topicMatch;
   });
 }
 
 function getSelectedItem(items) {
+  if (state.view === 'detail') return getItemById(state.selectedId);
   return items.find((item) => item.id === state.selectedId) || null;
 }
 
@@ -1480,10 +1372,7 @@ function getMapPreviewItem(items) {
 }
 
 function scrollMapContextPanelIntoView() {
-  if (!els.mapContextPanel || !window.matchMedia('(max-width: 1180px)').matches) return;
-  window.requestAnimationFrame(() => {
-    els.mapContextPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+  window.TeaExperience?.focusPreview();
 }
 
 function clearMapPreview() {
@@ -1497,12 +1386,13 @@ function setMapPreview(itemId, options = {}) {
 }
 
 function buildMapPreviewSummary(item) {
+  if (item.shortSummaryZh) return state.lang === 'zh' ? item.shortSummaryZh : item.descriptionEn;
   const categoryLabel = state.lang === 'zh' ? item.category : item.categoryEn;
   const teaTypeLabel = state.lang === 'zh' ? item.teaType : item.teaTypeEn;
   if (state.lang === 'zh') {
     return `${item.name}收录于${item.yearBatch}公布批次，分布于${item.province}${item.city ? ` · ${item.city}` : ''}，归属${categoryLabel}，以${teaTypeLabel}相关传统为主要识别线索，保护单位为${item.protectionUnit}。`;
   }
-  return `${item.nameEn} was inscribed in the ${item.yearBatch} batch and is associated with ${item.province}${item.city ? `, ${item.city}` : ''}. It is classified as ${categoryLabel}, linked to ${teaTypeLabel}, and protected by ${item.protectionUnit}.`;
+  return `${item.nameEn} is recorded in ${item.yearBatchEn} and is associated with ${item.cityEn || item.provinceEn}. Its safeguarding body is ${item.protectionUnitEn}.`;
 }
 
 function toggleMapLegendTeaType(key) {
@@ -1619,6 +1509,7 @@ function updateView(scale, viewX, viewY) {
   renderMapOverlays(items);
   renderMapContext(items);
   updateZoomUi();
+  window.TeaExperience?.afterRender(true);
 }
 
 function resetView(options = {}) {
@@ -1642,6 +1533,7 @@ function resetView(options = {}) {
   renderMapOverlays(items);
   renderMapContext(items);
   updateZoomUi();
+  window.TeaExperience?.afterRender(true);
 }
 
 function zoomAt(point, factor) {
@@ -1753,7 +1645,7 @@ function reconcileMapLegendSelection() {
 
 function reconcileSelectionState(items) {
   const availableIds = new Set(items.map((item) => item.id));
-  if (state.selectedId && !availableIds.has(state.selectedId)) state.selectedId = null;
+  if (state.view !== 'detail' && state.selectedId && !availableIds.has(state.selectedId)) state.selectedId = null;
   if (state.mapPreviewId && !availableIds.has(state.mapPreviewId)) state.mapPreviewId = null;
 
   const provinceEntries = getProvinceDirectoryEntries(items);
@@ -1848,14 +1740,14 @@ function renderGlobalChrome(items) {
   }
   if (state.view === 'province') {
     crumbs.push({
-      label: state.province === 'all' ? text.breadcrumbProvince : state.province,
+      label: state.province === 'all' ? text.breadcrumbProvince : localizedPlace(state.province),
       target: 'province',
       current: true
     });
   }
   if (state.view === 'detail') {
     crumbs.push({
-      label: state.province === 'all' ? text.breadcrumbProvince : state.province,
+      label: state.province === 'all' ? text.breadcrumbProvince : localizedPlace(state.province),
       target: 'province',
       current: false
     });
@@ -1903,6 +1795,15 @@ function renderGlobalChrome(items) {
 }
 
 function renderStaticShellText() {
+  const accessibleLabels = {
+    breadcrumb: ['页面路径', 'Breadcrumb navigation'], heroStats: ['收录概览', 'Collection overview'],
+    discoveryEntry: ['探索茶文化', 'Explore tea culture'], mapBrowseToggle: ['地图浏览方式', 'Map browsing mode'],
+    searchInput: ['搜索项目名 / 省份 / 地区', 'Search projects, provinces or places'],
+    mapToolbar: ['地图缩放控件', 'Map zoom controls'], officialMapSvg: ['中国茶类非遗地图', 'China tea heritage map']
+  };
+  for (const [id, labels] of Object.entries(accessibleLabels)) {
+    document.getElementById(id)?.setAttribute('aria-label', labels[state.lang === 'zh' ? 0 : 1]);
+  }
   const text = currentText();
   setNodeText(els.mapKicker, text.mapKicker);
   setNodeText(els.mapTitle, text.mapTitle);
@@ -1979,11 +1880,11 @@ function renderMapComplianceMeta() {
   }
 
   const text = currentText();
-  const reviewNumber = MAP_META.referenceReviewNumber || '—';
+  const reviewNumber = state.lang === 'zh' ? MAP_META.referenceReviewNumber : (MAP_META.referenceReviewNumber || '').replace('号', '');
   const fileName = MAP_META.fileName || '—';
-  const usage = MAP_META.referenceUsedFor || '—';
-  const notes = MAP_META.notes || '—';
-  const editionLabel = MAP_META.referenceEditionLabel || fileName;
+  const usage = state.lang === 'zh' ? MAP_META.referenceUsedFor : 'Used to align the national outline, provincial boundaries, Taiwan and the South China Sea inset; not displayed directly as the final map.';
+  const notes = state.lang === 'zh' ? MAP_META.notes : text.mapSourceNote;
+  const editionLabel = state.lang === 'zh' ? MAP_META.referenceEditionLabel : 'China administrative map reference (GS(2016)1600)';
 
   els.mapComplianceCard.innerHTML = `
     <div class="map-compliance-copy">
@@ -2064,8 +1965,8 @@ function renderMapContext(items) {
       ? `
         <section class="map-panel-card province-spotlight-card">
           <p class="map-panel-kicker">${text.mapProvinceSpotlightTitle}</p>
-          <h3>${escapeHtml(focusProvince)}</h3>
-          <p>${focusItems.length ? `${escapeHtml(focusProvince)} · ${focusItems.length}${text.provinceCountSuffix}` : text.mapProvinceSpotlightEmpty}</p>
+          <h3>${escapeHtml(localizedPlace(focusProvince))}</h3>
+          <p>${focusItems.length ? `${escapeHtml(localizedPlace(focusProvince))} · ${projectCount(focusItems.length)}` : text.mapProvinceSpotlightEmpty}</p>
           <div class="detail-meta">
             <span class="meta-pill"><strong>${text.provinceMetaTotal}</strong> ${totalFocusItems.length}</span>
             <span class="meta-pill"><strong>${text.provinceMetaVisible}</strong> ${focusItems.length}</span>
@@ -2100,8 +2001,8 @@ function renderMapContext(items) {
                 data-province="${escapeHtml(entry.province)}"
                 aria-pressed="${focusProvince === entry.province ? 'true' : 'false'}"
               >
-                <span class="province-directory-name">${escapeHtml(entry.province)}</span>
-                <span class="province-directory-count">${entry.count}${text.provinceCountSuffix}</span>
+                <span class="province-directory-name">${escapeHtml(localizedPlace(entry.province))}</span>
+                <span class="province-directory-count">${projectCount(entry.count)}</span>
               </button>
             `).join('')}
           </div>
@@ -2112,13 +2013,14 @@ function renderMapContext(items) {
     return;
   }
 
-  const currentViewLabel = state.province === 'all' ? text.mapStatFocusedDefault : state.province;
+  const currentViewLabel = state.province === 'all' ? text.mapStatFocusedDefault : localizedPlace(state.province);
   const visibleRegionCount = new Set(items.map((item) => item.province)).size;
   const previewItem = getMapPreviewItem(items);
+  els.mapContextPanel.classList.toggle('has-project-preview', Boolean(previewItem));
 
   if (previewItem) {
     const title = state.lang === 'zh' ? previewItem.name : previewItem.nameEn;
-    const subtitle = state.lang === 'zh' ? previewItem.nameEn : previewItem.name;
+    const subtitle = state.lang === 'zh' ? previewItem.nameEn : '';
     const teaTypeLabel = state.lang === 'zh' ? previewItem.teaType : previewItem.teaTypeEn;
     const categoryLabel = state.lang === 'zh' ? previewItem.category : previewItem.categoryEn;
     const summary = buildMapPreviewSummary(previewItem);
@@ -2143,19 +2045,19 @@ function renderMapContext(items) {
           <div class="map-preview-grid">
             <div class="preview-fact">
               <span class="preview-label">${text.detailMetaProvince}</span>
-              <strong>${escapeHtml(previewItem.province)}</strong>
+              <strong>${escapeHtml(localizedField(previewItem, 'province'))}</strong>
             </div>
             <div class="preview-fact">
               <span class="preview-label">${text.detailMetaRegion}</span>
-              <strong>${escapeHtml(previewItem.city || previewItem.province)}</strong>
+              <strong>${escapeHtml(localizedField(previewItem, 'city') || localizedField(previewItem, 'province'))}</strong>
             </div>
             <div class="preview-fact">
               <span class="preview-label">${text.detailMetaBatch}</span>
-              <strong>${escapeHtml(previewItem.yearBatch)}</strong>
+              <strong>${escapeHtml(localizedField(previewItem, 'yearBatch'))}</strong>
             </div>
             <div class="preview-fact preview-fact-wide">
               <span class="preview-label">${text.detailMetaUnit}</span>
-              <strong>${escapeHtml(previewItem.protectionUnit)}</strong>
+              <strong>${escapeHtml(localizedField(previewItem, 'protectionUnit'))}</strong>
             </div>
           </div>
           <section class="detail-section map-preview-summary-block">
@@ -2163,6 +2065,7 @@ function renderMapContext(items) {
             <p>${escapeHtml(summary)}</p>
           </section>
           <div class="preview-actions">
+            ${window.TeaExperience ? window.TeaExperience.actions(previewItem) : ''}
             <button type="button" class="panel-action panel-action-primary" data-preview-action="open" data-id="${previewItem.id}">${text.mapPreviewOpen}</button>
             <button type="button" class="panel-action panel-action-secondary" data-preview-action="province" data-province="${escapeHtml(previewItem.province)}">${text.mapProjectOpenProvince}</button>
             <button type="button" class="panel-action panel-action-secondary" data-preview-action="reset">${text.mapPreviewReset}</button>
@@ -2192,7 +2095,7 @@ function renderMapContext(items) {
 function renderProvinceHeader(items) {
   if (!els.provinceTitle || !els.provinceSummary || !els.provinceMeta) return;
   const text = currentText();
-  const provinceName = state.province === 'all' ? text.provinceDefaultTitle : state.province;
+  const provinceName = state.province === 'all' ? text.provinceDefaultTitle : localizedPlace(state.province);
   const provinceItems = state.province === 'all' ? [] : getProvinceItems(state.province);
   const visibleCount = state.province === 'all' ? 0 : items.length;
   const teaTypeCount = state.province === 'all' ? 0 : new Set(provinceItems.map((item) => item.teaType)).size;
@@ -2202,7 +2105,7 @@ function renderProvinceHeader(items) {
     ? text.provinceDefaultSummary
     : state.lang === 'zh'
       ? `${state.province}共收录 ${provinceItems.length} 项，当前显示 ${visibleCount} 项。`
-      : `${provinceItems.length} items are listed for ${state.province}, with ${visibleCount} currently visible.`;
+      : `${provinceItems.length} items are listed for ${localizedPlace(state.province)}, with ${visibleCount} currently visible.`;
   els.provinceMeta.innerHTML = state.province === 'all'
     ? `<span class="meta-pill"><strong>${text.provinceMetaWaitingLabel}</strong> ${text.provinceMetaWaitingValue}</span>`
     : `
@@ -2221,7 +2124,7 @@ function renderDetailHeader(items) {
     els.detailSummary.textContent = text.detailDefaultSummary;
     return;
   }
-  els.detailSummary.textContent = `${selected.province} · ${state.lang === 'zh' ? selected.teaType : selected.teaTypeEn} · ${selected.yearBatch}`;
+  els.detailSummary.textContent = `${localizedField(selected, 'province')} · ${localizedField(selected, 'teaType')} · ${localizedField(selected, 'yearBatch')}`;
 }
 
 function scrollToShell(shell) {
@@ -2231,12 +2134,13 @@ function scrollToShell(shell) {
     const shellTop = window.scrollY + shell.getBoundingClientRect().top;
     window.scrollTo({
       top: Math.max(0, shellTop - scrollMarginTop),
-      behavior: 'smooth'
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
     });
   });
 }
 
 function enterMapView() {
+  if (window.TeaExperience) return window.TeaExperience.navigate('map');
   state.view = 'map';
   state.province = 'all';
   state.teaType = 'all';
@@ -2255,6 +2159,7 @@ function enterMapView() {
 }
 
 function openProvinceView(province, options = {}) {
+  if (window.TeaExperience) return window.TeaExperience.navigate('province', { province, keepTeaType: options.keepTeaType });
   const nextProvince = province || 'all';
   state.view = 'province';
   state.province = nextProvince;
@@ -2267,6 +2172,7 @@ function openProvinceView(province, options = {}) {
 }
 
 function openDetailView(itemId) {
+  if (window.TeaExperience) return window.TeaExperience.navigate('detail', { id: itemId });
   const item = getItemById(itemId);
   if (!item) return;
   state.view = 'detail';
@@ -2278,6 +2184,7 @@ function openDetailView(itemId) {
 }
 
 function backToLandingView() {
+  if (window.TeaExperience) return window.TeaExperience.navigate('landing');
   state.view = 'landing';
   state.province = 'all';
   state.teaType = 'all';
@@ -2296,6 +2203,7 @@ function backToLandingView() {
 }
 
 function backToMapView() {
+  if (window.TeaExperience) return window.TeaExperience.navigate('map');
   state.view = 'map';
   state.province = 'all';
   state.teaType = 'all';
@@ -2307,6 +2215,7 @@ function backToMapView() {
 }
 
 function backToProvinceView() {
+  if (window.TeaExperience) return window.TeaExperience.navigate('province', { province: state.province });
   if (state.province === 'all') {
     backToMapView();
     return;
@@ -2341,7 +2250,7 @@ function renderHeroStats(items) {
   const stats = [
     { value: DATA.totalItems, label: text.statsItems },
     { value: DATA.totalProvinces, label: text.statsRegions },
-    { value: items.length, label: text.statsVisible }
+    { value: DATA.items.filter(item => item.practiceExperience || item.detailExperience).length, label: state.lang === 'zh' ? '互动探索' : 'Interactive projects' }
   ];
   els.heroStats.innerHTML = stats.map((stat) => `<div class="stat-card"><div class="stat-value">${stat.value}</div><div class="stat-label">${stat.label}</div></div>`).join('');
 }
@@ -2494,16 +2403,18 @@ function renderProvinceButtons(items) {
     if (point.x < -120 || point.x > VIEWBOX.width + 120 || point.y < -80 || point.y > VIEWBOX.height + 80) return '';
     const label = shortProvinceLabel(province);
     const hasItems = count > 0;
-    const buttonWidth = Math.max(hasItems ? 72 : 60, Math.min(126, label.length * 16 + (hasItems ? 40 : 30)));
+    const buttonWidth = state.lang === 'en'
+      ? Math.max(54, Math.min(116, label.length * 6.4 + 18))
+      : Math.max(hasItems ? 72 : 60, Math.min(126, label.length * 16 + (hasItems ? 40 : 30)));
     const buttonHeight = hasItems ? 38 : 32;
     const hitWidth = buttonWidth + 18;
     const hitHeight = buttonHeight + 14;
     return `
-      <g class="province-browse-button ${hasItems ? 'has-items' : 'is-empty'} ${province === activeProvince ? 'is-active' : ''}" data-province="${province}" transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})" aria-label="${escapeHtml(`${province}${hasItems ? ` ${count}${currentText().provinceCountSuffix}` : ''}`)}">
+      <g class="province-browse-button ${hasItems ? 'has-items' : 'is-empty'} ${province === activeProvince ? 'is-active' : ''}" data-province="${province}" transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})" aria-label="${escapeHtml(`${localizedPlace(province)}${hasItems ? ` ${projectCount(count)}` : ''}`)}">
         <rect class="province-browse-hit-area" x="${(-hitWidth / 2).toFixed(2)}" y="${(-hitHeight / 2).toFixed(2)}" width="${hitWidth.toFixed(2)}" height="${hitHeight.toFixed(2)}" rx="${(hitHeight / 2).toFixed(2)}"></rect>
         <rect class="province-browse-pill-shape" x="${(-buttonWidth / 2).toFixed(2)}" y="${(-buttonHeight / 2).toFixed(2)}" width="${buttonWidth.toFixed(2)}" height="${buttonHeight}" rx="15"></rect>
         <text class="province-browse-pill-name" text-anchor="middle" y="${hasItems ? '-2' : '5'}">${escapeHtml(label)}</text>
-        ${hasItems ? `<text class="province-browse-pill-count" text-anchor="middle" y="12">${count}${currentText().provinceCountSuffix}</text>` : ''}
+        ${hasItems ? `<text class="province-browse-pill-count" text-anchor="middle" y="12">${projectCount(count)}</text>` : ''}
       </g>
     `;
   }).join('');
@@ -2534,7 +2445,7 @@ function renderProvinceLabels(items) {
     const point = applyViewTransformPoint(feature.anchorX, feature.anchorY);
     if (point.x < -80 || point.x > VIEWBOX.width + 80 || point.y < -60 || point.y > VIEWBOX.height + 60) return;
     const count = visibleCounts.get(province) || 0;
-    labels.push(`<g transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})"><text class="province-label" text-anchor="middle">${feature.shortLabel}</text>${count > 0 ? `<text class="province-count" text-anchor="middle" y="18">${count}${currentText().provinceCountSuffix}</text>` : ''}</g>`);
+    labels.push(`<g transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})"><text class="province-label" text-anchor="middle">${shortProvinceLabel(feature.displayName)}</text>${count > 0 ? `<text class="province-count" text-anchor="middle" y="18">${projectCount(count)}</text>` : ''}</g>`);
   });
 
   els.provinceLabelLayer.innerHTML = labels.join('');
@@ -2560,8 +2471,8 @@ function renderSpecialRegions(items) {
         <line x1="${point.x.toFixed(2)}" y1="${point.y.toFixed(2)}" x2="${x.toFixed(2)}" y2="${y.toFixed(2)}" stroke="#9a8560" stroke-width="1.4" stroke-dasharray="3 3"></line>
         <g transform="translate(${x.toFixed(2)} ${y.toFixed(2)})">
           <rect class="special-region-pill" x="-38" y="-20" width="76" height="44" rx="18"></rect>
-          <text class="special-region-name" text-anchor="middle" y="-3">${province}</text>
-          <text class="special-region-count" text-anchor="middle" y="14">${count}${text.provinceCountSuffix}</text>
+          <text class="special-region-name" text-anchor="middle" y="-3">${localizedPlace(province)}</text>
+          <text class="special-region-count" text-anchor="middle" y="14">${projectCount(count)}</text>
         </g>
       </g>
     `);
@@ -2637,7 +2548,7 @@ function renderProjectMarkers(items) {
       const tagWidth = Math.min(216, Math.max(122, label.length * 12));
       const hitRadius = Math.max(26, 32 / Math.pow(state.viewScale, 0.02));
       markerSvg.push(`
-        <g class="project-marker ${active ? 'is-active' : ''}" data-id="${item.id}" transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})">
+        <g class="project-marker ${active ? 'is-active' : ''}" data-id="${item.id}" role="button" tabindex="0" aria-label="${escapeHtml(label)}" transform="translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})">
           <circle class="project-hit-area" r="${hitRadius.toFixed(2)}"></circle>
           <g class="project-bubble" transform="scale(${markerScale.toFixed(3)})">
             <path class="project-bubble-core" fill="${item.color}" d="M0 16c-3.4-4.2-11-9.5-11-18C-11-8.8-6.1-13 0-13S11-8.8 11-2c0 8.5-7.6 13.8-11 18Z"></path>
@@ -2662,6 +2573,7 @@ function renderProjectMarkers(items) {
   });
 }
 function renderDetail(items) {
+  if (window.TeaExperience) return window.TeaExperience.detail(getSelectedItem(items));
   const text = currentText();
   const selected = getSelectedItem(items);
   if (!selected) {
@@ -2682,13 +2594,13 @@ function renderDetail(items) {
   const teaTypeLabel = state.lang === 'zh' ? selected.teaType : selected.teaTypeEn;
   const categoryLabel = state.lang === 'zh' ? selected.category : selected.categoryEn;
   const detailTitle = state.lang === 'zh' ? selected.name : selected.nameEn;
-  const detailSubtitle = state.lang === 'zh' ? selected.nameEn : selected.name;
+  const detailSubtitle = state.lang === 'zh' ? selected.nameEn : '';
   const detailFacts = [
-    { label: text.detailMetaProvince, value: selected.province },
-    { label: text.detailMetaRegion, value: selected.city || selected.province },
-    { label: text.detailMetaDeclaredRegion, value: selected.declaredRegion || selected.city || selected.province, wide: true },
-    { label: text.detailMetaBatch, value: selected.yearBatch },
-    { label: text.detailMetaUnit, value: selected.protectionUnit, wide: true }
+    { label: text.detailMetaProvince, value: localizedField(selected, 'province') },
+    { label: text.detailMetaRegion, value: localizedField(selected, 'city') || localizedField(selected, 'province') },
+    { label: text.detailMetaDeclaredRegion, value: localizedField(selected, 'declaredRegion') || localizedField(selected, 'city') || localizedField(selected, 'province'), wide: true },
+    { label: text.detailMetaBatch, value: localizedField(selected, 'yearBatch') },
+    { label: text.detailMetaUnit, value: localizedField(selected, 'protectionUnit'), wide: true }
   ];
   const structuredSections = renderStructuredDetailSections(selected, text);
 
@@ -2712,15 +2624,19 @@ function renderDetail(items) {
       </div>
     </div>
     ${renderDetailLeadCard(selected, text)}
-    ${renderDetailMediaBlock(selected, text)}
+    ${renderDetailImageBlock(selected)}
     <div class="detail-sections">
       ${structuredSections}
-      ${renderEnglishSummarySection(selected, text)}
+
     </div>
   `;
 }
 
 function renderCards(items) {
+  if (window.TeaExperience) {
+    els.projectGrid.innerHTML = window.TeaExperience.cards(items);
+    return;
+  }
   const selected = getSelectedItem(items);
   const text = currentText();
   if (!items.length) {
@@ -2743,10 +2659,10 @@ function renderCards(items) {
         <div class="card-icon" style="background:${item.color}; color:#fffaf0;"><svg viewBox="0 0 16 16" aria-hidden="true">${iconMarkup(item.icon, '#fff8ee')}</svg></div>
         <div class="card-title-wrap">
           <h3 class="card-title">${state.lang === 'zh' ? item.name : item.nameEn}</h3>
-          <p class="card-subtitle">${state.lang === 'zh' ? item.nameEn : item.name}</p>
+          <p class="card-subtitle">${state.lang === 'zh' ? item.nameEn : ''}</p>
         </div>
       </div>
-      <p class="card-meta">${escapeHtml(item.city)} · ${escapeHtml(state.lang === 'zh' ? item.teaType : item.teaTypeEn)} · ${escapeHtml(item.yearBatch)}</p>
+      <p class="card-meta">${escapeHtml(localizedField(item, 'city'))} · ${escapeHtml(state.lang === 'zh' ? item.teaType : item.teaTypeEn)} · ${escapeHtml(localizedField(item, 'yearBatch'))}</p>
       <p class="card-summary">${escapeHtml(state.lang === 'zh' ? (item.leadZh || item.descriptionZh) : (item.leadEn || item.descriptionEn))}</p>
       <div class="card-action"><span>${text.cardLink}</span></div>
     </button>`).join('');
@@ -2790,26 +2706,31 @@ function rerender() {
   renderGlobalChrome(items);
   renderMapPresentationMode();
   renderHeroStats(items);
-  renderMapContext(items);
-  renderProvinceHeader(items);
-  renderDetailHeader(items);
-  renderTeaTypeFilters(items);
-  renderLegend();
-  renderProvinceShapes(items);
-  renderMapOverlays(items);
-  renderDetail(items);
-  renderCards(items);
+  // Hidden stages do not need fresh map geometry or detail illustrations.
+  if (state.view === 'map') {
+    renderMapContext(items);
+    renderTeaTypeFilters(items);
+    renderLegend();
+    renderProvinceShapes(items);
+    renderMapOverlays(items);
+  }
+  if (state.view === 'province') { renderProvinceHeader(items); renderTeaTypeFilters(items); renderCards(items); }
+  if (state.view === 'detail') { renderDetailHeader(items); renderDetail(items); }
   if (els.searchInput) {
     els.searchInput.value = state.search;
     els.searchInput.placeholder = currentText().searchPlaceholder;
   }
   els.langToggle.textContent = currentText().interfaceToggle;
   updateZoomUi();
+  window.TeaExperience?.afterRender();
 }
 
 els.langToggle.addEventListener('click', () => {
+  const open = [...document.querySelectorAll('#detailPanel details[open]')].map(node => node.id);
   state.lang = state.lang === 'zh' ? 'en' : 'zh';
+  try { localStorage.setItem('tea-map-language', state.lang); } catch {}
   rerender();
+  for (const id of open) { const node = document.getElementById(id); if (node) node.open = true; }
 });
 if (els.enterMapButton) {
   els.enterMapButton.addEventListener('click', () => enterMapView());
@@ -2819,6 +2740,7 @@ if (els.siteHomeButton) {
 }
 if (els.globalBackButton) {
   els.globalBackButton.addEventListener('click', () => {
+    if (window.TeaExperience) return window.TeaExperience.back();
     const target = els.globalBackButton.dataset.target;
     if (target === 'landing') backToLandingView();
     if (target === 'map') backToMapView();
@@ -2905,7 +2827,9 @@ if (els.detailPanel) {
     if (!target) return;
     if (target.tagName === 'DETAILS' && !target.hasAttribute('open')) target.setAttribute('open', '');
     window.requestAnimationFrame(() => {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
     });
   });
 }

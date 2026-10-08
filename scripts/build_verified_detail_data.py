@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import html
+from html.parser import HTMLParser
 import json
 import re
 import time
@@ -281,9 +282,31 @@ def extract_table_value(page_html: str, label: str) -> str:
         haystack,
         re.S,
     )
-    if not cell_match:
-        return ""
-    return clean_html(cell_match.group(1))
+    if cell_match:
+        return clean_html(cell_match.group(1))
+
+    class TextNodes(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.values = []
+
+        def handle_data(self, value):
+            if value.strip():
+                self.values.append(value.strip())
+
+    parser = TextNodes()
+    parser.feed(page_html)
+    for index, value in enumerate(parser.values):
+        match = re.match(rf"^{re.escape(label)}\s*[：:]\s*(.*)$", value)
+        if match:
+            tail = match.group(1).strip()
+            if tail:
+                return tail.split('|')[0].strip()
+            if index + 1 < len(parser.values):
+                following = parser.values[index + 1]
+                if not re.search(r'[：:]|项目序号|项目编号|公布时间|保护单位|申报地区', following):
+                    return following
+    return ""
 
 
 def extract_main_text(page_html: str) -> str:
@@ -533,8 +556,6 @@ def refresh_item(
     sentences = split_sentences(main_text)
     declared_region = (
         extract_table_value(page_html, "申报地区或单位")
-        or master_row.get("city", "")
-        or base_item.get("city", "")
     )
     protection_unit = extract_table_value(page_html, "保护单位") or feed_row.get("protectionUnit") or base_item.get("protectionUnit", "")
     inheritors = extract_related_inheritors(page_html)
@@ -606,6 +627,8 @@ def build_output_rows(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def main() -> int:
+    if any(row.get('practiceExperience') for row in read_json(ENRICHED_FEED_JSON_PATH)):
+        raise RuntimeError('旧版采集器不再覆盖交互版主数据。请更新05详情页投喂JSON并运行scripts/sync_feed.py；字段解析函数仍可独立复用。')
     base_data = load_base_data()
     master_rows = load_master_rows()
     trace_rows_by_id = load_trace_rows()
