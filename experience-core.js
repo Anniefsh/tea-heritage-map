@@ -107,7 +107,11 @@
   function createDetailStore(items, storage) {
     const revision = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
     let data = { version: 1, revision: revision(), progress: {} }, persistent = Boolean(storage);
-    const valid = new Map(items.filter(x => x.detailExperience).map(x => [x.id, new Set(x.detailExperience.units.map(u => u.id))]));
+    // Retain the replaced scenes as history; they do not count as reading the new static guide.
+    const valid = new Map(items.filter(x => x.detailExperience).map(x => [x.id, new Set([
+      ...x.detailExperience.units.map(u => u.id),
+      ...(x.detailExperience.type === 'static-flow' ? x.detailExperience.legacyUnitIds || [] : [])
+    ])]));
     try {
       const saved = JSON.parse(storage?.getItem(DETAIL_KEY) || '{}');
       if (typeof saved?.revision === 'string') data.revision = saved.revision;

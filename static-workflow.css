@@ -1,0 +1,18 @@
+/* Static workflow cards: every stage is visible without playback or input. */
+.dx-static-flow .static-flow-intro{font-size:18px;color:var(--muted);margin:8px 0 14px}
+.static-flow-boundary{font-size:14px;line-height:1.8;max-width:78ch;color:var(--muted);margin:0 0 28px}
+.static-flow-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;list-style:none;padding:0;margin:0}
+.static-flow-card{min-width:0;background:#fffcf3;border:1px solid #d8cfb6;border-radius:14px;overflow:hidden}
+.static-flow-card figure{margin:0}.static-flow-art{background:#f9f4e8}
+.static-flow-card figcaption{padding:22px 24px 26px;text-align:left}
+.static-flow-step{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:24px;margin-bottom:12px}
+.static-flow-step>span{font:18px var(--serif);color:#8b714b;letter-spacing:.1em}
+.static-flow-step>strong{font-size:11px;font-weight:500;line-height:1.5;border:1px solid #c8ad78;border-radius:12px;padding:4px 10px;color:#6b542f}
+.static-flow-card h4{font:600 clamp(22px,2vw,28px)/1.4 var(--serif);margin:0 0 12px;color:var(--ink)}
+.static-flow-card figcaption>p{font-size:16px;line-height:1.85;margin:0;color:#4d6055}
+.static-flow-branch{border-color:#b79a62}.static-flow-disclosure{font-size:12px;line-height:1.7;color:var(--muted);margin:16px 0 0}
+.static-flow-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;padding:28px 0 0;margin-top:26px;border-top:1px solid #d5caac}
+.static-flow-notes h4{font:600 20px/1.5 var(--serif);margin:0 0 12px}.static-flow-notes p{font-size:14px;line-height:1.85;margin:0;color:var(--muted)}
+.static-flow-art .image-fallback{position:absolute;inset:0;display:grid;place-content:center;padding:24px;text-align:center;font-size:15px}
+@media(max-width:1100px){.static-flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.static-flow-card figcaption{padding:18px 20px}.static-flow-notes{grid-template-columns:1fr;gap:22px}}
+@media(max-width:580px){.static-flow-grid{grid-template-columns:minmax(0,1fr);gap:20px}.static-flow-card h4{font-size:25px}.static-flow-card figcaption>p{font-size:16px}.dx-static-flow .static-flow-intro{font-size:16px}.static-flow-art{max-height:none}}

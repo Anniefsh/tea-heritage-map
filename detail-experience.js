@@ -14,6 +14,7 @@ window.createDetailExperiences = function (ctx, helpers) {
   const label = unit => tr(unit.titleZh, unit.titleEn);
   const unitButton = (item, unit, action = 'dx-view', extra = '') => button(action, label(unit), item.id, '', `data-unit="${esc(unit.id)}" ${extra}`);
   const unitCopy = (item, unit) => `<div class="dx-unit-copy"><h4>${esc(label(unit))}</h4><p>${esc(tr(unit.contentZh, unit.contentEn))}</p>${sourcePills(item, unit.sourceIds)}</div>`;
+  const zhejiang = window.createZhejiangExperiences(ctx, { tr, asset, button, memory, unitCopy, label });
   const sectionNames = { practice: ['工艺与礼俗', 'PRACTICE'], cultural_value: ['文化与地域', 'CULTURE & REGION'], inheritance: ['传承保护', 'TRANSMISSION'] };
 
   function figure(assetId, alt, overlay = '') {
@@ -79,10 +80,24 @@ window.createDetailExperiences = function (ctx, helpers) {
   function cycle(item, e, m) {
     return guide(item,e,m)+`<div class="dx-text-controls">${button('dx-next',tr('看下一个／回到起点','Next / return to start'),item.id)}</div>`;
   }
-  const types = { hotspots, 'quiz-cards': quiz, 'region-links': regions, lineage, sequence, guide, match, cycle };
+  const types = { hotspots, 'quiz-cards': quiz, 'region-links': regions, lineage, sequence: (item,e,m) => zhejiang.illustratedSequence(item,e,m,sequence(item,e,m),figure,unitButton), guide, match, cycle, ...zhejiang.types };
+  function staticFlow(item, e) {
+    const cards = e.units.map((u, i) => {
+      const url = asset(u.assetId), columns = u.assetColumns, rows = u.assetRows;
+      const frame = u.assetFrame, x = frame % columns, y = Math.floor(frame / columns);
+      const art = url ? `<img src="${esc(url)}" alt="${esc(label(u))}: ${tr('AI辅助流程示意', 'AI-assisted process illustration')}" loading="lazy" draggable="false">` : `<p class="image-fallback">${tr('图片暂不可用，可继续阅读步骤说明。', 'Image unavailable. The step description is still available.')}</p>`;
+      return `<li class="static-flow-card ${u.conditionZh ? 'static-flow-branch' : ''}"><figure><div class="zj-atlas static-flow-art" style="--cols:${columns};--rows:${rows};--cell-x:${x};--cell-y:${y}">${art}</div><figcaption><div class="static-flow-step"><span>${String(i + 1).padStart(2, '0')}</span>${u.conditionZh ? `<strong>${esc(tr(u.conditionZh, u.conditionEn))}</strong>` : ''}</div><h4>${esc(label(u))}</h4><p>${esc(tr(u.contentZh, u.contentEn))}</p></figcaption></figure></li>`;
+    }).join('');
+    const notes = (e.notes || []).map(n => `<article><h4>${esc(tr(n.titleZh, n.titleEn))}</h4><p>${esc(tr(n.contentZh, n.contentEn))}</p></article>`).join('');
+    return `<section class="detail-experience dx-static-flow" id="detailExperience" aria-labelledby="dxTitle"><div class="explore-section-heading"><div><p class="section-index">${tr('流程图解', 'PROCESS OVERVIEW')}</p><h3 id="dxTitle">${esc(tr(e.titleZh, e.titleEn))}</h3></div></div><p class="static-flow-intro">${esc(tr(e.noteZh, e.noteEn))}</p><p class="static-flow-boundary">${esc(tr(e.boundaryZh, e.boundaryEn))}</p><ol class="static-flow-grid">${cards}</ol><p class="static-flow-disclosure">${tr('AI辅助流程示意，非现场照片', 'AI-assisted process illustrations, not documentary photographs')}</p>${notes ? `<aside class="static-flow-notes" aria-label="${tr('流程中的几个细节', 'Details within the process')}">${notes}</aside>` : ''}</section>`;
+  }
+
   function render(item) {
+    zhejiang.cancel();
     const e = item.detailExperience;
-    if (!e?.units?.length || !types[e.type] || e.contentReview?.status !== 'reviewed') return '';
+    if (!e?.units?.length || e.contentReview?.status !== 'reviewed') return '';
+    if (e.type === 'static-flow') return staticFlow(item, e);
+    if (!types[e.type]) return '';
     const m = memory(item), count = (ctx.detailJournal.data.progress[item.id] || []).length;
     const group = sectionNames[e.sectionKey] || ['互动探索', 'EXPLORE'];
     return `<section class="detail-experience dx-${e.type}" id="detailExperience" aria-labelledby="dxTitle"><div class="explore-section-heading"><div><p class="section-index">${tr(...group)}</p><h3 id="dxTitle">${esc(tr(e.titleZh, e.titleEn))}</h3></div><span class="practice-count">${tr('已查看', 'Viewed')} ${count}/${e.units.length}</span></div><p class="practice-note">${esc(tr(e.noteZh, e.noteEn))}</p>${types[e.type](item, e, m)}<div class="dx-footer">${sourcePills(item, e.sourceIds)}${button('dx-reset', tr('重新探索', 'Explore again'), item.id, 'I05')}${button('dx-skip', tr('跳过，继续阅读', 'Skip and keep reading'), item.id)}</div>${count === e.units.length ? `<p class="dx-complete" role="status">${tr('这一段已经看完了，带着新发现继续逛逛吧。', 'A new discovery to take with you. Keep exploring!')}</p>` : ''}</section>`;
@@ -94,6 +109,7 @@ window.createDetailExperiences = function (ctx, helpers) {
     const item = lookup(trigger.dataset.item), e = item?.detailExperience;
     if (!e) return true;
     const m = memory(item), u = e.units.find(x => x.id === trigger.dataset.unit);
+    if (zhejiang.handle(trigger,item,e,m)) return true;
     if (action === 'dx-grab') return true;
     const view = id => ctx.detailJournal.view(item.id, id);
     if (action === 'dx-skip') {
@@ -122,7 +138,10 @@ window.createDetailExperiences = function (ctx, helpers) {
       m.choice = trigger.dataset.choice; m.open = [...new Set([...m.open, answer])]; view(answer);
     } else if (action === 'dx-move' && u) {
       m.order = TeaExplore.moveUnit(m.order, u.id, m.order.indexOf(u.id) + Number(trigger.dataset.offset)); m.checked = false; m.dirty = true;
-    } else if (action === 'dx-check') m.checked = true;
+    } else if (action === 'dx-check') {
+      m.checked = true;
+      if (m.order.every((id,i)=>id===e.sequenceIds[i])) e.sequenceIds.forEach(view);
+    }
     else if (action === 'dx-retry') { m.order = [...e.initialOrder]; m.checked = false; m.dirty = false; m.answer = false; }
     else if (action === 'dx-answer') { m.answer = true; e.sequenceIds.forEach(view); }
     ctx.redraw(trigger);
@@ -139,5 +158,5 @@ window.createDetailExperiences = function (ctx, helpers) {
     const trigger = [...document.querySelectorAll('[data-sort-handle]')].find(x => x.dataset.unit === unitId);
     ctx.redraw(trigger); ctx.notify(tr('已移动卡片，顺序已改变，请重新检查。', 'Card moved. Check the new order.'));
   }, event => ctx.notify(event === 'start' ? tr('正在移动，插入线表示落点；Esc取消。', 'Moving. The line marks the drop position; Escape cancels.') : tr('已取消移动，顺序未改变。', 'Move cancelled; order unchanged.')));
-  return { render, handle, conflicts };
+  return { render, handle, conflicts, cancel: zhejiang.cancel };
 };

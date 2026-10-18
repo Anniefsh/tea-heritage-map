@@ -1,6 +1,6 @@
 # China Tea Heritage Map
 
-A bilingual static map of 46 tea-related entries in China's national intangible cultural heritage inventory, with 13 reviewed interactive experiences.
+A bilingual static map of 46 tea-related entries in China's national intangible cultural heritage inventory, with 15 reviewed interactive experiences and two static illustrated process guides.
 
 ## View locally
 
@@ -11,6 +11,7 @@ Open `index.html` in a modern browser. No backend or account is required. Saved 
 - Full Chinese and English interface and project content.
 - Project comparison, recommendations, saved projects and exploration history.
 - Reviewed quizzes, illustrations, process guides and sequencing activities.
+- Longjing has nine main process illustrations; Jingshan has eight principal ritual stages. All cards are visible without animation, dragging or quizzes. Earlier scene records are retained, but these two reading guides do not display interactive progress.
 - One official source entry per project; no video or separate English Summary section.
 
 ## Data and sources
@@ -21,7 +22,7 @@ The editorial source documents and approval records live outside this repository
 
 ## Deployment
 
-`scripts/package_public_preview.py` prepares an allowlisted static distribution in the adjacent publication workspace. It validates the 46-project scope and 13 experiences, removes local document paths and approval conversation notes from the public distribution, and includes only approved artwork. Publish that distribution, not the entire working directory. Hosting charges, domain requirements and mainland-China availability depend on the selected provider.
+`scripts/package_public_preview.py` prepares an allowlisted static distribution in the adjacent publication workspace. It validates the 46-project scope and 17 content modules (15 interactive and two static), removes local document paths and approval conversation notes from the public distribution, and includes only approved artwork. Publish that distribution, not the entire working directory. Hosting charges, domain requirements and mainland-China availability depend on the selected provider.
 
 ## Checks
 

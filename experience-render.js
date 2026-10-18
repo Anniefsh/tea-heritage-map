@@ -25,7 +25,7 @@ window.createExperienceRenderers = function (ctx) {
 
   function references(item) {
     const usable = (item.references || []).filter(r => r.available !== false && /^https?:\/\//i.test(window.TeaExplore.safeUrl(r.url)));
-    const primary = usable.find(r => r.id === 'ihchina-project') || usable.find(r => r.url === item.sourceUrl) || usable[0];
+    const primary = usable.find(r => r.id === item.detailExperience?.primarySourceId) || usable.find(r => r.id === 'ihchina-project') || usable.find(r => r.url === item.sourceUrl) || usable[0];
     const href = primary?.url || (/^https?:\/\//i.test(window.TeaExplore.safeUrl(item.sourceUrl)) ? item.sourceUrl : '');
     return href ? `<a class="project-source-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">${icon('I07')}<span>${tr('查看官方项目资料', 'Official project source (Chinese)')}</span><span aria-hidden="true">↗</span></a>` : `<p class="reference-unavailable">${tr('来源链接暂不可用', 'Source link unavailable')}</p>`;
   }
@@ -71,7 +71,7 @@ window.createExperienceRenderers = function (ctx) {
     const related = window.TeaExplore.related(item, DATA.items);
     const labels = { tea: tr('同茶类', 'Same tea type'), region: tr('同地区', 'Same region'), category: tr('同非遗类别', 'Same heritage category') };
     const jumps = [
-      ...(item.practiceExperience || item.detailExperience ? [[item.practiceExperience ? 'practiceExperience' : 'detailExperience', tr('动手探索', 'Explore')]] : []),
+      ...(item.practiceExperience || item.detailExperience ? [[item.practiceExperience ? 'practiceExperience' : 'detailExperience', item.detailExperience?.type === 'static-flow' ? tr('流程图解', 'Process overview') : tr('动手探索', 'Explore')]] : []),
       ...(sections.length ? [['projectBackground', tr('项目故事', 'Background')]] : []),
       ['detail-section-source_audit', tr('登记与来源', 'Source')]
     ];
@@ -99,7 +99,7 @@ window.createExperienceRenderers = function (ctx) {
   function footprintsPage() {
     const favorites = ctx.journal.data.favorites.map(getItemById).filter(Boolean);
     const visited = [...ctx.journal.data.visited].reverse().map(getItemById).filter(Boolean);
-    const pilots = DATA.items.filter(item => item.practiceExperience || item.detailExperience);
+    const pilots = DATA.items.filter(item => item.practiceExperience || (item.detailExperience && item.detailExperience.type !== 'static-flow'));
     const progress = item => item.detailExperience ? (ctx.detailJournal.data.progress[item.id] || []).length : (ctx.journal.data.progress[item.id] || []).length;
     const total = item => item.detailExperience?.units.length || item.practiceExperience.steps.length;
     return `<p class="section-index">${tr('留下一点茶香', 'YOUR COLLECTION')}</p><h2 tabindex="-1">${tr('我的足迹', 'My discoveries')}</h2><p class="section-note">${tr('收藏与阅读记录仅保存在当前浏览器。', 'Saved projects and reading history stay in this browser.')}</p>
@@ -110,5 +110,5 @@ window.createExperienceRenderers = function (ctx) {
       <h3>${tr('最近浏览', 'Recently viewed')}</h3><div class="related-grid">${visited.length ? cards(visited) : button('discover', tr('随意发现一个项目', 'Discover a project'))}</div>${button('clear-journal', tr('清除本浏览器记录', 'Clear local history'))}`;
   }
 
-  return { tr, title, asset, icon, button, actions, sourcePills, references, cards, practice, detail, comparePage, footprintsPage, handleDetailAction: detailExperiences.handle };
+  return { tr, title, asset, icon, button, actions, sourcePills, references, cards, practice, detail, comparePage, footprintsPage, handleDetailAction: detailExperiences.handle, cancelDetailInteraction: detailExperiences.cancel };
 };

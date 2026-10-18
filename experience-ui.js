@@ -8,6 +8,7 @@
   const $ = id => document.getElementById(id);
   let compared = [], navIndex = 0, navigating = false, pendingReplace = null;
   let currentHash = '', historyAvailable = true, focusReturn = null, noticeTimer;
+  let noticeLanguage = state.lang;
   const activeSteps = {}, detailStates = {}, localBackStack = [];
   const fallbackSnapshots = new Map();
   const ctx = { journal, detailJournal, detailStates, activeSteps, navigate, redraw, notify, get compared() { return compared; } };
@@ -113,6 +114,12 @@
   }
 
   function afterRender(mapOnly = false) {
+    if (noticeLanguage !== state.lang) {
+      clearTimeout(noticeTimer);
+      $('exploreNotice').textContent = '';
+      noticeLanguage = state.lang;
+    }
+    if (!mapOnly) render.cancelDetailInteraction();
     const extra = ['compare', 'footprints', 'missing'].includes(state.view);
     if (!mapOnly) {
       $('exploreShell').classList.toggle('hidden', !extra);
@@ -251,8 +258,10 @@
     const img = event.target;
     if (img.tagName !== 'IMG') return;
     img.hidden = true;
-    if (img.closest('.practice-figure, .detail-experience-figure') && !img.parentElement.querySelector('.image-fallback')) {
-      img.insertAdjacentHTML('afterend', `<p class="image-fallback">${tr('插画暂不可用，请使用文字按钮继续探索。', 'Illustration unavailable. Use the text controls to continue.')}</p>`);
+    if (img.closest('.practice-figure, .detail-experience-figure, .zj-atlas') && !img.parentElement.querySelector('.image-fallback')) {
+      const compact = img.closest('.zj-sort-thumb, .zj-magnifier');
+      const message = img.closest('.dx-static-flow') ? tr('图片暂不可用，可继续阅读步骤说明。', 'Image unavailable. The step description is still available.') : compact ? tr('图片暂不可用', 'Image unavailable') : tr('插画暂不可用，请使用文字按钮继续探索。', 'Illustration unavailable. Use the text controls to continue.');
+      img.insertAdjacentHTML('afterend', `<p class="image-fallback">${message}</p>`);
       img.parentElement.querySelectorAll('.dx-hotspot').forEach(pin => { pin.hidden = true; });
     }
   }, true);
